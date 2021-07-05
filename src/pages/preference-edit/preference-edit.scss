@@ -1,0 +1,289 @@
+.main-edit-preference{
+    background-color: rgb(255,255,255);
+    bottom: 0vh;
+    width: 100%;
+    border-top-left-radius: 1.499vh;
+    border-top-right-radius: 1.499vh;
+    .grid{
+        padding:0;        
+    }
+    .row{
+        padding:0;
+    }
+    .col{
+        padding:0;
+    }    
+    .button-md{
+        font-size: 2.398vh;
+        height: 8.245vh; 
+        // background-color: rgb(242,155,17);
+        background: linear-gradient(to bottom, rgb(255,206,128) -80%, rgb(242,156,17) 100%);
+        text-transform: none;
+        border-radius: 0.899vh;
+        box-shadow: none;
+    }   
+    .button-ios{
+        font-size: 2.398vh;
+        // background-color: rgb(242,155,17);
+        background: linear-gradient(to bottom, rgb(255,206,128) -80%, rgb(242,156,17) 100%);
+        height: 8.245vh;
+        text-transform: none;
+        border-radius: 0.899vh;
+        box-shadow: none;
+    }
+    .button-inner{
+        font-size: 2.39vh;
+        font-family: Montserrat-Bold;
+     }
+}
+.main-edit-preference .heading-title-box{
+    background-color: rgb(240, 240, 240); 
+    padding: 2.848vh 1vh 0vh 3.597vh; 
+    border-radius:1vh;
+    h6{
+        font-size: 2.548vh; 
+        color: rgb(49, 74, 93); 
+        margin: 0; 
+        font-family: Montserrat-Bold;
+    }
+    p{
+        margin: 0;
+        font-size: 1.73vh;
+        font-family: Montserrat-Regular; 
+        color: rgb(0, 0, 0);
+    }
+}
+
+.main-edit-preference .heading-note{
+    padding: 2.848vh 1vh 0vh 3.597vh;
+    p{
+        margin: 0;
+        font-size: 1.73vh;
+        font-family: Montserrat-Regular; 
+        color: rgb(127, 127, 127);
+    }    
+}
+
+.main-edit-preference .update-menu{
+    padding: 0vh 2.893vh 0vh 3.597vh;  
+    h5{
+        margin: 0;
+        color:rgb(49, 74, 93); 
+        font-size: 2.248vh; 
+        font-family: Montserrat-SemiBold;
+    }
+    .heading{
+        margin: 0;
+        color:rgb(49, 74, 93); 
+        font-size: 2.248vh; 
+        font-family: Montserrat-SemiBold;
+        vertical-align: top;
+        margin: auto;
+    } 
+    // .radio-md .radio-icon{
+    //     width: 2.69vh;
+    //     height: 2.69vh;
+    // }
+    .radio-md .radio-checked {
+        border-color: rgb(27,183,106);
+    }
+    .radio-md .radio-inner, .radio-md-primary .radio.inner{
+        // width: 1.49vh !important;
+        // height: 1.49vh !important;
+        background-color: rgb(27,183,106) !important;
+    }
+    .item-md .radio-md {
+    background-color: transparent;
+    }
+    .meal-pref-label{
+        color: rgb(0, 0, 0); 
+        padding-left:1.994vh; 
+        vertical-align: middle; 
+        font-size: 2.098vh; 
+        font-family: Montserrat-Medium;
+        span{
+            color: rgb(209, 209, 209);
+            padding-left:2.953vh;
+        }
+    }
+    .meal-sel-button{
+        padding: 0.5vh 1.1vh; 
+        border-radius: 0.4vh;
+        background-color: rgb(92, 130, 157); 
+        color: #fff;
+        width: 3.853vh;
+        height: 3.853vh;
+        margin-left: 1.799vh;
+    }    
+}
+
+page-preference-edit .checkbox-md .checkbox-checked {
+    border-color: rgb(42, 194, 119) !important;
+    background-color:rgb(42, 194, 119) !important;
+    border-width: 0.9vh;
+    width: 3.853vh;
+    height: 3.853vh;
+}
+
+page-preference-edit .checkbox-ios .checkbox-checked{
+    border-color: rgb(42, 194, 119) !important;
+    background-color:rgb(42, 194, 119) !important;
+}
+
+page-preference-edit .checkbox-md .checkbox-icon {
+    width: 3.853vh;
+    height: 3.853vh;
+    border-radius: 0.4vh;
+}
+// .extreme-right ion-checkbox{
+//     float:right;
+// }
+
+page-preference-edit .checkbox-md .checkbox-checked .checkbox-inner{
+    height: 1.6vh;
+    left: 0.794vh;
+}
+ion-content.main-edit-preference {
+    height: 76.16191904047976vh;
+}
+.main-edit-preference .heading-title-box {
+    background-color: #f0f0f0;
+    padding: 2.998500749625187vh 0 2.998500749625187vh 4.497751124437781vh;
+    border-radius: 1vh;
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+}
+.heading-title-box {
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+}
+.areamodel input.text-input {
+    font-size: 4vw !important;
+}
+.areamodel ion-label p {
+    font-size: 4.5vw !important;
+    color: #000 !important;
+    margin-bottom: 1vh !important;
+}
+.areamodel ion-label p span:first-child {
+    width: 16.455vw;
+    display: block;
+    float: left;
+}
+.areamodel ion-label p span:nth-child(2) {
+    width: 3.891vw;
+    display: block;
+    float: left;
+    text-align: center
+}
+.areamodel ion-label p span:last-child {
+    width: calc(100% - 22.292vw);
+    display: block;
+    float: right;
+    text-align: left;
+}
+.main-edit-preference .heading-title-box p {
+    margin: 0;
+    font-size: 3.467vw;
+    font-family: Montserrat-Regular;
+    color: black;
+    margin-top: 0.4497751124437781vh;
+}
+.main-edit-preference .heading-note {
+    padding: 2.998500749625187vh 1vh 3.2983508245877062vh 3.2983508245877062vh;
+}
+.cust-meal-type-color:first-child {
+    width: 100%;
+    float: left;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 2.548725637181409vh;
+    padding-bottom: 3vh;
+}
+.cust-meal-type-color:first-child ion-list {
+    margin-bottom: 2.548725637181409vh;
+}
+.main-edit-preference ion-grid.grid {
+    height: 100%;
+    position: relative;
+}
+.select-modal-rcm .modal-wrapper {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 78.668479vh;
+}
+.select-modal-rcm .modal-wrapper {
+    height: 76.46176911544228vh !important;
+}
+.select-modal-rcm .modal-wrapper page-preference-edit {
+    height: 100%;
+}
+.select-modal-rcm .modal-wrapper page-preference-edit ion-content.main-edit-preference {
+    height: 100% !important;
+    position: relative !important;
+}
+.main-edit-preference .update-menu .meal-sel-button {
+    width: 3.8530734632683656vh;
+    height: 3.8530734632683656vh;
+    font-size: 2.6304347826086956vh;
+}
+.modal-wrapper ion-content.main-edit-preference .scroll-content {
+    overflow-y: hidden !important;
+}
+form.delivery-address ion-item ion-label {
+    font-size: 3.466666666666667vw !important;
+}
+.select-modal-rcm{
+    display: contents;
+}
+// .content-area-address .delivery-signup ion-item .item-inner ion-label{
+//     -webkit-transform: translate3d(0, 0, 0) scale(1);
+//     transform: translate3d(0, 0, 0) scale(1);
+// }   
+body ion-modal .areamodel .heading-title-box h6 {
+    font-size: 4.533vw;
+    font-size: 5vw !important;
+}
+.main-edit-preference .heading-note p {
+    margin: 0;
+}
+.main-edit-preference .update-menu h5 {
+    font-size: 3.733vw !important;
+}
+.main-edit-preference .update-menu .meal-pref-label {
+    font-size: 3.467vw !important;
+}
+.main-edit-preference .update-menu .heading{
+    font-size: 3.733vw !important;
+}
+// ion-radio {
+//     width: 2.998500749625187vh;
+//     height: 2.998500749625187vh;
+// }
+// // ion-radio .radio-icon {
+// //     height: 100% !important;
+// //     width: 100% !important;
+// // }
+// .radio-icon.radio-checked .radio-inner {
+//     height: 1.3643178410794603vh !important;
+//     width: 1.3643178410794603vh !important;
+//     left: 0 !important;
+//     top: 50% !important;
+//     transform: translateY(-50%) !important;
+//     right: 0 !important;
+//     margin: 0 auto !important;
+// }
+.modal-wrapper ion-content.main-edit-preference, 
+.modal-wrapper ion-content.main-edit-preference .model-area-margin ion-item, 
+.modal-wrapper .main-edit-preference.areamodel .model-area-margin.row {
+    border-radius: 1.499vh !important;
+}
+page-checkout .checkout-area button {
+    height: 14.667vw !important;
+}
+.main-edit-preference .heading-title-box h6 {
+    font-size: 4.533333333333333vw !important;
+}
+.main-edit-preference .heading-note p{
+font-size: 3.466666666666667vw !important;
+}

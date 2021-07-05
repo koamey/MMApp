@@ -1,0 +1,95 @@
+
+<ion-header no-border class="dit-type-header otp-headeer" (click)="classadded()">
+	<ion-navbar>
+	  <ion-buttons left>
+		 <button ion-button icon-only (click)="back()">
+		  <img src="assets/imgicon/Group 51.svg" class="backIcon">
+		 </button>
+	  </ion-buttons>
+	</ion-navbar>
+  </ion-header>
+
+<ion-content class="loginotp-content" (click)="classadded()" id="myDIV">
+	<div class="loginotp1">
+		<ion-grid>
+			<ion-row>
+				<ion-col class="text-center">
+					<img class="otp_img" src="assets/OTP_ic.svg">
+				</ion-col>
+			</ion-row>
+			<form>
+				<ion-row>
+					<ion-col class="enter-otp text-center">
+						<h1>Enter OTP</h1>
+						<p>We have sent you Access Code <br> Via SMS for mobile number verification </p>
+					</ion-col>
+				</ion-row>
+
+				<ion-row>
+					<ion-col class="enter-otp1 text-center">
+						<div class="otp-box">
+							<input type="tel" maxlength="1" #otp1 (keyup)="otpController($event,otp2,'')"
+								[formControl]="loginOTPForm.controls.number1">
+						</div>
+						<div class="otp-box">
+							<input type="tel" maxlength="1" #otp2 (keyup)="otpController($event,otp3,otp1)"
+								[formControl]="loginOTPForm.controls.number2">
+						</div>
+						<div class="otp-box">
+							<input type="tel" maxlength="1" #otp3 (keyup)="otpController($event,otp4,otp2)"
+								[formControl]="loginOTPForm.controls.number3">
+						</div>
+						<div class="otp-box" style="margin-right: 0rem;">
+							<input type="tel" maxlength="1" #otp4 (keyup)="otpController($event,'',otp3)"
+								[formControl]="loginOTPForm.controls.number4">
+						</div>
+					</ion-col>
+				</ion-row>
+
+			</form>
+
+		</ion-grid>
+		<ion-footer className="ion-no-border" class="common-footer login-otp-footer" (click)="classadded()">
+			<ion-toolbar>
+				<ion-row>
+					<ion-col style="padding: 0 5.333vw;">
+						<div class="submit-otp1">
+							<button ion-button type="submit" class="otp-click" block (click)="verifyloginotp()">
+								Verify Now
+							</button>
+							<!-- <button ion-button block (click)="singlenotification()">One notification</button> -->
+						</div>
+					</ion-col>
+				</ion-row>
+		
+				<ion-col text-center style="width: 100%;float: left;">
+					<div class="otp-receive">
+						Didn't receive ?
+						<a href="javascript:void(0);" (click)="doLogin()"> Resend OTP</a>
+					</div>
+				</ion-col>
+				</ion-toolbar>
+				</ion-footer>
+
+	</div>
+</ion-content>
+<!-- <ion-footer className="ion-no-border" class="common-footer login-otp-footer" (click)="classadded()">
+	<ion-toolbar> -->
+		<!-- <ion-row>
+			<ion-col style="padding: 0 5.333vw;">
+				<div class="submit-otp1">
+					<button ion-button type="submit" class="otp-click" block (click)="verifyloginotp()">
+						Verify Now
+					</button>
+				</div>
+			</ion-col>
+		</ion-row> -->
+
+		<!-- <ion-col text-center style="width: 100%;float: left;">
+			<div class="otp-receive">
+				Didn't receive ?
+				<a href="javascript:void(0);" (click)="doLogin()"> Resend OTP</a>
+			</div>
+		</ion-col> -->
+		<!-- </ion-toolbar>
+		</ion-footer> -->

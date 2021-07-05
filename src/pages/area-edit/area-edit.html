@@ -1,0 +1,127 @@
+<ion-content class="main-edit-preference areamodel">
+  <ion-grid>
+    <div class="heading-title-box">
+      <ion-row>
+        <ion-col col-9 class="text-left" defualt>
+            <h6 *ngIf="Fieldactive">Select Area</h6>
+            <h6 *ngIf="Fieldactive1">Select Pincode</h6>
+            <h6 *ngIf="Fieldactive2">Select Area</h6>
+            <h6 *ngIf="Fieldactive3">Select Pincode</h6>
+            <h6 *ngIf="Fieldactive4">Select Area</h6>  
+        </ion-col>
+        <ion-col col-3 style="margin-top: 0.6vh;text-align: right;">
+          <img src="assets/signs.png" style="width: 2.99vh;border-radius: 50%;margin-top: 0.6vh;" (click)="closemodel()">
+        </ion-col>
+      </ion-row>
+   </div>
+
+      <ion-row style="width: 100%;">
+      <ion-col *ngIf="Fieldactive">
+          <ion-list>
+            <ion-item style="padding-left: 5.333vw;   height: 6.896551724137931vh;">
+               <ion-input style="font-weight:bold ; " class="select-full-width" type="text" value='{{displayarea}}' (input)="selectarea($event.target.value)" placeholder="PIN CODE"  #input></ion-input>
+            </ion-item>
+          </ion-list>
+       
+      </ion-col>
+      <ion-col *ngIf="Fieldactive1">
+          <ion-list>
+            <ion-item style="padding-left: 5.333vw;    height: 6.896551724137931vh;">
+                <ion-input id="cars" placeholder="PINCODE" name="cars"
+                   class="select-full-width"
+                  (input)="selectarea1($event.target.value)" type="text" value="{{abcde_new}}" #input></ion-input>
+            </ion-item>
+          </ion-list>
+       
+      </ion-col>
+      <ion-col *ngIf="Fieldactive2">
+          <ion-list>
+            <ion-item style="padding-left: 5.333vw;    height: 6.896551724137931vh;">
+               <ion-input type="text" id="cars" placeholder="AREA" name="cars"
+                   class="select-full-width"
+                  (input)="selectarea_one1($event.target.value)" 
+                  value="{{areaname_new}}" #input></ion-input>
+            </ion-item>
+          </ion-list>
+       
+      </ion-col>
+      <ion-col *ngIf="Fieldactive3">
+          <ion-list>
+            <ion-item style="padding-left:5.333vw;    height: 6.896551724137931vh;">
+              <ion-input type="text"id="cars" name="cars" class="select-full-width" (input)="selectarea12($event.target.value)" placeholder="PINCODE" value="{{areaid1}}" #input></ion-input>
+            </ion-item>
+          </ion-list>
+       
+      </ion-col>
+       <ion-col *ngIf="Fieldactive4">
+          <ion-list>
+            <ion-item style="padding-left: 5.333vw;    height: 6.896551724137931vh;">
+              <ion-input type="text" id="cars" name="cars" class="select-full-width" (input)="selectarea1_sec($event.target.value)" placeholder="AREA" value="{{areaid2}}" #input></ion-input>
+            </ion-item>
+          </ion-list>
+       
+      </ion-col>
+    </ion-row>
+    <ion-row style="width: 100%;" class="model-area-margin">
+        <ion-col class="text-center" *ngIf="Active">
+          <ion-list>
+             <ion-item style="padding-left: 5.333vw;">
+              <div style=" width: 100%;height: 49vh;overflow-y: scroll;">
+              <p style="padding-top: 0.05vh;overflow: hidden;" *ngFor="let a of areaArrayfilter" (click)="setselectarea(a)" [innerHTML]="a"></p>
+            </div>
+            </ion-item>
+          </ion-list>
+        </ion-col>
+         <ion-col class="text-center" *ngIf="Actives">
+            <ion-list>
+              <ion-item>
+              <div style="  width: 100%;height: 49vh;overflow-y: scroll;">
+                <p  *ngFor="let a of areaArrayfilter" (click)="setselectarea1(a)" style="overflow: hidden;">{{a}}</p>
+              </div>
+              </ion-item>
+            </ion-list>
+        </ion-col>
+         <ion-col class="text-center" *ngIf="Actives_one">
+                     
+                      <ion-list>
+                         <ion-item>
+                          <div style="  width: 100%;height:49vh;overflow: scroll;">
+                          <p *ngFor="let a of areaArrayfilters" (click)="setselectarea_one1(a)">{{a}}</p>
+                        </div>
+                        </ion-item>
+                      </ion-list>
+          </ion-col>
+
+           <ion-col class="text-center" *ngIf="Actives_second">
+                     
+                      <ion-list>
+                         <ion-item>
+                          <div style="  width: 100%;height: 49vh;overflow-y: scroll;">
+                          <p *ngFor="let a of areaArrayfilters_sec" (click)="setselectarea1_one1(a)" style="overflow: hidden;">{{a}}</p>
+                        </div>
+                        </ion-item>
+                      </ion-list>
+          </ion-col>
+
+           <ion-col class="text-center" *ngIf="Actives_second1">
+                     
+                      <ion-list>
+                         <ion-item>
+                          <div style="  width: 100%;height: 49vh;overflow-y: scroll;">
+                          <p *ngFor="let a of areaArrayfilters2" (click)="setselectarea1_sec1(a)" style="overflow: hidden;">{{a}}</p>
+                        </div>
+                        </ion-item>
+                      </ion-list>
+          </ion-col>
+
+      </ion-row>
+     <!--  <ion-col col-12 style="position: absolute; width: 100%; bottom: 0; padding:2.923vh; ">
+        <div>
+          <button ion-button type="submit" id="input_submit" block (click)="onSubmit()">
+            Update Area
+          </button>
+        </div>
+      </ion-col> -->
+   
+  </ion-grid>
+</ion-content>

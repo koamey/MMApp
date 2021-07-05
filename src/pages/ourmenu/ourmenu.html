@@ -1,0 +1,47 @@
+<ion-header no-border class="dit-type-header">
+  <ion-navbar>
+    <ion-buttons left>
+      <button ion-button icon-only (click)="Back()">
+        <img src="assets/imgicon/Group_51.svg" class="backWhiteIcon">
+      </button>
+    </ion-buttons>
+    <ion-title text-center>OUR MENU</ion-title>
+  </ion-navbar>
+</ion-header>
+<!-- <ion-content class="main-content"> 
+  <div class="content-area ourmenuplan">
+    <ion-grid>
+      <ion-row>
+        <ion-col col-12 class="Terms-heading">
+          <h2>Our Menu</h2>
+          <span>Check out what we Offer</span>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+</ion-content> -->
+<ion-content class="main-faq ourmenuplan">
+  <div class="faq-content">
+    <h1>Our Menu</h1>
+    <h2>Check out what we Offer!</h2>    
+    <div class="row faqstart">
+      <div class="col-12" style="width: 100%; float: left;">
+        <ion-list>
+          <!-- *ngFor="let a of ourmenuArray; let i = index;"  -->
+          <ion-item text-wrap (click)="toggleGroup(i)" *ngFor="let a of ourmenuArray; let i = index;"
+            [ngClass]="{active: isGroupShown(i)}">
+            <h3>
+              <label class="myfistclass myfistclass_data" data-toggle="collapse" [innerHTML]="questions"></label>
+              <ion-icon color="success" item-right [name]="isGroupShown(1) ? 'arrow-dropdown' : 'arrow-dropright'" style="display: none !important;">
+              </ion-icon>
+            </h3>
+            <div *ngIf="isGroupShown(i)">
+              <h2 class="mysecondclass" [innerHTML]="answer"></h2>
+              <p class="mysecondclass" [innerHTML]="answer"></p>
+            </div>
+          </ion-item>
+        </ion-list>    
+      </div>
+    </div>
+  </div>
+</ion-content>

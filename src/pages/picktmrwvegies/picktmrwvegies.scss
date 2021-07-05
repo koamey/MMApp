@@ -1,0 +1,334 @@
+// .pick-vagies-heading{
+//     margin-top: 5.78vh;
+// }
+// .pick-vagies-heading .pick-sub-heading .image-icon{
+//     float: left;
+//     margin-left: 2.46vh;
+//     margin-top: 0.23vh;
+// }
+
+// .pick-vagies-heading .pick-sub-heading .heading-title{
+//     text-align: center !important;
+//     font-family: Montserrat-Bold;
+//     line-height: 4.55vh;
+//     font-size: 1.76vh !important;
+//     color: rgb(255, 255, 255) !important;
+//     width: 100% !important;
+//     margin: 0vh -3.94vh;
+//     letter-spacing: 0.105vh;
+// }
+
+
+.pickheader .picknav .toolbar-title-md {
+    color: #fff !important;
+    opacity: 100%;
+}
+
+.pick-vagies-heading .scroll-content{
+    overflow-y: scroll !important;
+}
+
+.main-vaggies .heading-pickvaggies p{
+    color :rgb(255,255,255);
+    font-family: Montserrat-Regular;
+    font-size: 2.71vh;
+    text-align: center;
+    line-height: 4.34vh;
+    margin: 0.988vh 0vh 0;
+}
+
+.main-vaggies .heading-pickvaggies h2{
+    color :rgb(255,255,255);
+    font-family: Montserrat-Bold;
+    font-size:3.80vh;
+    text-align: center;
+    line-height: 4.34vh;
+    margin-top:0vh;
+}
+
+.heading-pickvaggies-label label{
+    font-size: 4vw;
+    font-family: Montserrat-SemiBold;
+    text-align: center;
+    line-height: 5.02vh;
+    width: 8.69vh;
+    height: 2.58vh;
+}
+.lunch-heading{
+    text-align: center;
+    font-family: Montserrat-Bold;
+    font-size: 4.267vw;
+    color: #f29b11 !important;
+    margin: 0vh;
+}
+
+.lunch-label{
+    font-size: 3.733vw;
+    font-family: Montserrat-Medium;
+    text-align: center;
+    color: #203c52 !important;
+    line-height: 5.027vh;
+    opacity: 50%;
+}
+
+.meal-list{
+    text-align: center;
+    border: 0.135vh solid #000;
+    border-radius: 0.95vh;
+    //opacity: 70%;
+    // width:45.51vh;
+    // height: 7.33vh;
+}
+
+.meal-list p{
+    text-align: center;
+    //width:45.51vh;
+    // height: 7.33vh;
+    // margin: auto;
+    font-size: 4vw;
+    //line-height: 2.17vh;
+    letter-spacing: 0.020vh;
+    font-family: Montserrat-SemiBold;
+    // margin-top: 1.90vh;
+}
+
+.meal-list2{
+    text-align: center;
+    border: 0.135vh solid #000;
+    border-radius: 0.95vh;
+}
+.meal-list2 p{
+    text-align: center;
+    font-size: 4vw;
+    //line-height: 2.17vh;
+    letter-spacing: 0.020vh;
+    font-family: Montserrat-SemiBold;
+}
+.pick-vagies-heading .pick-sub-heading .toolbar-background-md{ 
+    background-color: rgb(32, 60, 82) !important;
+}
+
+.main-vaggies{
+    background-color: rgb(32, 60, 82);
+}
+
+//.main-vaggies .grid{
+  //  margin: 3.88vh 0vh;
+//}
+
+.main-vaggies .main-vaggies-second-grid
+{
+     margin: -3vh 0vh;
+}
+.main-vaggies .main-vaggies-first-grid
+{
+     margin: 1.88vh 0vh;
+}
+
+.main-vaggies .mainDiv{
+    background-color: transparent;
+    height: 84%;
+    // overflow-y: scroll;
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+    // padding: 0 1.4vh 6vh 1.4vh;
+}
+
+.pick-vagies-containt{
+    line-height: 3.5vh;
+    font-size: 2.5vh;
+    margin: 0 0vh;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    padding: 0;
+    background-color: #ffffff;
+    height: calc(100% - 6.25vh);
+    border-top-left-radius: 2vh;
+    border-top-right-radius: 2vh;
+    -webkit-box-shadow: 0 0 0.5vh #000;
+    box-shadow: 0 0 0.5vh #000;
+    overflow-y: scroll;
+}
+
+.main-vaggies .heading-pickvaggies{
+    width: 100%;
+    text-align: center;
+}
+
+.white {
+    border-radius: 0.67vh;
+    background-color: #f29b11 !important;
+    border-bottom: 0.70vh solid #f3a01c;
+    border-bottom-left-radius: 4.07vh;
+    border-bottom-right-radius: 4.07vh;
+    width: 31.200vw;
+    margin: auto;
+    background-color: #f3a01c;
+    padding: 0;
+}
+ 
+.border-bold{
+    border-bottom: 0.70vh solid #f3a01c;
+    border-bottom-left-radius: 4.07vh;
+    border-bottom-right-radius: 4.07vh;
+    width: 31.200vw;
+    margin: auto;
+    background-color: #f3a01c;
+
+}
+
+
+.pick-vagies-containt .meal-heading{
+    line-height: 3.5vh;
+    font-size: 2.5vh;
+    margin: 0vh; 
+}
+.main-vaggies .pick-vagies-containt .button-md{
+   // height: 6vh;
+   text-transform: none;
+   font-size: 2.19vh;
+   margin-bottom: 2.99vh;
+   font-family: Montserrat-Bold;
+   height:8.245vh !important;
+   border-radius: 0.899vh;
+   text-transform: none;
+   background: rgba(255,206,128,1);
+   background: linear-gradient(to bottom, rgba(255,206,128,1) -80%, rgba(242,156,17,1) 100%);
+ //  background-color: rgb(216, 216, 216) !important;
+   box-shadow: none;
+}
+
+
+.main-vaggies .pick-vagies-containt .button-ios {
+    // height: 6vh;
+    text-transform: none;
+    font-size: 2.19vh;
+    margin-bottom: 2.99vh;
+    font-family: Montserrat-Bold;
+    height:8.245vh !important;
+    border-radius: 0.899vh;
+    text-transform: none;
+    background: rgba(255,206,128,1);
+    background: linear-gradient(to bottom, rgba(255,206,128,1) -80%, rgba(242,156,17,1) 100%);
+  //  background-color: rgb(216, 216, 216) !important;
+    box-shadow: none;
+}
+
+
+.main-vaggies .pick-vagies-containt .button-inner{
+    font-family: Montserrat-Bold;
+    font-size: 2.398vh;
+}
+
+// .button-class{
+//     height: 8.245vh !important;
+//     text-transform: none;
+//     font-size: 2.398vh;
+
+//     font-family: Montserrat-Bold;
+//     color:#fff;
+//     margin: 0.4rem 0.2rem;
+//     padding: 0 1em;
+//     width:100%;   
+// }
+
+.guest-meal-area .Guest-meal .col{
+    padding:0vh;
+}
+
+.guest-meal-area .Guest-meal {
+    margin-top: 11vh;
+}
+
+.guest-meal-area .Guest-meal h1{ 
+    margin: 3.682065217391304vh 0vh 0vh 0vh;
+    color: #f3a01c;
+    font-size: 4.533vw;
+    font-family: Montserrat-SemiBold;
+
+}
+.guest-meal-area .Guest-meal p {
+    margin: 0.6657608695652175vh auto auto;
+    color: #203c52;
+    opacity: 50%;
+    font-size: 3.467vw;
+    line-height: 2.548725637181409vh;
+    width: 72vw;
+}
+
+
+.guest-meal-area .Guest-meal .guestButton{
+    margin: 0 5.333vw;
+    padding-right: 5.99vh;
+    padding: 0;
+    width: calc(100% - 10.666vw);
+}
+
+.guest-meal-area .Guest-meal .guestButton button.orderclick {
+    margin: 0;
+    padding: 0;
+}
+.guest-meal-area .Guest-meal .button-ios {
+    background: linear-gradient(to bottom, rgb(255,206,128) -80%, rgb(242,156,17) 100%);
+    // background-color:rgb(242, 155, 17);
+    border-radius: 0.5vh;
+    height: 7.24vh;
+}
+
+.guest-meal-area .Guest-meal .button-md{
+   background: linear-gradient(to bottom, rgb(255,206,128) -80%, rgb(242,156,17) 100%);
+    // background-color:rgb(242, 155, 17);
+    border-radius: 0.5vh;
+    height: 7.24vh;
+}
+
+.guest-meal-area .Guest-meal .button-inner{
+    font-family: Montserrat-Bold;
+    font-size: 2.398vh;
+}
+
+// .main-vaggies .heading-pickvaggies-label .col
+// {
+//     padding:0 !important;
+// }
+.idscript{
+    display:block;
+}
+ion-content.main-vaggies {
+    width: 100vw;
+    height: calc(100% - 10.494752623688155vh);
+    bottom: 0;
+    top: auto;
+}
+.main-vaggies .main-vaggies-first-grid {
+    margin: 0;
+    padding: 0;
+}
+.main-vaggies .mainDiv {
+    background-color: transparent;
+    height: 77.699vh;
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.fix-pick-vegie {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    padding: 0 1.4vh;
+}
+ion-content.main-vaggies .scroll-content {
+    overflow-y: hidden !important;
+}
+.main-edit-preference .row ion-list.list.list-md {
+    margin: 0;
+}
+.item-md.item-input.ng-invalid.ng-touched:not(.input-has-focus):not(.item-input-has-focus) .item-inner {
+    border-bottom-color: #f3a01c;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}

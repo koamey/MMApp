@@ -1,0 +1,20 @@
+PODS:
+  - OneSignal (2.14.3)
+  - razorpay-pod (1.1.5)
+
+DEPENDENCIES:
+  - OneSignal (= 2.14.3)
+  - razorpay-pod
+
+SPEC REPOS:
+  trunk:
+    - OneSignal
+    - razorpay-pod
+
+SPEC CHECKSUMS:
+  OneSignal: 7dfe466265c05f02b95a274b9c997a0619ad2117
+  razorpay-pod: 31dd24ddb70275d82be12527b45001f9bc9f1be2
+
+PODFILE CHECKSUM: 7652eab62e77ae7d4e63f51de9a9f922502d9f8a
+
+COCOAPODS: 1.9.3

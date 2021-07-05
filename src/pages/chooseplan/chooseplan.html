@@ -1,0 +1,53 @@
+
+
+<ion-header no-border class="dit-type-header otp-headeer">
+	<ion-navbar>
+	  <ion-buttons left>
+		<button ion-button icon-only (click)="back()">
+		  <img src="assets/imgicon/Group 51.svg" class="backIcon" >
+    </button>
+	  </ion-buttons>
+	</ion-navbar>
+  </ion-header>
+
+<ion-content class="chooseplan-content">
+  <div class="choose-plan">
+    <ion-grid>
+      <ion-row>
+        <ion-col col-12 class="text-center">
+          <h4>Choose Your Plan</h4>
+          <span class="mainpara">Did you know? You can CHOOSE YOUR VEGGIES DAILY a day prior once you take a plan. </span>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <ion-grid>
+      <ion-row style="margin-top: 1.945vh;" *ngFor="let subscriptions of subscriptionArray; let i=index">
+        <ion-col col-12 class="select-area2">
+          <div class="monthly-subscription" id='plan_{{subscriptions.subscription_id}}' (click)="onClickSubscription(subscriptions.subscription_id)">
+            <div>
+              <img style="width: 9.97vh;height: 9.97vh;margin-top: 2.248vh;margin-bottom: 1.664vh;" *ngIf="subscriptions.subscription_id!='1'"
+                src="assets/Group_321.svg" alt="food-image" class="img-responsive">
+              <img style="width: 13.778vh; height: 13.6vh;" *ngIf="subscriptions.subscription_id=='1'" src="assets/Group_225.svg" alt="food-image"
+                class="img-responsive">
+            </div>
+            <h4>{{subscriptions.subscription_name}}</h4>
+            <span [innerHTML]="subscriptions.subscription_content"></span>
+            <label class="smallcontent" id='plan_p_{{subscriptions.subscription_id}}' [innerHTML]="subscriptions.subscription_sub_content"></label>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <div class="bottom">
+            <!-- <p>
+              <sup style="color: red; font-size: 1.97vh; top:0em !important;">* </sup> Subscription or Trial will only start after 48 hours from the payment date</p> -->
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+</ion-content>

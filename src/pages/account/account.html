@@ -1,0 +1,388 @@
+<!--
+  Generated template for the AccountPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header no-border class="dit-type-header accHeader" (click)="classadded()">
+  <ion-navbar>
+    <ion-buttons left *ngIf="Active1" (click)="onclickacountback()">
+      <button ion-button icon-only>
+        <img src="assets/imgicon/Group_51.svg" class="backWhiteIcon">
+      </button>
+    </ion-buttons>
+    <ion-title text-center *ngIf="Active1">ACCOUNT</ion-title>
+
+    <ion-buttons left *ngIf="Active2" (click)="onclickpersonalback()">
+      <button ion-button icon-only>
+        <img src="assets/imgicon/Group_51.svg" class="backWhiteIcon">
+      </button>
+    </ion-buttons>
+    <ion-title *ngIf="Active2">PERSONAL</ion-title>
+
+    <ion-buttons left *ngIf="Active3" (click)="onclickaddressback()">
+      <button ion-button icon-only>
+        <img src="assets/imgicon/Group_51.svg" class="backWhiteIcon">
+      </button>
+    </ion-buttons>
+    <ion-title *ngIf="Active3">ADDRESSES</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="account-section" (click)="classadded()" id="myDIV">
+  <div class="account-profile-section1" *ngIf="Active1">
+    <div class="subheader" *ngIf="Active1">
+      <ion-grid>
+        <ion-row>
+          <ion-col col-4>
+            <div class="profile-image" [ngStyle]="{'background-image': 'url(' + base64Image + ')'}">
+              <div class="edit-profile">
+                <img src="assets/Rectangle-34.png" (click)="onGallery()">
+              </div>
+            </div>
+          </ion-col>
+          <ion-col col-8>
+            <div class="userName">
+              <h2>{{custFname}}&nbsp;{{custLname}}</h2>
+              <p>{{custMnum}}</p>
+            </div>
+            <div class="planName">
+              <img src="assets/Plan_ic@2x.png" class="diamond">
+              <label> {{mtype}}</label>
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+    <div class="main-account-area">
+      <ion-grid>
+        <ion-row (click)="onclickpersonal()">
+          <ion-col col-2 style="vertical-align: middle; margin:auto;margin-right: 0;margin-left: 0;">
+            <div class="account-icon">
+              <img src="assets/Personal_ic.svg" style="max-height: 6.400vw;">
+            </div>
+          </ion-col>
+          <ion-col col-9>
+            <div class="person-row">
+              <label>Personal </label>
+              <p>First, Last name, Email, Phone No:
+                <p>
+            </div>
+          </ion-col>
+          <ion-col col-1 style="vertical-align: middle; margin: auto;">
+            <div class="right-arrow">
+              <ion-icon name="ios-arrow-forward" style="color: #b6bfc6;"></ion-icon>
+            </div>
+          </ion-col>
+        </ion-row>
+        <hr class="row-line">
+        <ion-row (click)="onclickaddress()">
+          <ion-col col-2 style="vertical-align: middle; margin:auto;margin-right: 0;
+          margin-left: 0;">
+            <div class="account-icon">
+              <img class="" src="assets/Address_ic.svg" style="    max-height: 5.760vw;">
+            </div>
+          </ion-col>
+          <ion-col col-9>
+            <div class="person-row">
+              <label>Addresses</label>
+              <p>Home & Work Address</p>
+            </div>
+          </ion-col>
+          <ion-col col-1 style="vertical-align: middle; margin: auto;">
+            <div class="right-arrow">
+              <ion-icon name="ios-arrow-forward" style="color: #b6bfc6;"></ion-icon>
+            </div>
+          </ion-col>
+        </ion-row>
+        <!-- <hr class="row-line">
+        <ion-row (click)="onClickReferAndEarn()">
+          <ion-col col-1 style="vertical-align: middle; margin:auto;">
+            <div class="account-icon">
+              <img src="assets/Refer_ic.svg" style="width: 75%;">
+            </div>
+          </ion-col>
+          <ion-col col-10>
+            <div class="person-row">
+              <label>Refer & Earn</label>
+              <p>Refer your friends to earn rewards
+              </p>
+            </div>
+          </ion-col>
+          <ion-col col-1 style="vertical-align: middle; margin: auto;">
+            <div class="right-arrow">
+              <ion-icon name="ios-arrow-forward" style="color: #b6bfc6;"></ion-icon>
+            </div>
+          </ion-col>
+        </ion-row> -->
+        <hr class="row-line">
+        <ion-row>
+          <ion-col col-2 style="vertical-align: middle; margin:auto;margin-right: 0;
+          margin-left: 0;">
+            <div class="account-icon">
+              <img class="" src="assets/Help_ic.svg" style="max-height:6.667vw">
+            </div>
+          </ion-col>
+          <ion-col col-9>
+            <div class="person-row" (click)="onclickhelp()">
+              <label>Help </label>
+              <p>FAQ's and Links</p>
+            </div>
+          </ion-col>
+          <ion-col col-1 style="vertical-align: middle; margin: auto;">
+            <div class="right-arrow">
+              <ion-icon name="ios-arrow-forward" style="color: #b6bfc6;"></ion-icon>
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+      <br />
+    </div>
+  </div>
+
+
+
+
+
+
+  <form *ngIf="Active2" novalidate [formGroup]="accountForm" style="width: 100%;height: 100%;float: left;position: relative;">
+    <div class="main-account-area2">
+
+      <ion-grid>
+        <ion-row>
+          <ion-item>
+            <ion-label floating class="person-lebel">FIRST NAME</ion-label>
+            <ion-input type="text" class="person_input" [formControl]="accountForm.controls.fname" [(ngModel)]="fname">
+            </ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label floating class="person-lebel">LAST NAME</ion-label>
+            <ion-input type="text" class="person_input" [formControl]="accountForm.controls.lname" [(ngModel)]="lname">
+            </ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label floating class="person-lebel">EMAIL ID</ion-label>
+            <ion-input type="text" class="person_input" [formControl]="accountForm.controls.email" [(ngModel)]="email">
+            </ion-input>
+          </ion-item>
+          <ion-item class="Aboutyoudropdown">
+            <ion-label floating class="person-lebel">PROFESSION</ion-label>
+            <!-- <ion-select id="cars" name="cars" interface="popover" class="work-input"
+              class="" (ionChange)="selectprof($event)" [(ngModel)]="profid" [formControl]="accountForm.controls.prof">
+              <ion-option *ngFor="let p of profArray" value="{{p.id}}">
+                {{p.profession}}
+              </ion-option>
+            </ion-select> -->
+            <ion-input style="font-family: Montserrat-SemiBold; font-size: 2.098vh;" class="select-full-width" value='{{profname}}'  type="text" (click)="selectprof()" (keyup)="selectprof()" (keydown)="selectprof()"  [formControl]="accountForm.controls.prof"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label floating class="person-lebel">10 DIGIT MOBILE NUMBER</ion-label>
+            <ion-input type="tel" maxlength="10" class="person_input" [formControl]="accountForm.controls.mobnum" [(ngModel)]="mobnum"></ion-input>
+          </ion-item>
+        </ion-row>
+
+        
+      </ion-grid>
+      <ion-footer className="ion-no-border" class="footer-common">
+        <ion-toolbar>
+      <ion-row style="width: calc(100% - 5.434vh);margin: 0 auto;">
+        <ion-col class="buttonFix" style="padding: 0;">
+          <button ion-button type="submit" id="input_submit" class="saveBUtton" block (click)="updatepersonalinfo()" style="margin: 0; padding: 0;">Save Changes
+          </button>
+        </ion-col>
+      </ion-row>
+      </ion-toolbar>
+      </ion-footer>
+
+      <!-- <ion-grid >
+       
+      </ion-grid> -->
+
+    </div>
+  </form>
+
+  <div *ngIf="Active3">
+    <form [formGroup]="addresssForm">
+    <div class="main-account-area3">
+      <ion-grid>
+        <ion-row>
+          <h2>HOME ADDRESS</h2>
+        </ion-row>
+        <ion-row class="home-address">
+          <ion-item>
+            <ion-label floating class="work-label">HOUSE/FLAT NO:</ion-label>
+            <ion-input type="text" [(ngModel)]="Hflat" [formControl]="addresssForm.controls.Hflat"></ion-input>
+          </ion-item>
+        </ion-row>
+        <ion-row>
+          <ion-item>
+            <ion-label floating class="work-label">ADDRESS LINE 1</ion-label>
+            <ion-input class="work-input" type="text" [(ngModel)]="Hadd1" [formControl]="addresssForm.controls.Hadd1"></ion-input>
+          </ion-item>
+        </ion-row>
+        <ion-row>
+          <ion-item>
+            <ion-label floating class="work-label">ADDRESS LINE 2</ion-label>
+            <ion-input class="work-input" type="text" [(ngModel)]="Hadd2" [formControl]="addresssForm.controls.Hadd2"></ion-input>
+          </ion-item>
+        </ion-row>
+
+        <ion-row>
+          <ion-col col-6 style="padding-left: 0;">
+            <ion-item>
+              <ion-label floating class="work-label">CITY</ion-label>
+            <ion-input class="work-input" type="text" [(ngModel)]="Hcity" [formControl]="addresssForm.controls.Hcity" [readonly]="true"></ion-input>
+            </ion-item>
+          </ion-col>
+          <ion-col col-6 style="padding-right:0;">
+            <ion-item>
+              <ion-label floating class="work-label">PINCODE</ion-label>
+              <ion-input id="cars" name="cars" class="work-input" style="border-bottom: solid 0.1vh rgb(244,164,37); " class="" type="text"
+                (click)="onclickarea1()" (keyup)="onclickarea1()" (keydown)="onclickarea1()" value="{{abcde_new}}" [readonly]="true"></ion-input>
+
+              <!--  <ion-select id="cars" name="cars"  class="work-input" style="border-bottom: solid 0.1vh rgb(244,164,37); " class=""
+                (ionChange)="selectarea($event)" [(ngModel)]="areaid">
+                <ion-option *ngFor="let a of areaArray" value="{{a.id}}">
+                  {{a.pincode}}
+                </ion-option>
+              </ion-select> -->
+            </ion-item>
+          </ion-col>
+          <!--  <ion-col col-1 class="deleteicon1">              
+             <div>
+              <img src="assets/imgicon/delete.png" (click)="deleteicon()">
+             </div>
+            </ion-col> -->
+        </ion-row>
+
+        <ion-row>
+          <ion-col col-6 style="padding-left: 0;">
+            <ion-item style="margin-bottom: 0 !important;">
+              <ion-label floating class="work-label">STATE</ion-label>
+              <ion-input type="text" class="work-input" [(ngModel)]="Hstate" [readonly]="true" [formControl]="addresssForm.controls.Hstate"></ion-input>
+            </ion-item>
+          </ion-col>
+          <ion-col col-6 style="padding-right: 0;">
+            <ion-item style="margin-bottom: 0 !important;">
+              <ion-label floating class="work-label">AREA</ion-label>
+
+              <ion-input type="text" id="cars" name="cars" class="work-input" value="{{areaname_new}}" style="border-bottom: solid 0.1vh rgb(244,164,37); "
+                class="" (click)="onclickarea2()" (keyup)="onclickarea2()" (keydown)="onclickarea2()" [readonly]="true" ></ion-input>
+
+              <!--      <ion-select id="cars" name="cars"  class="work-input" style="border-bottom: solid 0.1vh rgb(244,164,37); " class=""
+                (ionChange)="selectarea($event)" [(ngModel)]="areaid">
+                <ion-option *ngFor="let a of areaArray" value="{{a.id}}">
+                  {{a.area}}
+                </ion-option>
+              </ion-select> -->
+
+            </ion-item>
+          </ion-col>
+
+          <!-- <ion-col col-1 class="deleteicon1">              
+              <div>
+                <img src="assets/imgicon/delete.png" (click)="deleteicon()">
+              </div>
+           </ion-col> -->
+
+        </ion-row>
+      </ion-grid>
+      <br>
+      <!--Work Address here start-->
+      <ion-grid>
+        <ion-row>
+          <h2>WORK ADDRESS</h2>
+        </ion-row>
+        <ion-row class="home-address">
+          <ion-item>
+            <ion-label floating class="work-label">COMPANY NAME WITH FLOOR NO:</ion-label>
+            <ion-input type="text" class="work-input" [(ngModel)]="Wflat" [formControl]="addresssForm.controls.Wflat"></ion-input>
+          </ion-item>
+        </ion-row>
+        <ion-row>
+          <ion-item>
+            <ion-label floating class="work-label">ADDRESS LINE 1 </ion-label>
+            <ion-input type="text" class="work-input" [(ngModel)]="Wadd1" [formControl]="addresssForm.controls.Wadd1"></ion-input>
+          </ion-item>
+        </ion-row>
+        <ion-row>
+          <ion-item>
+            <ion-label floating class="work-label">ADDRESS LINE 2</ion-label>
+            <ion-input type="text" class="work-input" [(ngModel)]="Wadd2" [formControl]="addresssForm.controls.Wadd2"></ion-input>
+          </ion-item>
+        </ion-row>
+
+        <ion-row>
+          <ion-col col-6 style="padding-left: 0;">
+            <ion-item>
+              <ion-label floating class="work-label">CITY</ion-label>
+              <ion-input type="text" class="work-input" [(ngModel)]="Wcity" [readonly]="true" [formControl]="addresssForm.controls.Wcity"></ion-input>
+            </ion-item>
+          </ion-col>
+          <ion-col col-6 style="padding-right: 0;">
+            <ion-item>
+
+              <ion-label floating class="work-label">PINCODE</ion-label>
+              <br />
+              <ion-input type="text" id="cars" name="cars" class="work-input" style="border-bottom: solid 0.1vh rgb(244,164,37); " class=""
+                value="{{areaid1}}" (click)="onclickarea3()" (keyup)="onclickarea3()" (keydown)="onclickarea3()" [readonly]="true" ></ion-input>
+              <!--  <ion-select id="cars" name="cars"  class="work-input" style="border-bottom: solid 0.1vh rgb(244,164,37); " class=""
+                (ionChange)="selectarea1($event)" [(ngModel)]="areaid1">
+                <ion-option *ngFor="let a of areaArray1" value="{{a.id}}">
+                  {{a.pincode}}
+                </ion-option>
+              </ion-select> -->
+            </ion-item>
+          </ion-col>
+          <!--    <ion-col col-1 class="deleteicon1">              
+              <div><img src="assets/imgicon/delete.png" (click)="deleteicon1()"></div>
+            </ion-col> -->
+        </ion-row>
+
+        <ion-row>
+          <ion-col col-6 style="padding-left: 0;">
+            <ion-item style="margin-bottom: 0 !important;">
+              <ion-label floating class="work-label">STATE</ion-label>
+              <ion-input type="text" class="work-input" [(ngModel)]="Wstate" [readonly]="true" [formControl]="addresssForm.controls.Wstate"></ion-input>
+            </ion-item>
+          </ion-col>
+          <ion-col col-6 style="padding-right: 0;">
+            <ion-item style="margin-bottom: 0 !important;">
+              <ion-label floating class="work-label">AREA</ion-label>
+
+              <ion-input type="text" id="cars" name="cars" class="work-input" style="border-bottom: solid 0.1vh rgb(244,164,37); " class=""
+                value="{{areaid2}}" (click)="onclickarea4()" (keyup)="onclickarea4()" (keydown)="onclickarea4()" [readonly]="true"></ion-input>
+
+              <!-- <ion-select id="cars" name="cars" class="work-input" style="border-bottom: solid 0.1vh rgb(244,164,37); " class=""
+                (ionChange)="selectarea1($event)" [(ngModel)]="areaid1">
+                <ion-option *ngFor="let a of areaArray1" value="{{a.id}}">
+                  {{a.area}}
+                </ion-option>
+              </ion-select> -->
+
+            </ion-item>
+          </ion-col>
+          <!--  <ion-col col-1 class="deleteicon1">  
+               <div>
+                <img src="assets/imgicon/delete.png" (click)="deleteicon1()">
+               </div>            
+            </ion-col> -->
+        </ion-row>
+
+      </ion-grid>
+      <!-- <br />
+      <button ion-button type="submit" class="address-button" id="input_submit" block (click)=" onSubmit()"> Update Address
+      </button> -->
+
+      <ion-row style="left: 0;width: 100%;bottom: 2.71739vh;right: 0;margin: 0 auto;">
+        <ion-col class="buttonFix">
+          <button ion-button type="submit" class="address-button" id="input_submit" block (click)=" onSubmit()" style="margin: 0;padding: 0;height: 7.4728260869565215vh;"> Update Address
+          </button>
+
+        </ion-col>
+      </ion-row>
+    </div>
+  </form>
+  </div>
+
+</ion-content>

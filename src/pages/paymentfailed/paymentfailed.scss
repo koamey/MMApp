@@ -1,0 +1,72 @@
+page-paymentfailed {
+
+}
+.paymentFailed-content .pym-failed {
+    width: 100%;
+}
+
+.paymentFailed-content .pym-failed .failedImage{
+   // margin-top: 14.406vh;
+    margin-top: 10.406vh;
+    width: 24.737vh;
+    height: 24.737vh;
+}
+
+
+.paymentFailed-content .pym-failed h2{
+    color: rgb( 49 ,74, 93);
+    text-align: center;
+    margin: 2.713vh 0vh 0vh 0vh;
+    font-size: 2.824vh;
+    font-family: Montserrat-Bold;
+    line-height: 5.99vh;
+}
+
+.paymentFailed-content .pym-failed p{
+    margin: 1.836vh 0vh 0vh 0vh;
+    text-align:center;
+    color: rgb(49, 74, 93);
+    line-height: 3.29vh;
+    font-family: Montserrat-Regular;
+    font-size: 1.977vh
+}
+
+
+.paymentFailed-content .pym-failed .button-md{
+    background-color: rgb(32, 60, 82);
+    // height: 4.6rem !important;
+    // background: linear-gradient(to bottom, rgb(255,206,128) -80%, rgb(242,156,17) 100%);
+    text-transform: none;
+    font-size: 2.398vh;
+    height: 7.796vh;
+    border-radius: 0.899vh;
+    box-shadow: none;
+}
+
+.paymentFailed-content .pym-failed .button-ios {
+    background-color: rgb(32, 60, 82);
+    // height: 4.6rem !important;
+    // background: linear-gradient(to bottom, rgb(255,206,128) -80%, rgb(242,156,17) 100%);
+    text-transform: none;
+    // font-size: 1.9rem;
+    font-size: 2.398vh;
+    height: 7.796vh;
+    border-radius: 0.899vh;
+    box-shadow: none;
+}
+
+.button-bottom-payment span{
+    font-size: 2.398vh;
+    font-family: Montserrat-SemiBold;
+}
+.button-bottom-payment{
+    margin-top: 11.994vh;
+}
+// .button-bottom-payment button{
+//     height: 7.79vh;
+    
+// }
+
+.button-bottom-payment img{
+    margin-right: 1.742vh;
+}

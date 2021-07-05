@@ -1,0 +1,576 @@
+.checkout-screen{
+    margin-top: 0 !important;
+    margin-bottom: 1.6491754122938531vh;
+}
+// .special-margin-checkout  .toolbar-title-md{
+//     margin-left: -3.5vh !important;
+// }
+page-checkout{
+  .scroll-content
+  {
+    padding-bottom: 0 !important;
+  } 
+  .scroll-content {
+        overflow-y: scroll !important;
+    }
+}
+
+.checkout-screen label {
+    font-size: 3.733vw;
+    font-family: Montserrat-SemiBold;
+    text-align: left;
+    color: white;
+    vertical-align: middle
+}
+
+.checkout-screen img{
+    vertical-align: middle;
+}
+
+
+.checkout-header .delevery-sub-heading .image-icon{
+    float: left;
+}
+
+.checkout-header .delevery-sub-heading .toolbar-title-md{
+    text-align: center !important;
+    margin-top: 0.56rem !important;
+    font-family: Montserrat-Bold;
+    font-size: 0.78rem !important;
+    color: rgba(255, 255, 255, 0.7);
+    margin-right: 1.39rem;
+}
+
+.checkout-header .toolbar-md {
+    padding: 0.83rem 0.94rem;
+  }
+
+// .scroll-content{
+//         overflow-y: hidden !important;
+// }
+
+.checkout-header .delevery-sub-heading .toolbar-background-md{ 
+    background-color: rgb(32, 60, 82) !important;
+}
+
+.checkout-content{
+    background-color: rgb(32, 60, 82);
+}
+
+
+.checkout-area .mealtype{
+    display: inline-block;
+}
+
+
+
+//mealtype area css start
+.checkout-area .mealtype label{
+    display: inline-block;
+    color: #314a5d;
+    font-size: 3.467vw;
+    font-family: Montserrat-Bold;
+    text-align: left;
+    line-height: 2.79rem;
+}
+
+.checkout-area .mealtype .onboard-click
+{
+    font-family: Montserrat-Medium;
+    font-size: 3.733vw;
+    text-align: left;
+    line-height: 2.79rem;
+}
+
+
+
+.checkout-area .endmealtype{
+    display: inline-block;
+}
+
+
+
+//mealtype area css start
+.checkout-area .endmealtype label{
+    display: inline-block;
+    color:rgb(49 ,74, 93);
+    font-family: Montserrat-Bold;
+    font-size: 0.98rem;
+    text-align: left;
+    line-height: 2.79rem;
+}
+
+.checkout-area .mealdesc-content{
+    height: 1.33rem;
+    margin: 0.22rem 0rem;
+    font-size: 0.72rem;
+    font-family: Montserrat-Medium;
+}
+
+.checkout-area .mealtype .mealdesc-content{
+    height: 1.33rem;
+    margin: 0.22rem 0rem;
+    font-size: 0.72rem;
+    font-family: Montserrat-Medium;
+}
+
+.checkout-area .mealtypearea{
+    float: right; 
+    display: inline-block;
+   
+}
+.checkout-area .mealtypearea a{
+    text-decoration: none;
+    font-size: 3.467vw;
+    font-family: Montserrat-Bold;
+    line-height: 2.79rem;
+    text-align: left;
+}
+
+//mealtype area css End 
+
+//preference area start 
+
+.checkout-area .preference-area{
+    line-height: 2.0em;
+}
+
+.checkout-area .preference-area label{
+    color: #314a5d;
+    font-size: 3.467vw;
+    font-family: Montserrat-Bold;
+    line-height: 2.79rem;
+    text-align: left;
+    color: #314a5d;
+}
+
+.checkout-area .preference-area .mealtypearea{
+    float: right;
+    display: inline-block;
+}
+
+.checkout-area .preference-area .mealtypearea a{
+    text-decoration: none;
+    // font-size:0.98rem;
+    font-size: 1.94vh;
+    font-family: Montserrat-Bold;
+    line-height: 2.79rem;
+    text-align: left;
+}
+
+.checkout-area .preference-area .lunch-time label{
+    color: black;
+    font-family: Montserrat-SemiBold;
+    font-size: 3.200vw;
+    text-align: left;
+    line-height: 2.79rem;
+    opacity: 51%;
+
+}
+
+
+.checkout-area .preference-area .lunch-time .lunchDesc{
+    color: black;
+    margin: 0.02rem 0rem;
+    font-family: Montserrat-Medium;
+    font-size: 3.733vw;
+    text-align: left;
+    color: black;
+    line-height: 2.6986506746626686vh;
+}
+
+
+//Date area css 
+.checkout-area .mealtype .dateType{
+    margin: 0.02rem 0rem;
+    font-size: 3.733vw;
+    text-align: left;
+    color: black;
+    line-height: 2.79rem;
+    font-family: Montserrat-Medium;
+}
+//Date area css 
+.checkout-area .mealtype .dateType1{
+    // height: 1.33rem; 
+    margin: 0.22rem 0rem; 
+    font-size: 1.06rem;
+    text-align: left;
+    color: rgb(0,0,0);
+    line-height: 2.79rem;
+    font-family: Montserrat-Medium;
+}
+
+//Dilevery lunch and dinner css 
+.checkout-area .dilevery-time{
+    display: inline-block;
+}
+
+.checkout-area .dilevery-time label{
+    font-family: Montserrat-Bold;
+    line-height: 2.79rem;
+    text-align: left;
+    color: #314a5d;
+    font-size: 3.467vw;
+}
+
+.checkout-area .dilevery-time .deliveryLunch label{
+    color: black;
+    font-family: Montserrat-SemiBold;
+    font-size: 3.200vw;
+    text-align: left;
+    line-height: 2.79rem;
+    opacity: 51%;
+}
+.checkout-area .dilevery-time .deliveryLunch .lunchDilTime{
+    margin: 0.22rem 0rem;
+    font-family: Montserrat-Medium;
+    font-size: 3.733vw;
+    text-align: left;
+    line-height: 2.79rem;
+    color: black;
+}
+.all-edit-button{
+    bottom: 0; 
+    // position: fixed; 
+    background: white;
+}
+// .all-edit-button button{
+
+//     height: 8.24vh !important;
+// }
+
+
+.checkout-area .deliveryLunch label{
+    color: black;
+    opacity: 50%;
+    font-size: 3.200vw;
+    line-height: 3.08rem;
+    font-family: Montserrat-SemiBold;
+}
+.checkout-area .deliveryLunch .lunchDilTime{
+    height: 1.11rem;
+    font-size: 3.733vw;
+    font-family: Montserrat-Medium;
+    line-height: 3.08rem;
+    margin-bottom: 1.89rem;
+}
+
+//end dilevery time and address css
+
+.checkout-area hr.borderLine {
+    border: rgba(29, 51, 67, 0.2);
+    margin: 0.83rem 0rem 0.56rem 0rem;
+    height: 0.17rem
+}
+
+.checkout-area{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-color: #ffffff;
+    height: 71.336vh;
+    border-top-left-radius: 1.11rem;
+    border-top-right-radius: 1.11rem;
+    -webkit-box-shadow: 0 0 0.28rem #000;
+    box-shadow: 0 0 0.28rem #000;
+    overflow-y: auto;
+    // top: auto;
+
+}
+
+.checkout-content .heading-preference{
+    width:100%;
+}
+
+.checkout-content .heading-preference p{
+    color:#ffff;
+    text-align: center;
+    font-size: 0.89rem;
+    opacity: 80%;
+    margin:0rem;
+    font-family: Montserrat-Regular;
+}
+
+.checkout-content .grid{
+    padding:0rem;
+}
+
+.checkout-content .heading-preference h2{
+    color:#ffff;
+    text-align: center;
+    margin-top:0.33rem;
+    font-size: 1.28rem;
+    font-family: Montserrat-Bold;
+}
+
+.checkout-content .tab1 label{
+    font-family: Montserrat-SemiBold;
+    font-size: 0.78rem;
+}
+
+
+.checkout-area .reffer-code{
+    background-color: whitesmoke;
+    border-radius: 0.56rem;
+    margin: 0 5.333vw;
+    padding: 2vw 4vw;
+    margin-bottom: 2vh;
+}
+
+.checkout-area .reffer-code label{
+    font-family: Montserrat-Bold;
+    font-size: 4.266666666666667vw;
+    color: #314a5d;
+    margin-left: 0.56rem;
+}
+
+.checkout-area .reffer-code .button-md {
+    height: 3.250rem !important;
+    text-transform: none;
+    //background: rgb(242, 155, 17);
+    box-shadow: none;
+}
+
+.checkout-area .reffer-code .button-ios{
+    height: 3.250rem !important;
+    text-transform: none;
+   // background: rgb(242, 155, 17);
+    box-shadow: none;
+}
+
+.checkout-area .reffer-code .button-inner{
+    font-family: Montserrat-SemiBold;
+    font-size: 3.466666666666667vw !important;
+}
+
+.checkout-area .reffer-code .text-input-md {
+    margin: 0.41rem 0.41rem;
+    padding: 0.22rem;
+    width: calc(100% - 0.41rem - 0.41rem);
+    height: 3.33rem;
+    border: 0.08rem dotted #314a5d;
+    background-color: #fff;
+    border-radius: 0.41rem;
+    font-family: Montserrat-SemiBold;
+    font-size: 1.08rem;
+    color: #314a5d;
+}
+
+.checkout-area .reffer-code .text-input-ios {
+    margin: 0.41rem 0.41rem;
+    padding: 0.22rem;
+    width: calc(100% - 0.41rem - 0.41rem);
+    height:  3.33rem;
+    border: 0.08rem dotted #314a5d;
+    background-color: #fff;
+    border-radius: 0.41rem;
+    font-family: Montserrat-SemiBold;
+    font-size: 1.08rem;
+    color: #314a5d;
+}
+
+
+
+
+
+
+// .checkout-area .button-md{
+//     padding: 1.17rem 0rem;
+//     background: rgba(255,206,128,1);
+//     text-transform: none;
+//     background: linear-gradient(to bottom, rgba(255,206,128,1) -80%, rgba(242,156,17,1) 100%);
+//     border-radius: 0.33rem;
+//     height: 8.24vh;
+// }
+
+
+.checkout-area .button-inner{
+    font-size: 4.266666666666667vw;
+    font-family: Montserrat-Bold;
+    text-align: left;
+}
+
+.checkout-area .button-ios{
+    height:14.667vw !important;
+    text-transform: none;
+    // background: rgba(255,206,128,1);
+    background: linear-gradient(to bottom, rgb(255,206,128) -80%, rgb(242,156,17) 100%);
+    border-radius: 0.899vh;
+    box-shadow: none;
+}
+
+
+.checkout-area a{
+    color: rgb(244, 163, 35) !important;
+    font-size: 0.72rem;
+    font-weight: bold;
+}
+
+
+.enable{
+ color:#fff;
+}
+
+.disable{
+    color: rgb(121, 138, 151);
+}
+    
+.newline{
+    border-top: 0.06rem dashed;
+}
+
+
+.checkout-area .button-md:hover:not(.disable-hover) {
+    background-color: #f8b13f;
+}
+
+
+
+//start css checkout payment option
+
+.checkout-area .checkout-payment-content{
+    background-color: rgb(245, 245, 245);
+    border-radius:0.33rem;
+    padding:1rem 4vw;
+    // margin: 0.56rem;
+}
+
+.checkout-area .checkout-payment-content h3{
+    color: #314a5d;
+    font-family: Montserrat-Bold;
+    font-size: 4.266666666666667vw;
+    text-align: left;
+    margin-top: 0rem;
+}
+
+.price-countvalues {
+    float:right;
+}
+.checkout-area .checkout-payment-content label{
+    font-size: 3.7333333333333334vw;
+    font-family: Montserrat-Medium;
+    color: black;
+    text-align: left;
+    line-height: 7.2vw;
+}
+
+.checkout-area .checkout-payment-content label.total{
+    font-family: Montserrat-Bold;
+    color: black;
+    font-size: 3.7333333333333334vw;
+    line-height: 7.866667vw;
+    text-align: left;
+}
+.checkout-area .checkout-payment-content label.total-price{
+    float: right;
+    font-family: Montserrat-Bold;
+    // font-size:1.17rem;
+    font-size: 2.098vh;
+    line-height: 2.79rem;
+    text-align: left;
+}
+
+// .checkout-area .grid{
+//     padding: 0rem 0.56rem !important;
+// }
+
+.checkout-payment-content .row{
+    margin-top: -0.19rem;
+}
+
+.checkout-area button{
+    height: 4.58rem;
+}
+
+.button-grid-box {
+    //bottom: 0; 
+    position: relative; 
+    background-color: white;
+    //top: 13vh;
+}
+.button-grid-box .first-total-label{
+    z-index: 1111;
+    position: absolute;
+    left: 2.89rem;
+    font-size: 4.266666666666667vw;
+    text-align: left;
+    font-family: Montserrat-Bold;
+}
+.button-grid-box img {
+    width: 100%;
+     position: relative;
+}
+
+.second-total-label{
+    z-index: 1111;
+    position: absolute;
+    right: 2.89rem;
+    font-size: 4.266666666666667vw;
+    font-family: Montserrat-Bold;
+    text-align: left;
+    font-family: Montserrat-Bold;
+}
+.checkout-area .button-grid-box{
+    margin-bottom: 0rem;
+}
+
+
+// .buttonEffect {
+//     position: relative;
+//     text-align: center;
+//     -webkit-transition-duration: 0.4s;
+//     transition-duration: 0.4s;
+//     text-decoration: none;
+//     overflow: hidden;
+//     cursor: pointer;
+//   }
+  
+//   .buttonEffect:after {
+//     content: "";
+//     background: #f8d399;
+//     display: block;
+//     position: absolute;
+//     padding-top: 300%;
+//     padding-left: 110%;
+//     margin-left: -1.66rem!important;
+//     margin-top: -120%;
+//     opacity: 0;
+//     transition: all 0.6s
+//   }
+  
+//   .buttonEffect:active:after {
+//     padding: 0;
+//     margin: 0;
+//     opacity: 1;
+//     transition: 0s
+//   }
+// .checkout-area .button-grid-box {
+//     margin-bottom: 0rem;
+//     position: absolute;
+//     bottom: 2.717391304347826vh;
+//     top: auto;
+// }
+.button-ios {
+    background: rgb(242, 155, 17);
+}
+.checkout-area {
+    padding-bottom: 4vh;
+}
+.checkout-area button {
+    padding: 0;
+    margin: 0;
+}
+// page-checkout ion-content.main-content .scroll-content {
+//     overflow-y: hidden !important;
+// }
+button.mealtype-integer.col-4 ion-label {
+    color: rgba(49, 74, 93, 1);
+}
+.dashboard-heading .dashboard-navbar .bar-button-menutoggle {
+    width: 3.898050974512744vh !important;
+    height: 2.998500749625187vh !important;
+}
+.checkbox-ios .checkbox-icon {
+    width: 5.600vw !important;
+    height: 5.600vw !important;
+}

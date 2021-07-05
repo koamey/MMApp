@@ -1,0 +1,16 @@
+{
+	"pods": {
+		"razorpay-pod": {
+			"type": "pod",
+			"name": "razorpay-pod"
+		},
+		"OneSignal": {
+			"type": "podspec",
+			"src": "OneSignal",
+			"spec": "2.14.3"
+		}
+	},
+	"sources": {},
+	"iosMinVersion": "10.0",
+	"useFrameworks": true
+}

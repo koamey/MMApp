@@ -1,0 +1,229 @@
+<!-- 
+<ion-header no-border class="dashboard-heading">
+  <ion-navbar class="dashboard-navbar text-center">
+    <button class="image-icon" ion-button menuToggle>
+      <img name="menu" src="assets/imgicon/Hamburger_menu.png" />
+    </button>
+    <p class="dshboard-title"><span>DASHBOARD</span></p>
+    <img class="image-icon2" src="assets/imgicon/Group 69.png" slot="secondary">
+  </ion-navbar>
+</ion-header> -->
+
+
+<ion-header no-border class="dashboard-heading">
+  <ion-navbar class="dashboard-navbar">
+    <img class="image-icon backWhiteIcon" ion-button menuToggle name="menu" src="assets/imgicon/Hamburger_menu.svg"/>
+    <ion-title class="dshboard-title">DASHBOARD</ion-title>
+    <!-- <img class="image-icon2" src="assets/imgicon/Group 69.png" slot="secondary"> -->
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content class="dashboard-content">
+  <div class="main-dashboard">
+    <div class="user-welcome">
+        <label >Welcome Back,</label><br>
+        <span class="label1">{{custname}}</span>
+    </div>
+    <!--  Lunch and dinner plan box start -->
+    <ion-grid>
+      <ion-row>
+        <ion-col class="main-column">
+          <div class="plan-name">
+            <ion-row>
+              <ion-col>
+                <h2 class="onboard-click firsth2" block>{{mealtyp}} Plan</h2>
+              </ion-col>
+            </ion-row>
+
+            <ion-row class="round-off">
+              <ion-col col-6 text-center class="vl">
+                <ion-row>
+                    <ion-col col-5 style="vertical-align: middle; margin: auto;">
+                      <div class="inner-inline">
+                        <round-progress class="roundvalues" [current]="current" [max]="actualmealcount" [stroke]="stroke" [radius]="radius"
+                          [semicircle]="semicircle" [rounded]="rounded" [responsive]="responsive" [clockwise]="clockwise"
+                          [color]="gradient ? 'url(#gradient)' : color" [background]="background" [duration]="duration"
+                          [animation]="animation" [animationDelay]="animationDelay"></round-progress>
+                      </div>
+                    </ion-col>
+                    <ion-col col-7 text-left style="padding-left: 0;">
+                      <div  class="onboard-click inner-inline2" block>
+                        <div style="display: block; text-align: left;">
+                          <h1 >{{current}}</h1>
+                        </div>
+                        <p > Meals left</p>
+                      </div>
+                    </ion-col>
+                </ion-row>
+                
+             
+              </ion-col>
+
+              <!-- <ion-col col-2 text-center class="left-round-off">
+                <div class="vl"></div>
+              </ion-col> -->
+              <ion-col col-1 text-center></ion-col>
+            
+              <ion-col col-5 text-center>
+                <ion-row>
+                  <ion-col col-5 style="vertical-align: middle; margin: auto;">
+                    <div class="inner-inline">
+                      <round-progress class="roundvalues" [current]="current1" [max]="actualmealdays" [stroke]="stroke" [radius]="radius"
+                        [semicircle]="semicircle" [rounded]="rounded" [responsive]="responsive" [clockwise]="clockwise"
+                        [color]="gradient ? 'url(#gradient)' : color" [background]="background" [duration]="duration"
+                        [animation]="animation" [animationDelay]="animationDelay"></round-progress>
+                    </div>
+                  </ion-col>
+                  <ion-col col-7 text-left style=" padding-left: 1.985vw;">
+                    <div class="onboard-click inner-inline2" block>
+                      <div style="display: block; text-align: left;">
+                        <h1 >{{currentmealperiod}} </h1>
+                      </div>
+                      <p>Days left</p>
+                    </div>
+                  </ion-col>
+                </ion-row>
+                
+              </ion-col>
+            </ion-row>
+
+           
+            <!-- Subscription Period start-->
+            <ion-row>
+              <ion-col>
+                <h2 class="onboard-click subscription-period" block>
+                  Subscription Period
+                </h2>
+              </ion-col>
+            </ion-row>
+
+            <ion-row>
+              <ion-col col-6>
+                <div style="width: calc(100% - 5.333vw); float: left;margin-left: 5.333vw;">
+                  <label class="fromdate"> FROM </label>
+                  <h4 class="fromdateh4">
+                    {{(startdate)?.substring(0,10)|date:'d MMM y'}}</h4>
+                </div>
+              </ion-col>
+
+              <ion-col col-6>
+                <div style="width: calc(100% - 3.2vh); float: left; margin-left: 3.2vh;">
+                  <label class="fromdate">TO</label>
+                  <h4 class="fromdateh4">
+                    {{(enddate)?.substring(0,10)|date:'d MMM y'}} </h4>
+                </div>
+              </ion-col>
+            </ion-row>
+            <!-- Subscription Period End -->
+
+            <!-- Renew Subscription Start -->
+            <ion-row>
+              <ion-col>
+                <div class="renew-sub" (click)="renewsubscription()">
+                  <p > Renew Subscription</p>
+                </div>
+                <!-- <div class="renew-sub" >
+                  <p > Renew Subscription</p>
+                </div> -->
+              </ion-col>
+            </ion-row>
+            <!-- Renuw Subscription End disabled (click)="renewsubscription()" -->
+
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <!-- (click)='picktmrwveggies()' [disabled]="!custstatus || PickVeggiesTabCheck=='false'"   -->
+    <ion-grid class="bottomContaint">
+      <div class="tomorrow-main"  [style.background]="buttonColor1">
+        <ion-row>
+          <ion-col col-11>
+              <button [style.background]="buttonColor1" (click)="picktmrwveggies()" >
+              <label >Pick Tommorow's Veggies</label>
+              <p >Choose your choice of veggies for meals </p>
+            </button>
+          
+          </ion-col>
+
+          <ion-col col-1 text-right style="vertical-align: middle; margin: auto;">
+            <div class="">
+              <img src="assets/imgicon/Path 34.png" />
+            </div>
+          </ion-col>
+        </ion-row>
+      </div>
+    </ion-grid>
+
+    <ion-grid>
+      <ion-row>
+        <ion-col style="padding: 0;">
+          <h1 class="manage-account">Manage Account</h1>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <ion-grid style="margin-bottom:2.998vh;">
+      <ion-row class="margin-row">
+        <ion-col col-6>
+          <div class="four-box">
+            <!--[disabled]="!custstatus || trial_subscriptionTabCheck==true" [style.background]="orderGuestButton"   -->
+            <button  class="user-selection" (click)="orderGUestMeal()">
+              <div class="col-12">
+                <img class="first-image" src="assets/GuestMeal_ic.svg">
+              </div>
+              <div class="col-12">
+                <h4 class="first-heading">Order Guest <br> Meal</h4>
+              </div>  
+            </button>
+          </div>    
+        </ion-col>
+        <ion-col col-6>
+          <div class="four-box">
+            <!-- [disabled]="!custstatus || cancelMealTabCheck=='false'" [style.background]="cancelTabButton"
+              [style.background]="allbutton" -->
+              <button class="user-selection" (click)="cancelMeal()">
+                <div class="col-12">
+                  <img class="second-image"src="assets/cancelMeal_ic.svg">
+                </div>
+                <div class="col-12">
+                  <h4 class="second-heading">Cancel <br> Meal</h4>
+                </div>
+              </button>
+          </div>        
+        </ion-col>
+      </ion-row>
+
+      <ion-row class="margin-row">
+        <ion-col col-6>
+          <div class="four-box">
+            <!--[disabled]="!custstatus" [style.background]="allbutton" [style.background]="switchaddresstime1"-->
+            <button class="user-selection" (click)="switchAddressTime()">
+              <div class="col-12">
+                <img class="third-image" src="assets/Sitch_ic.svg">
+              </div>
+              <div class="col-12">
+                <h4 class="third-heading">Switch Address <br> /Time</h4>
+              </div>
+            </button>
+          </div>
+        </ion-col>
+        <ion-col col-6>
+          <div class="four-box">
+            <!--[style.background]="allbutton" [style.background]="switchaddresstime1" [disabled]="!custstatus"(click)="changeupgrade()" -->
+            <button class="user-selection" (click)="changeupgrade()">
+              <div class="col-12">
+                <img class="four-image" src="assets/Upgrade-ic.svg">
+              </div>
+              <div class="col-12">
+                <h4 class="four-heading">Change/Upgrade <br> Meal Type</h4>
+              </div>
+            </button>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+  </div>
+
+</ion-content>

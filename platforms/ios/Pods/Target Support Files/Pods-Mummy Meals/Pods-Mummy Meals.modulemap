@@ -1,0 +1,6 @@
+framework module Pods_Mummy_Meals {
+  umbrella header "Pods-Mummy Meals-umbrella.h"
+
+  export *
+  module * { export * }
+}

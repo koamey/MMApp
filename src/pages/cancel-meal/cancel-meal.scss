@@ -1,0 +1,226 @@
+
+.cancel-opacity .toolbar-title-md
+{
+    opacity:unset !important;
+    margin-left: -4vh !important;
+}
+.cancel-opacity .toolbar-title-ios
+{
+     opacity:unset !important;
+    //  margin-left: -3.2vh !important;
+}
+
+.choose-cancelmeal{
+    width: 100%;
+    height: 76.46vh;
+    margin-top: 3.448vh;
+    position: absolute;
+    bottom: 0;
+    background-color: #ffffff;
+    border-top-left-radius: 2vh;
+    border-top-right-radius: 2vh;
+    box-shadow: 0 0 0.5 #000;
+}
+.choose-cancelmeal h5 {
+    text-align: center;
+    font-family: Montserrat-Bold;
+    font-size: 4.267vw;
+    line-height: 5.027vh;
+    color: #f29b11;
+}
+.choose-cancelmeal h4 {
+    text-align: center;
+    font-family: Montserrat-Medium;
+    font-size: 3.733vw;
+    line-height: 5.027vh;
+    color: #203c52;
+    opacity: 50%;
+    margin-top: -0.34vh;
+    margin-bottom: 0;
+}
+
+.choose-cancelmeal .item-ios{
+    padding-right: 2.398vh;
+}
+
+.choose-cancelmeal .item-md{
+    padding-right: 2.398vh;   
+}
+
+.datetime-text-from{
+    font-family: Montserrat-Bold;
+    font-size: 2.038vh !important;
+    line-height: 2.58vh;
+    letter-spacing: 0.020vh !important;
+    width: 100%;
+    height: 6.58vh;
+    text-align: center;
+    margin-top: -0.71vh;
+    color:rgb(0,0,0);
+}
+
+
+.datetime-text-from .datetime-text{
+    margin: 0vh !important;
+    font-size: 4vw !important;
+    font-family: Montserrat-Bold;
+    text-transform: uppercase;
+    text-align: center;
+    width: 20.38vh;
+    letter-spacing: 0.022vh;
+}
+
+
+.mealtype-checked{
+    text-align: center  ;
+    .radio-md .radio-checked {
+        border-color: rgb(27,183,106);
+    }
+    .radio-md .radio-inner, .radio-md-primary .radio.inner{
+        // width: 1.49vh !important;
+        // height: 1.49vh !important;
+        background-color: rgb(27,183,106) !important;
+    }
+    .item-md .radio-md {
+    background-color: transparent;
+    }
+}
+
+.mealtype-checked ion-radio {
+    margin: -2px 2px;
+}
+
+.mealtype-checked{
+    vertical-align: middle;
+    margin: auto;
+}
+
+.mealtype-checked label {
+    text-align: left;
+    font-family: Montserrat-SemiBold;
+    font-size: 3.733vw;
+    letter-spacing: 0.0190vh;
+    color: #203c52;
+    margin-left: 1vh;
+    vertical-align: middle;
+}
+
+.remain-count{
+    font-family: Montserrat-Regular;
+    font-size: 3.733vw;
+    line-height: 2.98vh;
+    text-align: center;
+    color: #999999;
+}
+.remain-count span{
+    font-family: Montserrat-SemiBold;
+    font-size: 2.248vh;
+    line-height:2.98vh ;
+    text-align: center;
+    color: rgb(214, 8 ,8);
+}
+.footer-contents {
+    font-family: Montserrat-Light;
+    font-size: 3.200vw;
+    line-height: 2.17vh;
+    text-align: center;
+    color: #999999;
+    margin: 0.40vh 2.58vh;
+}
+
+.footer-contents span{
+    color: rgb(214, 8 ,8);
+}
+
+.cancel-scroll .scroll-content{
+    overflow-y: scroll !important;
+}
+.footer-color {
+    background-color: rgb(255,255,255);
+}
+
+.button-class-cancel{
+    height: 8.245vh !important;
+    text-transform: none;
+    font-size: 2.398vh;
+    font-family: Montserrat-Bold;
+    border-radius: 0.54vh;
+    color: rgb(193, 193, 193);
+    margin: 1.4vh 0;
+    padding: 0 1em;
+    width: 100%;
+    border-radius: 1vh;
+}
+
+
+// .cancel-meal-type-color  input[type='radio']:after {
+//     width: 2.283vh;
+//     height: 2.283vh;
+//     border-radius: 2.283vh;
+//     top: -0.30vh;
+//     left: -0.15vh;
+//     position: relative;
+//     background-color: #d1d3d1;
+//     content: '';
+//     display: inline-block;
+//     visibility: visible;
+//     border: 0vh solid white;
+// }
+
+// .cancel-meal-type-color  input[type='radio']:checked:after {
+//     width: 2.283vh;
+//     height: 2.283vh;
+//     border-radius: 2.283vh;
+//     top: -0.30vh;
+//     left: -0.15vh;
+//     position: relative;
+//     background-color: #00cc66;
+//     content: '';
+//     display: inline-block;
+//     visibility: visible;
+//     border: 0vh solid white;
+// }
+
+
+.cancel-meal-type-color  input[type='radio']:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #d1d3d1;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+.cancel-meal-type-color  input[type='radio']:checked:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #00cc66;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+.choose-cancelmeal ion-grid.footer-color.grid {
+    padding: 2.717391304347826vh 5.333vw;
+    width: 100%;
+}
+.choose-cancelmeal ion-grid.footer-color.grid .button-class-cancel {
+    padding: 0;
+    margin: 0;
+}
+.choose-cancelmeal ion-grid.footer-color.grid .col {
+    padding: 0;
+}
+
+
+
+

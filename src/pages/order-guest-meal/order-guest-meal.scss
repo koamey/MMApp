@@ -1,0 +1,234 @@
+
+.order-header .toolbar-title-md{
+    opacity: 100%;
+}
+
+.choose-ordermeal{
+    width: 100%;
+    height: 76.46vh;
+    margin-top: 3.448vh;
+    position: absolute;
+    bottom: 0;
+    background-color: #ffffff;
+    border-top-left-radius: 2vh;
+    border-top-right-radius: 2vh;
+    box-shadow: 0 0 0.5 #000;
+}
+
+.choose-ordermeal h5 {
+    text-align: center;
+    font-family: Montserrat-Bold;
+    font-size: 4.267vw;
+    color: #f29b11;
+    margin: 4.076086956521739vh 0 2.717391304347826vh 0;
+}
+
+.choose-ordermeal .datetime-text{
+    font-family: Montserrat-SemiBold;
+    font-size: 4vw !important;
+    letter-spacing: 0.020vh;
+    text-align: center;
+    margin-top: 0;
+    padding: 0 0 1.2499999999999998vh 0;
+    min-height: 1px;
+    line-height: normal;
+}
+
+.choose-type-quantity{
+    font-family: Montserrat-Bold;
+    font-size: 4.267vw !important;
+    text-align: center;
+    color: #f29b11 !important;
+    width: 100%;
+    margin: 4.184782608695652vh 0 2.717391304347826vh 0;
+}
+
+.meal-type-class{
+    border: 0.1vh solid #162a3a;
+    border-radius: 0.7vh;
+    width: calc(100% - 10.666vw);
+    margin: 0 5.333vw 2.717391304347826vh 5.333vw;
+}
+
+.meal-type-class .orderDetail{
+    margin: 3.076087vh 2.717391304347826vh 3.076087vh 2.717391304347826vh;
+}
+// .meal-type-class img{
+//     margin: 3.07vh 2.71vh;
+// }
+
+.font-image {
+    vertical-align: middle; 
+    margin:auto;
+    text-align:center;
+    padding: 0;
+}
+
+.font-image .meal-content{
+    text-align: center;
+    margin: auto;
+    float: right;
+    margin-right: 0vh;
+}
+
+.font-image label {
+    font-family: Montserrat-SemiBold;
+    font-size: 4vw;
+    color: #0b0b0b;
+    line-height: 4.75vh;
+}
+.mealtype-label{    
+    color: rgb(49, 74, 93); 
+    font-size: 2.4vh; 
+    font-weight: bold
+}
+
+.mealtype-integer {
+    background: transparent;
+}
+
+
+.mealtype-integer .label-ios{
+    margin:0;
+}
+// .inputValues{
+//     width: 5.4vh;
+//     display: inline-block;
+//     text-align: center;
+//     vertical-align: middle;
+//     height: 0.99vh; 
+//      margin: auto;
+//     top: 0;
+// }
+// .inputeNumber{
+//     border-bottom: 1vh !important;
+//     color: #314a5d;
+//     font-size: 2.4vh;
+//     font-weight: bold;
+//     font-family: Montserrat-Bold;
+//     display: inline-block;
+//     width: 4vh;
+//     height: 5vh;
+//     margin: 0vh 1.2vh;
+//     text-align: center;
+//     vertical-align: text-bottom;
+// }
+
+
+
+.button-class_added{
+    height: 8.24vh !important;
+    text-transform: none;
+    font-size: 2.19vh;
+    font-weight: 900;
+    font-family: Montserrat-Bold;
+    border-radius: 0.54vh;
+    color: white;
+    margin: 2.717391304347826vh;
+    width: calc(100% - 5.4346vh);
+    border-radius: 1vh;
+    padding: 0;
+}
+
+// .plusbutton{
+//     padding: 0.5vh 1vh; 
+//     border-radius: 0.6vh;  
+//     background: transparent;  
+//     border: 0.19vh solid #162a3a; 
+//     line-height: 1.4vh!important;
+//     margin-right: 1.49vh;
+//     width: 3.85vh;
+//     height: 3.85vh;
+//     font-size: 2.4vh;
+//     font-family: Montserrat-Bold;
+// }
+
+
+
+.order-guest-containt{
+    background-color: rgb(32, 60, 82);
+}
+
+.order-scroll .scroll-content{
+    overflow-y: scroll !important;
+}
+
+
+.meal-type-class .text-input-md{
+    margin: 0.4vh 0vh !important;
+    padding: 0;
+    width: calc(100% - 0vh - 0vh) !important;
+    color: rgb(49 ,74, 93);
+    font-family: Montserrat-Bold;
+    text-align: center;
+    font-size:2.24vh;
+}
+
+.inputeNumber .text-input-ios{
+    margin: 1.199vh 1.199vh 1.649vh 0;
+}
+
+.meal-type-class .text-input-ios
+{
+    width: calc(100% - 0vh - 0vh) !important;
+    text-align: center;
+    font-size:2.24vh;
+    color: rgb(49 ,74, 93);
+    font-family: Montserrat-Bold;
+}
+ion-content.aboutUser-main, 
+ion-content.main-terms-privacy, 
+ion-content.orderhistory-vaggies, 
+ion-content.about-content, 
+ion-content.loginotp-content{
+    width: 100vw;
+    height: calc(100% - 10.494752623688155vh);
+    bottom: 0;
+    top: auto;
+}
+.aboutUser-contain{
+    height: auto;
+}
+.terms-privacy-contain .TermsArea {
+    background: #fff;
+    width: 100%;
+    background-color: #ffffff;
+    border-top-left-radius: 2vh;
+    border-top-right-radius: 2vh;
+    -webkit-box-shadow: 0 0 0.5vh #000;
+    box-shadow: 0 0 0.5vh #000;
+}
+.terms-privacy-contain {
+    width: 100%;
+    height: 100%;
+    margin-top: 4.49vh;
+    background-color: #ffffff;
+    border-top-left-radius: 2vh;
+    border-top-right-radius: 2vh;
+    position: absolute;
+}
+.term-condition1 {
+    margin: 0 2.717391304347826vh;
+}
+.aboutUser-contain{
+    height: auto !important;
+}
+ion-footer.footer-common {
+    background: #fff;
+}
+.term-condition1 p {
+    font-size: 4.267vw;
+}
+.term-condition p {
+    font-size: 1.4rem;
+    color: black;
+}
+ion-grid.toogle-highlite.grid {
+    position: fixed;
+    z-index: 1;
+    padding: 0 2.5vh;
+}
+ion-modal ion-input input {
+    margin: 0 !important;
+    font-size: 2.4vh;
+}

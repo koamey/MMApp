@@ -1,0 +1,97 @@
+
+
+<ion-header no-border class="dit-type-header otp-headeer" (click)="classadded()">
+	<ion-navbar>
+	  <ion-buttons left>
+		<button ion-button icon-only (click)="Back()">
+		  <img src="assets/imgicon/Group 51.svg" class="backIcon" >
+    </button>
+	  </ion-buttons>
+	</ion-navbar>
+  </ion-header>
+
+
+<ion-content class="about-content" id="myDIV" (click)="classadded()">
+  <div class="aboutyou">
+    <ion-grid style="padding: 0;">
+      <!-- <ion-row>
+        <ion-col class="text-left">
+          <div class="back-icon">
+            <img src="assets/imgicon/Group 51.svg" class="backIcon" (click)="Back()">
+          </div>
+        </ion-col>
+      </ion-row> -->
+      <ion-row >
+        <ion-col class="text-left">
+          <div class="about-headings">
+            <h1>About You</h1>
+            <p>Please help us get to know you better </p>
+          </div>
+        </ion-col>
+      </ion-row >
+      <ion-row > 
+        <ion-col class="text-left">
+          <div class="user_info">
+              <h3>BASIC INFO</h3>
+          </div>
+        </ion-col>
+      </ion-row>
+
+      <form *ngIf="active" novalidate [formGroup]="aboutForm" style="margin-top: 1.4992503748125936vh;">
+        <ion-row>
+        
+            <ion-item style="margin-bottom:2vh">
+              <ion-label class="user_field" style="margin-bottom: 0.9295352323838081vh;" floating>FIRST NAME</ion-label>
+              <ion-input type="text" [formControl]="aboutForm.controls.name" maxlength="20" [(ngModel)]="fname" ></ion-input>
+            </ion-item>
+            <ion-item style="margin-bottom:2vh">
+              <ion-label class="user_field" style="margin-bottom: 0.9295352323838081vh;" floating>LAST NAME</ion-label>
+              <ion-input type="text" [formControl]="aboutForm.controls.lastname" maxlength="20" [(ngModel)]="lname"></ion-input>
+            </ion-item>
+            <ion-item style="margin-bottom:2vh">
+              <ion-label class="user_field" style="margin-bottom: 0.9295352323838081vh;" floating>EMAIL ADDRESS</ion-label>
+              <ion-input type="email" name="email"
+                pattern="[A-Za-z0-9._%+-]{3,}@[a-zA-Z]{3,}([.]{1}[a-zA-Z]{2,}|[.]{1}[a-zA-Z]{2,}[.]{1}[a-zA-Z]{2,})"
+                [formControl]="aboutForm.controls.email" [(ngModel)]="Emailid"></ion-input>
+            </ion-item>
+            <ion-item class="Aboutyoudropdown" style="margin-bottom:0">
+              <ion-label floating class="user_field" style="margin-bottom: 0.9295352323838081vh;">PROFESSION</ion-label>
+              <!-- <ion-select id="cars" name="cars" interface="popover" class="work-input" style="border-bottom: solid 0.1vh rgb(244,164,37); " class="" (ionChange)="selectprof($event)" [(ngModel)]="profid"  [formControl]="aboutForm.controls.prof">
+                <ion-option *ngFor="let p of profArray" value="{{p.id}}">
+                  {{p.profession}}
+                </ion-option>
+              </ion-select> -->
+              <ion-input style="font-family: Montserrat-SemiBold; font-size: 2.098vh;" class="select-full-width" value='{{profname}}'  type="text"  (keyup)="selectprof()" (keydown)="selectprof()" (click)="selectprof()"  [formControl]="aboutForm.controls.prof" [readonly]="true"></ion-input>
+            </ion-item>
+      
+        </ion-row>
+
+       
+      </form>
+    </ion-grid>
+
+    <ion-footer  className="ion-no-border" class="common-footer" style="background: #fff;" >
+      <ion-toolbar>
+    <ion-row class="bottomButton">
+      <ion-col style="padding: 0 5.333vw; width: 100%; float: left;" >
+          <button ion-button type="submit" class="" id="input_submit" block (click)="doSignup()" style="width: 100%; float: left; color: #fff; font-size: 4.266666666666667vw;">
+            Submit
+          </button>
+      </ion-col>
+    </ion-row>
+    </ion-toolbar>
+    </ion-footer>
+  </div>
+</ion-content>
+
+<!-- <ion-footer className="ion-no-border" class="common-footer" style="background: #fff;" (click)="removedclass()">
+	<ion-toolbar>
+<ion-row class="bottomButton">
+  <ion-col style="padding: 0 5.333vw;" >
+      <button ion-button type="submit" class="aboutButton" id="input_submit" block (click)="doSignup()">
+        Submit
+      </button>
+  </ion-col>
+</ion-row>
+</ion-toolbar>
+</ion-footer> -->

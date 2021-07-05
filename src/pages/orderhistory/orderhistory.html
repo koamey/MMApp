@@ -1,0 +1,109 @@
+
+<ion-header no-border class="dit-type-header order-header">
+  <ion-navbar>
+    <ion-buttons left>
+      <button ion-button icon-only (click)="Back()">
+        <img src="assets/imgicon/Group_51.svg" class="backWhiteIcon">
+      </button>
+    </ion-buttons>
+    <ion-title  text-center>ORDER HISTORY</ion-title>     
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="orderhistory-vaggies">
+  <div class="historyTabDiv">
+  <ion-grid style="padding: 5px 5.333vw;">
+    <ion-row class="heading-pickvaggies-label">
+      <ion-col text-center>
+        <!-- [style.color]="ActiveSubcription ? Mysub1:Mysub2" -->
+        <div  (click)="onClickMySubcription()" [style.color]="Mysub2">
+          <label >My Subscriptions</label>
+        </div>
+      </ion-col>
+      <ion-col text-center>
+        <div [style.color]="ActiveGuestMeal ? guestordr1:guestordr2" (click)="onClickGuestMeal()">
+          <label >Guest Orders</label>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <div class="order-history text-center">
+    <div *ngIf="ActiveSubcription" style="width: 100%;padding: 0 5.333vw;float: left;">
+      <ion-grid style="padding: 0;">
+        <ion-row>
+          <ion-col text-center style="padding: 0;"><p [class]="ActiveSubcription ? Mysub1:Mysub2"></p></ion-col>
+          <ion-col text-center style="padding: 0;"><p></p></ion-col>
+        </ion-row>
+      </ion-grid>
+   
+
+      <ion-grid>
+        <div *ngFor="let order of orderArray; let i=index">
+          <ion-row>
+            <h4 class="order-number">ORDER - {{order.subscription_order_number}}</h4>
+          </ion-row>
+          <ion-row class="mealtype-margin">
+            <h4 class="order-mealtype">{{order.meal_type}}</h4>
+          </ion-row>
+          <ion-row>
+            <ion-col>
+              <ion-row class="order-on">ORDERED ON</ion-row>
+              <h4 class="order-date-time">{{order.start_date|date:'d MMM y'}}</h4>
+            </ion-col>
+            <ion-col>
+              <ion-row class="order-on"> EXPIRED ON</ion-row>
+              <h4 class="order-date-time">{{order.end_date?.substring(0,10)|date:'d MMM y'}}</h4>
+              
+            </ion-col>
+            <ion-row><h4 class="total-order-price"> &#8377; {{order.price}}</h4></ion-row>
+          </ion-row>
+         <hr/>
+        </div>
+        <div *ngIf="showData==true" style="padding-top: 25.5vh;">
+          No Records to Display
+        </div>
+      </ion-grid>
+    </div>
+    <div *ngIf="ActiveGuestMeal" id="idscripts">    
+      
+      <ion-grid style="padding: 0;">
+      <ion-row class="orderhistory-guestmeal" style="    padding: 0 5.333vw;">
+        <ion-col text-center style="padding: 0;"><p ></p></ion-col>
+        <ion-col text-center style="padding: 0;"><p [class]="ActiveGuestMeal ? Mysub1:Mysub2"></p></ion-col>
+      </ion-row>
+    </ion-grid>
+
+      <ion-grid class="guestOrder">
+        <!-- <ion-row class="order-guesthistory"><ion-col style="float:right;"></ion-col><ion-col><img src="assets/CancelOrder@3x.png"></ion-col></ion-row> -->
+        <div *ngFor="let mealTypes of guestMealArray; let i=index">
+              <ion-row>              
+                <h4 class="order-number">ORDER - {{mealTypes.order_id}}</h4>
+              </ion-row>
+              <ion-row class="mealtype-margin-guest">
+                <h4 class="order-mealtype">{{mealTypes.meal_type}}</h4>
+              </ion-row>
+            
+          <ion-row>
+            <ion-col>
+              <ion-row class="order-on">ORDERED ON</ion-row>
+              <h4 class="order-date-time">{{mealTypes.date}}</h4>
+            </ion-col>
+            <ion-col>
+              <ion-row class="order-on"> QUANTITY</ion-row>
+              <h4 class="order-date-time">{{mealTypes.quantity}}</h4>              
+            </ion-col>            
+            <ion-row><h4 class="total-order-price"> &#8377; {{mealTypes.total_amount}}</h4></ion-row>
+          </ion-row>
+          <hr/>
+        </div>
+      </ion-grid>
+      <div *ngIf="showData1==true" style="padding-top: 30vh;">
+        No Records to Display
+      </div>
+    </div>
+    
+  </div>
+
+</div>
+</ion-content>

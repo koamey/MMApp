@@ -1,0 +1,85 @@
+<ion-content class="login-scroll" style="background: url('assets/loginFood.jpg') center center no-repeat; width:100%; height:100%; background-size: cover;">
+	<div class="loginpage" *ngIf="logindiv==true">
+		<div padding class="wrap">
+			<form *ngIf="active" novalidate [formGroup]="loginForm" class="signup-form">
+				<div class="login-detail">
+					<h2>Login</h2>
+					<p>Enter your phone number to proceed</p>
+					<!-- <br> -->
+				</div>
+
+				<ion-item class="inputForm">
+					<ion-label class="contactNumber" floating>10 DIGIT MOBILE NUMBER</ion-label>
+					<ion-input type="tel" class="loginInput" maxlength="10" [formControl]="loginForm.controls.number" >
+					</ion-input>
+				</ion-item>
+				<br>
+				<button ion-button type="submit" id="input_submit" block class="loginbutton" (click)="doLogin('login')">
+					Continue
+				</button>
+<!-- *ngIf='skipdisable==true'  -->
+				<ion-grid class="scb">
+					<ion-row class="social-button">
+						<ion-col text-center>
+							<div class="skiplinks" *ngIf='disableskip!=true'>
+								<a href="javascript:void(0);" class="skip" (click)="doLogin('skip')">Skip for Now</a>
+							</div>
+						</ion-col>
+					</ion-row>
+				</ion-grid>
+
+				<ion-grid class="scc">
+					<ion-row class="social-button">
+						<ion-col text-center>
+							<div class="changemodule">
+								Want to change Module?
+								<a href="javascript:void(0);" (click)="Choosemodule()"> Choose Module</a>
+							</div>
+						</ion-col>
+					</ion-row>
+				</ion-grid>
+			</form>
+		</div>
+	</div>
+
+	<div class="loginpage" *ngIf="logindiv1==true">
+		<div padding class="wrap">
+			<form *ngIf="active" novalidate [formGroup]="loginForm" class="signup-form">
+				<div class="login-detail">
+					<h2>Login</h2>
+					<p>Enter your phone number to proceed</p>
+				</div>
+
+				<ion-item>
+					<ion-label class="contactNumber" floating>10 DIGIT MOBILE NUMBER</ion-label>
+					<ion-input type="tel" class="loginInput" maxlength="10" [formControl]="loginForm.controls.number" >
+					</ion-input>
+				</ion-item>
+				<button ion-button type="submit" id="input_submit" block class="loginbutton" (click)="doLogin('login')">
+					Continue
+				</button>
+
+				<ion-grid class="scb">
+					<ion-row class="social-button">
+						<ion-col text-center>
+							<div *ngIf='skipdisable==true' class="skiplinks">
+								<a href="javascript:void(0);" class="skip" (click)="doLogin('skip')">Skip for Now</a>
+							</div>
+						</ion-col>
+					</ion-row>
+				</ion-grid>
+
+				<ion-grid class="scc">
+					<ion-row class="social-button">
+						<ion-col text-center>
+							<div class="changemodule">
+								Want to change Module?
+								<a href="javascript:void(0);" (click)="Choosemodule()"> Choose Module</a>
+							</div>
+						</ion-col>
+					</ion-row>
+				</ion-grid>
+			</form>
+		</div>
+	</div>
+</ion-content>

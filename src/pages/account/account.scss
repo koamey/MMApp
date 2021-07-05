@@ -1,0 +1,417 @@
+
+// .account-heading{
+//     margin-top: 7.025vh !important;
+// }
+// .account-heading .account-sub-heading .image-icon{
+//     float: left;
+//     margin-left:  2.9895vh;
+//     margin-top:-1.253vh;
+// }
+
+// .account-heading .toolbar-md {
+//     padding: 1.5vh 1.7vh;
+// }
+
+// .account-heading .account-sub-heading .toolbar-title-md{
+//     width: 10.9vh;
+//     text-align: center !important;
+//     font-size: 1.94vh !important;
+//     font-family: Montserrat-Bold;
+//     color: rgb(255,255,255);
+//     margin-right:21.57vh;
+//     margin-left:12.57vh;
+//     padding: 0px !important;
+// }
+
+.accHeader .toolbar-title-md{
+    margin-left: -2.8vh !important;
+}
+
+.scroll-content{
+        overflow-y: hidden !important;
+}
+
+.account-heading .account-sub-heading .toolbar-background-md{ 
+    background-color: rgb(32, 60, 82) !important;
+}
+
+.profile-pic{
+    position: relaive; 
+    background-color: rgb(48, 78, 101);    
+    border-radius: 4.0358vh; 
+    height: 14.94vh;
+    width: 15.2vh;
+    margin-top: 7.17vh;
+}
+
+.account-section{
+    background-color: rgb(32, 60, 82);
+}
+
+
+//  .Header .header-md::after, .tabs-md[tabsPlacement="top"] > .tabbar::after, .footer-md::before, .tabs-md[tabsPlacement="bottom"] > .tabbar::before{
+//     background-image: none !important;
+// }
+
+.main-account-area{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding: 3vh 3vh 0vh 3vh;
+    background-color: #ffffff;
+    height: 75%;
+    border-top-left-radius: 2vh;
+    border-top-right-radius: 2vh;
+    // padding: 10vh;
+    box-shadow: 0 0 0.5vh #000;
+    overflow-y: scroll;
+    font-size: 2.7vh;
+}
+
+.main-account-area .account-icon{
+    display: inline-block;
+    width: 3.4vh;
+    text-align: center;
+}
+
+.main-account-area .person-row label{
+    color: #314a5d;
+    font-size: 3.733vw;
+    font-family: Montserrat-SemiBold;
+}
+
+.main-account-area .person-row p{
+    font-size: 3.200vw;
+    color: #314a5d;
+    opacity: 50%;
+    margin: 0vh;
+}
+
+.main-account-area .right-arrow{
+    display:inline-block; 
+    font-size: 1.6vh;
+    float: right;
+    vertical-align: top;
+}
+
+
+
+
+
+
+
+.main-account-area2{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding: 5.24vh 2.99vh 0vh 2.99vh;
+    background-color: #ffffff;
+    height: 97%;
+    border-top-left-radius: 2vh;
+    border-top-right-radius: 2vh;
+    // padding: 10vh;
+    box-shadow: 0 0 0.5vh #000;
+    overflow-y: scroll;
+    font-size: 2.7vh;
+}
+
+.main-account-area2 .item-ios{
+    padding-left:0vh;
+}
+
+.main-account-area2 .person_input{
+    font-size: 2.09vh;
+    font-family: Montserrat-SemiBold;
+    color: rgb(49, 74, 93);
+}
+
+.main-account-area2 .person-lebel{
+    font-size: 1.499vh;
+    font-family: Montserrat-Bold;
+    color:rgb(170, 170, 170);
+    letter-spacing: 0.1vh;
+}
+
+.main-account-area2 .button-ios{
+    background: linear-gradient(to bottom, rgba(255,206,128,1) -80%, rgba(242,156,17,1) 100%);
+    height: 14.667vw !important;
+
+}
+.main-account-area2 button{
+    background: linear-gradient(to bottom, rgba(255,206,128,1) -80%, rgba(242,156,17,1) 100%);
+    height:14.667vw!important;
+
+}
+
+.main-account-area2 .button-inner{
+    font-family: Montserrat-Bold;
+    font-size: 4.267vw;
+}
+
+.main-account-area2 .item-md.item-block .item-inner {
+    border-bottom: 0.1vh solid #dedede;
+}
+
+
+.account-section .account-profile-section1 .subheader{
+ margin : 0vh 1.2vh;
+}
+
+// .account-section .account-profile-section1 .subheader .profile-image{
+//     background-color: rgb(48, 78, 101);
+//     background: rgb(48, 78, 101) no-repeat center;
+//     -webkit-background-size: cover;
+//     -moz-background-size: cover;
+//     -o-background-size: cover;
+//     background-size: cover;
+//     border-radius: 2vh;
+//     height: 14.99vh;
+//     width: 15.24vh;
+//     // width: 100%;
+// }
+.account-section .account-profile-section1 .subheader .profile-image {
+    background-color: #304e65;
+    background: #304e65 no-repeat center;
+    background-size: cover;
+    border-radius: 2vh;
+    height: 14.992503748125937vh;
+    width: 14.992503748125937vh;
+    position: relative;
+}
+.account-section .account-profile-section1 .subheader .profile-image .edit-profile{
+    position: absolute;
+    top: 0.7744565217391305vh;
+    right: 0.7744565217391305vh;
+}
+
+.account-section .account-profile-section1{
+    width: 100%;
+    margin-top: 2.0380434782608696vh;
+    margin-bottom: 2.0380434782608696vh;
+}
+
+
+.account-section .account-profile-section1 .subheader .userName {
+    margin-left: 1.99vh;
+}
+
+.account-section .account-profile-section1 .subheader .userName h2{
+    color: #ffff;
+    margin: 2.1vh 0vh 0vh 0vh;
+    font-size: 4.533vw;
+    font-family: Montserrat-Bold;
+}
+
+.account-section .account-profile-section1 .subheader .userName  p{
+    color: rgb(255, 255, 255);
+    opacity: 50%;
+    margin: 0.89vh 0vh 0vh 0vh;
+    font-size: 3.467vw;
+}
+
+.account-section .account-profile-section1 .subheader .planName{
+    margin-left: 1.99vh;
+    margin-top: 2.0652173913043477vh;
+    width: 100%;
+    float: left;
+}
+.account-section .account-profile-section1 .subheader .planName img.diamond{
+    vertical-align: middle;
+    float: left;
+    width: 2.7736131934032984vh;
+    height: 1.949025487256372vh;
+}
+.account-section .account-profile-section1 .subheader .planName label{
+    vertical-align: top;
+    font-size: 3.467vw;
+    margin-left: 1.1548913043478262vh;
+    font-weight: bold;
+    color: #f3a01b;
+    vertical-align: middle;
+    position: relative;
+    margin-top: -0.3vh;
+    float: left;
+}
+
+
+
+
+
+.main-account-area .row-line {
+    height: 0.1vh !important;
+    background-color: #b6bfc6 !important;
+    width: 100%;
+    margin: 2.8vh 0;
+}
+
+.main-account-area2 .button-md{
+    background-color: rgb(242, 155, 17);
+    height: 8.245vh !important; 
+    text-transform: none;
+    font-size: 2.19rem;
+    font-weight: 900;
+}
+
+.main-account-area2 .item-md{
+    padding-left:0vh;
+}
+
+
+
+.main-account-area3{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding: 3.8043478260869565vh 4vw 2.717391304347826vh 4vw;
+    background-color: #ffffff;
+    height: 97%;
+    border-top-left-radius: 2vh;
+    border-top-right-radius: 2vh;
+    -webkit-box-shadow: 0 0 0.5vh #000;
+    box-shadow: 0 0 0.5vh #000;
+    overflow-y: scroll;
+    font-size: 2.7vh;
+}
+
+.main-account-area3 h2{
+    margin: 0vh;
+    color: rgb(242, 155, 17);
+    font-weight: bold;
+    font-size: 1.4rem;
+    font-family: Montserrat-Bold;
+}
+
+.main-account-area3 .home-address{
+    margin-top: 2.5815217391304346vh;
+}
+
+.main-account-area3 .work-label{
+    font-size: 1.97vh;
+    color: rgb(170, 170, 170);
+    font-family: Montserrat-Bold;
+    letter-spacing: 0.014vh;
+    line-height: 1.87vh;
+}
+
+.main-account-area3 .work-input{
+    font-family: Montserrat-SemiBold;
+    font-size: 2.09vh;
+    letter-spacing: 0.020vh;
+    color: rgb(49, 74, 93);
+}
+
+.main-account-area3 .select-text{
+    color: rgb(49, 74, 93);
+    font-family: Montserrat-SemiBold;
+    font-size: 2.09vh;
+}
+
+// .main-account-area3 .item-label-stacked .select-ios, .item-label-floating .select-ios{
+//     margin-top: -0.299px !important;
+//     padding-bottom : 0.9vh !important;
+// }
+
+.main-account-area3 .button-ios{
+    // background-color: #f2a221;
+    background: linear-gradient(to bottom, rgba(255,206,128,1) -80%, rgba(242,156,17,1) 100%);
+    height:14.667vw !important;
+}
+.main-account-area3 button{
+    // background-color: #f2a221;
+    background: linear-gradient(to bottom, rgba(255,206,128,1) -80%, rgba(242,156,17,1) 100%);
+    height:14.667vw !important;
+}
+.main-account-area3 .item-md.item-input.ng-valid.item-input-has-value:not(.input-has-focus):not(.item-input-has-focus) .item-inner, .item-md.item-input.ng-valid.input-has-value:not(.input-has-focus):not(.item-input-has-focus) .item-inner{
+    border-bottom-color: #f3a01c !important;
+}
+
+.main-account-area3 .address-button .button-inner{
+    font-family: Montserrat-Bold;
+    font-size: 4.267vw;
+}
+
+.main-account-area3 .item-ios{
+    padding-left:0vh;
+}
+
+.main-account-area3 .item-cover{
+    height: 0vh !important;
+}
+.main-account-area3 .item-md{
+    padding-left:0vh;
+}
+.main-account-area3 .item-md.item-block .item-inner {
+    border-bottom: 0.1vh solid #dedede;
+}
+
+
+.main-account-area3 .button-md{
+    height: 8.24vh !important;
+    text-transform: none;
+    font-size: 3vh;
+    font-weight: 900;
+    background-color: rgb(242, 155, 17);
+    border-radius: 0.899vh;
+}
+
+.deleteicon1 {  
+    vertical-align: middle;
+    margin: auto;
+}
+
+.deleteicon1 .item-inner{
+    border-bottom:none !important;
+}
+ion-header.dit-type-header.accHeader .toolbar-title-ios {
+    opacity: 1;
+}
+ion-content.account-section {
+    width: 100vw;
+    height: calc(100% - 10.494752623688155vh);
+    bottom: 0;
+    top: auto;
+}
+.account-section .account-profile-section1 .subheader .profile-image .edit-profile img {
+    width: 4.3478260869565215vh;
+    height: 4.3478260869565215vh;
+}
+.main-account-area2 {
+    padding: 4.755434782608695vh 2.717391304347826vh;
+}
+.main-account-area2 ion-item ion-label, .main-account-area3 ion-item ion-label {
+    width: 100%;
+    font-size: 3.466666666666667vw !important;
+    margin: 0;
+    line-height: normal !important;
+}
+.main-account-area2 .person_input input.text-input, .main-account-area3 .person_input input.text-input {
+    margin: 0.8152173913043478vh 0 !important;
+    width: 100% !important;
+    line-height: normal;
+}
+.main-account-area2 ion-item , .main-account-area3 ion-item {
+    margin-bottom: 2.8260869565217392vh !important;
+
+}
+ion-content.account-section.content .scroll-content {
+    overflow-y: hidden !important;
+}
+.button-md, .button-ios {
+    height: 8.245vh !important;
+}
+.button-ios, .button-md {
+    background: #f29b11;
+}
+page-refer-and-earn .toolbar-title {
+    opacity: 1 !important;
+}
+.main-account-area3 ion-item .item-inner {
+    padding: 0 !important;
+}
+html, body {
+    width: 100vw;
+    height: 100vh;
+}
+.aboutButton span.button-inner {
+    font-size: 4.267vw !important
+}

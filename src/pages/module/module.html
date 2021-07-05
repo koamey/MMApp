@@ -1,0 +1,90 @@
+<ion-content class="module-main">
+    <div class="module-screen">
+        <div class="module-logo">
+        <ion-grid>
+            <ion-row>
+                <ion-col class="text-center">
+                    <img class="" src="assets/logo.svg" class="main-logo">
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+        </div>
+        <ion-grid>
+            <ion-row>
+                <div class="module-content">
+                    <h2>Choose Your Module</h2>
+                    <p class="module-text">Please select what kind of user
+                        you are
+                    </p>
+                    <div class="module-area">
+                        <ion-grid>
+                            <ion-row>
+                                <ion-col style="">
+                                    <div class="individual" (click)="individual()">
+                                        <div class="ind_user_img">
+                                            <img class="" src="assets/imgicon/user (1).svg" style="width:2.39vh; height: 2.69vh;">
+                                        </div>
+        
+                                        <div class="ind_user">
+                                            Individual User
+                                        </div>
+                                        <div class="ind_icon">
+                                            <ion-icon name="ios-arrow-forward"></ion-icon>
+                                        </div>
+                                    </div>
+                                    <!-- (click)="corporate()" -->
+                                    <div class="corporate" >
+                                        <div class="cor_user_img">
+                                            <img class="" src="assets/imgicon/Group_4.svg" style="width:4.79vh; height: 2.39vh;">
+                                        </div>
+                                        <div class="cor_user">
+                                            Corporate User
+                                        </div>
+                                        <div class="cor_icon">
+                                            <ion-icon name="ios-arrow-forward"></ion-icon>
+                                        </div>
+                                    </div>
+        
+                                    <div class="donate">
+                                        <div class="don_user_img">
+                                            <img class="" src="assets/imgicon/heart (1).svg" style="width:2.84vh; height: 2.54vh;">
+                                        </div>
+                                        <div class="don_user">
+                                            Donate Food
+                                        </div>
+                                        <div class="don_icon">
+                                            <ion-icon name="ios-arrow-forward"></ion-icon>
+                                        </div>
+                                    </div>
+                                    
+                                </ion-col>
+                            </ion-row>
+                           
+                        </ion-grid>
+                    </div>
+                    <ion-footer className="ion-no-border" class="main-module-footer">
+                        <ion-toolbar>
+                    <div class="module-area module-footer">
+                        <ion-grid>
+                    <ion-row>
+                        <ion-col>
+                            <p class="term-condition">By continuing you
+                                agree to our <a href="javascript:void(0);" (click)="onclickTermCondition()"
+                                    style="color: #fff; text-decoration: none ;">Terms</a> & <a
+                                    href="javascript:void(0);" (click)="onclickTermCondition()"
+                                    style="color: #fff;text-decoration: none">Privacy Policy</a></p>
+
+                        </ion-col>
+                    </ion-row>
+                    </ion-grid>
+                    </div>
+                    </ion-toolbar>
+                    </ion-footer>
+
+                </div>
+            </ion-row>
+        </ion-grid>
+
+        
+    </div>
+</ion-content>

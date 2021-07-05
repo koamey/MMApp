@@ -1,0 +1,169 @@
+<ion-header no-border class="dit-type-header wheretodel" (click)="classadded()">
+  <ion-navbar>
+    <ion-buttons left>
+      <button ion-button icon-only (click)="Back()">
+        <img src="assets/imgicon/Group_51.svg" class="backWhiteIcon ">
+      </button>
+    </ion-buttons>
+    <ion-title text-center>WHERE TO DELIVER?</ion-title>     
+  </ion-navbar>
+</ion-header>
+<ion-content class="main-content" (click)="classadded()" id="myDIV">
+  <div class="content-area-address">
+    <div class="delivery-signup">
+      <ion-grid>
+        <form *ngIf="active" novalidate [formGroup]="deliveryAddressForm" class="delivery-address" style="margin-bottom: 4vh;">
+          <ion-row>
+            <ion-col>
+              <h4>HOME ADDRESS</h4>
+            </ion-col>
+          </ion-row>
+
+          <ion-row>
+            <ion-col col-12>
+              <ion-item style="padding-left: 0rem !important;">
+                <ion-label floating>HOUSE/FLAT NO:</ion-label>
+                <ion-input type="text" autocomplete="off"  [formControl]="deliveryAddressForm.controls.flat_no1" #flatno1></ion-input>
+              </ion-item>
+            </ion-col>
+            <ion-col col-12>
+              <ion-item style="padding-left: 0rem !important;">
+                <ion-label floating>ADDRESS LINE 1</ion-label>
+                <ion-input autocomplete="off"  [formControl]="deliveryAddressForm.controls.address11" #address11 id="googlePlaces" required>
+                </ion-input>
+              </ion-item>
+            </ion-col>
+            <ion-col col-12>
+              <ion-item style="padding-left: 0rem !important;">
+                <ion-label floating>ADDRESS LINE 2</ion-label>
+                <ion-input autocomplete="off"  type="text" [formControl]="deliveryAddressForm.controls.address21" #address21></ion-input>
+              </ion-item>
+            </ion-col>
+          </ion-row>
+
+          <ion-row>
+            <ion-col col-6>
+              <ion-item style="padding-left: 0rem !important;">
+                <ion-label floating>CITY</ion-label>
+                <ion-input type="text" [formControl]="deliveryAddressForm.controls.city1" [(ngModel)]="Hcity"  [readonly]="true">
+                </ion-input>
+              </ion-item>
+            </ion-col>
+            <ion-col col-6>
+              <ion-item style="padding-left: 0rem !important;">
+                <ion-label floating>PINCODE</ion-label>
+                <ion-input id="cars" name="cars" autocomplete="off" 
+                   class="select-full-width"type="text" [formControl]="deliveryAddressForm.controls.area_id1"  (keyup)="onclickarea1()"  (keydown)="onclickarea1()" (click)="onclickarea1()" value="{{abcde_new}}" [readonly]="true"></ion-input>
+                   
+              
+              </ion-item>
+            </ion-col>
+           <!--  <ion-col col-1 class="deleteicon">              
+              <div style="padding: 0.449vh; margin-top:1vh;">
+                <img src="assets/imgicon/delete.png" (click)="deleteicon()">
+              </div>
+            </ion-col> -->
+          </ion-row>
+
+          <ion-row>
+            <ion-col col-6>
+              <ion-item style="padding-left: 0rem !important;">
+                <ion-label floating>STATE</ion-label>
+                <ion-input type="text" [formControl]="deliveryAddressForm.controls.state1" [(ngModel)]="HState"  [readonly]="true">
+                </ion-input>
+              </ion-item>
+            </ion-col>
+            <ion-col col-5>
+              <ion-item style="padding-left: 0rem !important;">
+                 <ion-label floating>AREA</ion-label>
+                <ion-input type="text" id="cars" name="cars" autocomplete="off" 
+                   class="select-full-width" [formControl]="deliveryAddressForm.controls.area_id12"
+                  value="{{areaname_new}}" (keyup)="onclickarea2()" (keydown)="onclickarea2()" (click)="onclickarea2()" [readonly]="true"></ion-input>
+              </ion-item>
+             
+
+            </ion-col>
+            <ion-col col-1 class="deleteicon">       
+              <div style="padding: 0.449vh;"><img src="assets/imgicon/droparea.svg" (keyup)="onclickarea2()" (keydown)="onclickarea2()" (click)="onclickarea2()" style="width:2.398vh; opacity: 0.6;"></div>
+           </ion-col>
+          
+          </ion-row>
+          <ion-row>
+            <ion-col col-12>
+              <h4>WORK ADDRESS</h4>
+            </ion-col>
+            <ion-col col-12>
+              <ion-item style="padding-left: 0rem !important;">
+                <ion-label floating>COMPANY NAME WITH FLOOR NO.</ion-label>
+                <ion-input type="text" autocomplete="off"  [formControl]="deliveryAddressForm.controls.flate_no2" #flateno2></ion-input>
+              </ion-item>
+            </ion-col>
+            <ion-col col-12>
+              <ion-item style="padding-left: 0rem !important;">
+                <ion-label floating>ADDRESS LINE 1</ion-label>
+                <ion-input type="text" autocomplete="off"  [formControl]="deliveryAddressForm.controls.address12" #address12></ion-input>
+              </ion-item>
+            </ion-col>
+            <ion-col col-12>
+              <ion-item style="padding-left: 0rem !important;">
+                <ion-label floating>ADDRESS LINE 2</ion-label>
+                <ion-input type="text" autocomplete="off"  [formControl]="deliveryAddressForm.controls.address22" #address22></ion-input>
+              </ion-item>
+            </ion-col>
+          </ion-row>
+
+          <ion-row>
+            <ion-col col-6>
+              <ion-item style="padding-left: 0rem !important;">
+                <ion-label floating>CITY</ion-label>
+                <ion-input type="text" [formControl]="deliveryAddressForm.controls.city2" [(ngModel)]="WCity"  [readonly]="true">
+                </ion-input>
+              </ion-item>
+            </ion-col>
+            <ion-col col-6>
+              <ion-item style="padding-left: 0rem !important;">
+                  <ion-label floating>PINCODE</ion-label>
+                <ion-input type="text"id="cars" name="cars" class="select-full-width" autocomplete="off"  
+                  [formControl]="deliveryAddressForm.controls.area_id2" value="{{areaid1}}"  (keyup)="onclickarea3()"  (keydown)="onclickarea3()" (click)="onclickarea3()" [readonly]="true"></ion-input>
+              </ion-item>
+            </ion-col>
+         <!--    <ion-col col-1 class="deleteicon">              
+              <div style="padding: 0.449vh; margin-top:1vh;"><img src="assets/imgicon/delete.png" (click)="deleteicon1()"></div>
+            </ion-col> -->
+          </ion-row>
+
+          <ion-row>
+            <ion-col col-6>
+              <ion-item style="padding-left: 0rem !important;">
+                <ion-label floating>STATE</ion-label>
+                <ion-input type="text" [formControl]="deliveryAddressForm.controls.state2" [(ngModel)]="WState"  [readonly]="true">
+                </ion-input>
+              </ion-item>
+            </ion-col>
+            <ion-col col-5>
+              <ion-item style="padding-left: 0rem !important;">
+                 <ion-label floating>AREA</ion-label>
+                <ion-input type="text" id="cars" name="cars" class="select-full-width"  autocomplete="off"  
+                  [formControl]="deliveryAddressForm.controls.area_id22" value="{{areaid2}}" (keyup)="onclickarea4()" (keydown)="onclickarea4()" (click)="onclickarea4()" [readonly]="true"></ion-input>
+              </ion-item>
+            </ion-col>    
+            <ion-col col-1 class="deleteicon">       
+              <div style="padding: 0.449vh;"><img src="assets/imgicon/droparea.svg" (keyup)="onclickarea4()" (keydown)="onclickarea4()" (click)="onclickarea4()" style="width:2.398vh; opacity: 0.6;"></div>
+           </ion-col>   
+             
+            
+          </ion-row>
+        </form>
+      </ion-grid>
+      <ion-col style="width: 100%;border-radius: 0.5rem;float: left;padding: 0 0 4vh 0; ">
+        <div class="text-center">
+          <button ion-button type="submit" id="input_submit" style="border-radius: 0.28vh; margin: 0;height: 14.667vw !important;" (click)="onSubmit()" block>
+            Continue
+          </button>
+        </div>
+      </ion-col>
+    </div>
+  </div>
+</ion-content>
+
+

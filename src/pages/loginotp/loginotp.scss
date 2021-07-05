@@ -1,0 +1,253 @@
+.otp-headeer .toolbar-background{
+  background-color: rgb(255, 255, 255) !important;
+}
+
+.otp-headeer .backIcon{
+  width: 4.49vh;
+  height: 4.49vh
+}
+
+.loginotp1{
+width: 100%;
+height: 100%;
+// position: absolute;
+bottom: 0;
+
+overflow-y: scroll;
+margin: 0vh;
+}
+
+// .loginotp1{
+//   background-size: cover;
+//   background-color: #fff;
+//   width: 100%;
+//   height: 100%;
+//   .start-button {
+//   color:rgb(49, 74, 93);
+//   font-weight: normal;
+//   text-transform: none;
+//   font-size: 0.72rem;
+//   border-radius: 0.45rem;
+//   font-weight: 600;
+//   }
+// }
+
+.loginotp1 .col{
+  padding: 0;
+}
+
+.loginotp1 .grid{
+  padding: 0;
+}
+
+.loginotp1 page-signup .icon, page-login .icon {
+   padding-bottom: 0rem !important;
+   width: 0rem !important;
+   padding-right: 0.5rem;
+}
+
+
+.loginotp1 .otp-back{
+  border-radius: 0.83rem !important;
+  border: 0.06rem solid rgb(49, 74, 93) !important;
+  background-color: #ffff !important;
+  color: rgb(49, 74, 93) !important;
+}
+
+//Select Area css start here
+
+.loginotp1 .otp_img{
+  margin-top: 4vw;
+  width: 25.187vh;
+}
+
+
+// .loginotp1 .submit-otp1{
+//   padding: 0rem 2.717391304347826vh;
+// }
+
+.loginotp1 .submit-otp1 .otp-click{
+  color: #ffff;
+  height: 4.58rem;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(-80%, #ffce80), to(#f29c11));
+  background: linear-gradient(to bottom, #ffce80 -80%, #f29c11 100%);
+  text-transform: none;
+  border-radius: 0.45rem;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  padding: 0;
+  margin: 0;
+}
+
+.loginotp1 .submit-otp1 .otp-click .button-inner{
+  font-size: 1.39rem;
+  font-family: Montserrat-Bold;
+}
+
+
+.loginotp1 .otp-receive {
+  font-size: 3.7333333333333334vw;
+  color: #727272;
+  font-family: "Montserrat-SemiBold";
+  line-height: 5.066666666666666vw;
+}
+
+.loginotp1 .otp-receive a{
+  font-family: Montserrat-SemiBold;
+  font-size: 1.22rem;
+  letter-spacing: 0.01rem;
+  color: rgb(242, 155, 17);
+  text-decoration:none;
+}
+
+.loginotp1 .enter-otp h1{
+  color: #2e2a25;
+  text-align: center;
+  margin: 8.533333333333333vw 0 0 0;
+  font-size: 5.866666666666666vw;
+  font-family: Montserrat-Bold;
+  line-height: 7.2vw;
+}
+
+
+.loginotp1 .enter-otp p {
+  text-align: center;
+  font-size: 3.466666666666667vw;
+  line-height: 4.533333333333333vw;
+  color: rgb(46, 42, 37);
+  margin: 0.58rem 0rem 0rem 0rem;
+  font-family: Montserrat-Light;
+}
+
+//Select Area css end here
+
+
+.welcome-content {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  padding: 0 0.78rem 3.34rem 0.56rem;
+  background-color:
+  #203c52;
+  height: 18.51rem;
+  border-radius: 1%;
+  border-top-left-radius: 1.67rem;
+  border-top-right-radius: 1.67rem;
+  padding:1.11rem;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  padding: 0 0.56rem 2.22rem 0.56rem;
+  background-color: rgb(32, 60, 82);
+}
+
+.welcome-content h2{
+  color:#fff;
+  text-align: center;
+}
+
+.welcome-content p{
+  text-align: center;
+  color:#bdbdbd;
+}
+
+ 
+.welcome-group {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  p {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 2.22rem;
+  }
+}
+
+.welcome-icon {
+  display: none;
+  width: 3.89rem;
+  height: 3.89rem;
+  background: url('../assets/for_logo.png') center center no-repeat;
+  background-size: 1.22rem 0.45rem;
+  border: 0.11rem solid #fff;
+  padding: 0.3.34rem;
+  border-radius: 50%;
+  .inner {
+    display: inline-block;
+    border: 0.11rem solid #fff;
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+  }
+}
+
+.welcome-text {
+  display: block;
+  padding-top: 0.83rem;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 0.0.56rem;
+  line-height: 2.22rem;
+}
+
+/*css of Login otp*/
+.enter-otp1{
+  margin-top: 14.133333333333333vw;
+  padding-bottom: 50vw !important;
+}
+
+.enter-otp1 .otp-box{
+  width: 4.11rem;
+  height: 4.58rem;
+  border: 0.06rem solid #aaaaaa;
+  border-radius: 0.5rem;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 2.22rem;
+  margin: 0rem 2.0rem 0rem 0rem;
+  color: #2e2a25;
+  font-family: Montserrat-Medium;
+}
+
+
+.enter-otp1 .otp-box input{
+  width: 2.45rem;
+  margin: 0.22rem;
+  // padding: 0.56rem;
+  height: 90%;
+  text-align: center;
+  border: none;
+  vertical-align: middle;
+}
+.enter-otp1 .otp-box {
+  border: 0;
+  width: 13.333333333333334vw;
+  height: 14.666666666666666vw;
+}
+.enter-otp1 .otp-box input {
+  font-size: 2.2500017007876rem;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  border: 0.06rem solid #aaaaaa;
+  border-radius: 0.5rem;
+  padding: 0;
+}
+// ion-content.loginotp-content .scroll-content {
+// overflow-y: hidden !important;
+// }
+ion-footer.common-footer.login-otp-footer {
+  background: #fff !important;
+}
+page-choosedeliveryaddress .dileveryButton {
+  padding: 0vh 4vw !important;
+}
+.mystyle.loginotp-content .login-otp-footer {
+  position: relative;
+}
+.mystyle.loginotp-content ion-col.enter-otp1 {
+  padding-bottom: 0 !important;
+}

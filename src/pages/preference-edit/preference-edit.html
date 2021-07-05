@@ -1,0 +1,113 @@
+<ion-content class="main-edit-preference">
+  <ion-grid>
+    <ion-row>
+      <ion-col col-12 class="text-left" defualt>
+        <div class="heading-title-box">
+          <h6>{{mealType}}</h6>
+          <p>{{preferenceString}}</p>
+        </div>
+      </ion-col>
+      <ion-col col-12 class="text-left" defualt>
+        <div class="heading-note">
+          <p><sup style="color: red; font-size: 1.4vh; top:0em !important;">*</sup> Addition of bread/rice can be done
+            only once per subscription and cannot be reverted till expiry.</p>
+        </div>
+      </ion-col>
+      <ion-col>
+        <form [formGroup]="preferenceEditForm" class="update-menu">
+          <ion-grid>
+            <div class="cust-meal-type-color">
+              <ion-row>
+                <ion-col col-12 class="text-left">
+                  <div>
+                    <h5>Choice of {{category}}</h5>
+                  </div>
+                </ion-col>
+              </ion-row>
+              <ion-list radio-group >
+              <ion-row style="margin-top: 1.994vh;">
+                <ion-col col-7 style="vertical-align: middle;">
+                  <ion-radio [checked]="rdDefaultRoti" class="radio" type="radio" mode="md" value="choice1"
+                      style="vertical-align: middle;" (click)="radioGroupChange('choice1')">
+                    </ion-radio>
+                  <label
+                    class='meal-pref-label' (click)="radioGroupChange('choice1')">{{displayProductChoice}}<span>&#x20B9;{{displayPrizeChoice}}</span></label>
+                </ion-col>
+                <ion-col col-5 text-right>
+                  <button defualt class="meal-sel-button" [style.background]="buttonColor"
+                    [disabled]="displayquantityChoice==myNumber || disableMinusButton==false"
+                    (click)="onclickMinusChapati()"> - </button>
+                  <label style="margin-left: 1.799vh;width: 2.248vh;font-size:3.733vw;font-family:Montserrat-SemiBold;">{{displayquantityChoice}}</label>
+                  <button defualt class="meal-sel-button"
+                    [disabled]="disablePlusButton==false || maxQuantity==displayquantityChoice"
+                    [style.background]="buttonColorplus" (click)="onclickaddChapati()"> + </button>
+                </ion-col>
+              </ion-row>
+
+              <ion-row style="margin-top: 1.994vh;">
+                <ion-col col-7 style="vertical-align: middle;">
+                  <ion-radio [checked]="rdDefaultRoti1" class="radio" type="radio" mode="md" value="choice2"
+                      style="vertical-align: middle;" (click)="radioGroupChange('choice2')">
+                    </ion-radio>
+                  <label class='meal-pref-label' (click)="radioGroupChange('choice2')">{{displayProductChoice1}}
+                    <span>&#x20B9;{{displayPrizeChoice1}}</span></label>
+                </ion-col>
+
+                <ion-col col-5 text-right>
+                  <button defualt class="meal-sel-button" [style.background]="buttonColor1"
+                    [disabled]="displayquantityChoice1==myNumber1 || disableMinusButton1==false "
+                    (click)="onclickMinusPhulka()"> - </button>
+                  <label style="margin-left: 1.799vh;width: 2.248vh;font-size:3.733vw;font-family: Montserrat-SemiBold;">{{displayquantityChoice1}}</label>
+                  <button defualt class="meal-sel-button"
+                    [disabled]="disablePlusButton1==false || maxQuantity1==displayquantityChoice1"
+                    [style.background]="buttonColorplus1" (click)="onclickaddPhulka()"> + </button>
+                </ion-col>
+              </ion-row>
+              </ion-list>
+            </div>
+            <div>
+              <ion-row>
+                <ion-col col-6 text-left style="vertical-align: middle; margin:auto;">
+                    <label class="heading">Choice of {{category1}}</label>
+                </ion-col>
+                <ion-col col-6 text-right>
+                  <ion-checkbox [checked]="chkRemoveRice" [(ngModel)]="chkRemoveRice"  [ngModelOptions]="{standalone: true}" (ionChange)="removeRice()" style="vertical-align: middle;" ></ion-checkbox>
+                </ion-col>
+              </ion-row>              
+              <ion-list radio-group  class="cust-meal-type-color">
+                <ion-row style="margin-top: 1.994vh;">
+                  <ion-col col-7 style="vertical-align: middle;">
+                      <ion-radio [checked]="rdDefaultRice" [disabled]="!chkRemoveRice" type="radio" mode="md" value="rice1" style="vertical-align: middle;" (click)="radioGroupChange1('rice1')"></ion-radio>
+                      <label [style.color]="ricelabelcolor" class='meal-pref-label' *ngIf="chkRemoveRice==true"  (click)="radioGroupChange1('rice1')" >{{displayProductChoice2}}</label> 
+                      <label style="color:rgb(209, 209, 209);" class='meal-pref-label' *ngIf="chkRemoveRice==false">{{displayProductChoice2}}</label>                    
+                  </ion-col>
+                </ion-row>
+                <ion-row style="margin-top: 1.994vh;">
+                  <ion-col col-7 style="vertical-align: middle;">
+                    <ion-radio [checked]="rdDefaultRice1" [disabled]="!chkRemoveRice"  type="radio" mode="md" value="rice2" style="vertical-align: middle;" (click)="radioGroupChange1('rice2')"></ion-radio>
+                    <label  [style.color]="ricelabelcolor" class='meal-pref-label'  *ngIf="chkRemoveRice==true" (click)="radioGroupChange1('rice2')" >{{displayProductChoice3}}</label>
+                    <label  style="color:rgb(209, 209, 209);" class='meal-pref-label' *ngIf="chkRemoveRice==false">{{displayProductChoice3}}</label>
+                  </ion-col>
+                </ion-row>
+              </ion-list>
+            </div>
+          </ion-grid>
+        </form>
+      </ion-col>
+      
+    </ion-row>
+ 
+  </ion-grid>
+</ion-content>
+
+<ion-footer className="ion-no-border" class="footer-common">
+  <ion-toolbar>
+    <ion-col col-12 style="position: absolute; width: 100%; bottom: 0; padding:0 2.923vh; ">        
+      <div>
+        <button ion-button type="submit" id="input_submit" block (click)="onSubmit()" style="margin: 0;">
+          Update Cart
+        </button>
+      </div>
+    </ion-col>
+    </ion-toolbar>
+    </ion-footer>

@@ -1,0 +1,188 @@
+
+.otp-headeer .backIcon{
+  width: 4.497vh;
+  height: 4.497vh;
+}
+
+.chooseplan-content{
+  background-size: cover;
+}
+.chooseplan-content .scroll-content {
+  overflow-y: scroll !important;
+}
+
+.choose-plan{
+  padding-left: 5.333vw;
+  padding-right: 5.333vw;
+  position: absolute;
+}
+.choose-plan .grid{
+  margin : 0 !important;
+  padding: 0 !important;
+}
+
+.choose-plan .col{
+  padding: 0 !important;
+}
+.choose-plan .row{
+  padding: 0 !important;
+}
+.choose-plan h4{
+  color: #203c52;
+  margin: auto;
+  font-size: 7.467vw;
+  font-family: Montserrat-Bold;
+  margin-top: 1.046vh;
+}
+.choose-plan .mainpara{
+  color: rgb(0, 0, 0);
+  margin: auto;
+  font-size: 1.994vh;
+  letter-spacing: 0.019vh;
+  opacity: 65%;
+  font-family: Montserrat-Light;
+  margin-top: 0.749vh;
+  margin-bottom: 3.44vh;
+  
+}
+.choose-plan .button-ios{
+background-color: rgb(255, 255, 255);
+}
+
+.choose-plan .button-md{
+  background-color: rgb(255, 255, 255);
+  --webkit-box-shadow: none;
+  box-shadow: none;
+  }
+.choose-plan .monthly-subscription{
+  background-color:rgb(245, 245, 245) !important;
+  margin-top:  1.499vh;
+  //height:30.985vh;
+  padding-bottom: 3.05vh;
+  text-align:center;
+  border-radius:1.04vh; 
+  margin: auto;
+}
+
+.choose-plan .monthly-subscription img{
+  margin: auto;
+}
+
+.choose-plan .monthly-subscription h4{
+  font-size: 4.464vw;
+  font-family: Montserrat-Bold;
+  text-align: center;
+  color: #000; 
+}
+
+.monthly-subscription span{
+  text-align: center;
+  font-size:1.94vh;
+  color: rgb(0, 0, 0);
+  opacity: 100%;  
+  font-family: Montserrat-Medium;
+}
+
+.monthly-subscription span p{
+  text-align: center;
+  line-height: 2.39vh;
+  font-size: 3.869vw;
+  color: black;
+  font-family: Montserrat-Regular;
+  padding: 0 1vh;
+  margin: 0;
+  margin-top: 1.049vh;
+}
+.monthly-subscription .smallcontent{
+  margin-top: 0.749vh;
+}
+.monthly-subscription .smallcontent p{
+  text-align: center;
+  line-height: 4.267vw;
+  font-size: 3.869vw;
+  color: #a3a3a3;
+  font-family: Montserrat-Regular;
+  padding-left: 3.247vh;
+  padding-right: 3.247vh;
+  margin: 0;
+}
+
+ion-row .bottom p {
+    text-align: center;
+    font-size:1.79vh;
+    color: rgb(0, 0, 0);
+    opacity: 50%;
+    font-family:Montserrat-Light;
+    margin-top: 4.63vh;
+    line-height: 2.39vh;
+    color: rgb(0, 0, 0);     
+}
+
+// ion-row .bottom p sup {
+//   text-align: center;
+//   font-size:1.79vh;
+//   color: rgb(226, 42 ,51);
+// }
+
+.bottom{
+  margin-bottom: 4.94vh;
+  p{
+    text-align: center;
+    font-size:1.79vh;
+    color: rgb(0, 0, 0);
+    opacity: 50%;
+    font-family:Montserrat-Light;
+    margin-top: 4.63vh;
+    line-height: 2.39vh;
+    color: rgb(0, 0, 0);   
+  }    
+}
+
+/*--*/
+.choose-plan {
+  width: 100%;
+  float: left;
+}
+.choose-plan h4 {
+  margin-bottom: 0.749vh;
+}
+.choose-plan .mainpara {
+  margin-top: 0.749vh;
+  line-height: 4.533vw;
+  margin-bottom: 2.552vh;
+  display: block;
+  font-size: 3.467vw;
+}
+.choose-plan .monthly-subscription img {
+  margin: 0.449vh 0;
+}
+.choose-plan .monthly-subscription h4 {
+  margin-bottom: 1.049vh;
+  margin-top: 0;
+}
+.monthly-subscription span {
+  line-height: 2.69vh;
+}
+// .monthly-subscription span {
+//   line-height: 5.247vh;
+// }
+.monthly-subscription .smallcontent p {
+  width: calc(100% - 18.666vw);
+  margin: 0 auto !important;
+  padding: 0 !important;
+  line-height: 2.69vh;
+  margin-bottom: 0.749vh;
+  margin-top: 0;
+}
+.monthly-subscription span p {
+  margin-bottom: 0.749vh;
+}
+.monthly-subscription span p:nth-child(2) {
+  margin-top: 0;
+}
+
+
+
+
+
+

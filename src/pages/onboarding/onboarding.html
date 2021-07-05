@@ -1,0 +1,102 @@
+<!-- <div *ngFor="let a of contents; let i=index"> -->
+    <ion-content class="onboard-screen">
+        <ion-grid>
+            <ion-row>
+                <div style="width: 100%; float: left;">
+                    <div class="onboarding-screen" *ngIf="active1">
+                        <img src="assets/onbard-image1.png" class="onboardimg">
+                        <div class="text-center bulletsHeight">
+                            <div class="text-center bullets" (click)="firstnext(0)">
+                            </div>
+                            <div class="text-center defaultbullet" (click)="firstnext(1)">
+                            </div>
+                            <div class="text-center defaultbullet" (click)="firstnext(2)">
+                            </div>
+                        </div>
+                        <div class="text-center" style="margin-bottom: 2.8vh;">
+                            <div class="onboard-text">
+                                <h5 [innerHTML]="page_name1"></h5>
+                                <p class="pageDesc" [innerHTML]="page_desc1">
+                                </p>
+                            </div>
+                        </div>
+                        <div class="text-center onboard-content">
+                            <button ion-button class="start-button" (click)="firstnext(1)">
+                                Next
+                            </button>
+                        </div>
+                    </div>
+                    <div class="onboarding-screen" *ngIf="active2">
+                        <img src="assets/onbard-image2.png" class="onboardimg">
+                        <div class="text-center bulletsHeight">
+                            <div class="text-center defaultbullet" (click)="firstnext(0)">
+                            </div>
+                            <div class="text-center bullets" (click)="firstnext(1)">
+                            </div>
+                            <div class="text-center defaultbullet" (click)="firstnext(2)">
+                            </div>
+                        </div>
+                        <p class="text-center">
+                            <span class="onboard-text">
+                                <h5 [innerHTML]="page_name2"></h5>
+                                <p class="pageDesc" [innerHTML]="page_desc2"></p>
+                            </span>
+                        </p>
+                        <div class="text-center onboard-content">
+                            <button ion-button class="start-button" (click)="firstnext(2)">
+                               Next
+                            </button>
+                        </div>
+                    </div>
+                    <div class="onboarding-screen" *ngIf="active3">
+                        <img src="assets/onbard-image3.png" class="onboardimg">
+                        <div class="text-center bulletsHeight">
+                            <div class="text-center defaultbullet" (click)="firstnext(0)">
+                            </div>
+                            <div class="text-center defaultbullet" (click)="firstnext(1)">
+                            </div>
+                            <div class="text-center bullets" (click)="firstnext(2)">
+                            </div>
+                        </div>
+                        <p class="text-center">
+                            <span class="onboard-text">
+                                <h5 [innerHTML]="page_name3"> </h5>
+                                <p class="pageDesc" [innerHTML]="page_desc3"></p>
+                            </span>
+                        </p>
+                        <div class="text-center onboard-content">
+                            <button ion-button class="start-button" (click)="firstnext(3)">
+                                Next
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+            </ion-row>
+        </ion-grid>
+    </ion-content>
+    <ion-footer className="ion-no-border" class="onboarding-footer">
+        <ion-toolbar>
+                    <div class="text-center" style="    padding: 0 5.997001499250374vh;">
+                        <!-- <button style="font-size: 2.398vh; width:50%;display: inline;" ion-button type="submit" id="input_submit" block>
+                            Continue
+                        </button>
+                        <button style="font-size: 2.398vh; width:50%;display: inline" ion-button type="submit" id="input_submit" block>
+                            Continue
+                        </button> -->
+                        <div class="faq" (click)="faq()" style="float: left;font-size: 4vw;
+                        color: rgba(32, 60, 32, 1);font-family: Montserrat-Medium;">FAQ</div>
+    
+                        <div class="skip" style="float: right;font-size: 4vw;
+                        color: rgba(32, 60, 32, 1);font-family: Montserrat-Medium;">
+                            <a href="javascript:void(0);" (click)="onboardingFirst()" style="font-size:4vw;
+                            color: rgba(32, 60, 32, 1);text-decoration: none;font-family: Montserrat-Medium;">Skip
+                                 <span style="line-height: 19px; display: inline-block; vertical-align: middle;">
+                                    <ion-icon name="ios-arrow-forward"></ion-icon>
+                                    <ion-icon name="ios-arrow-forward"></ion-icon>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+        </ion-toolbar>
+    </ion-footer>

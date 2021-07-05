@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">103.79.100.31</domain>
+        <domain includeSubdomains="true">68.183.87.209</domain>
+        <domain includeSubdomains="true">159.89.167.186</domain>
+        <domain includeSubdomains="true">app.mummymeals.in</domain>
+         <domain includeSubdomains="true">167.71.239.115</domain>
+    </domain-config>
+</network-security-config>

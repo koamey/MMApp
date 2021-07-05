@@ -1,0 +1,98 @@
+page-area-edit {
+	.list-ios
+	{
+		margin:0vh !important;
+	}
+	.areamodel .heading-title-box{
+		
+		background: #101e29;
+	
+	}
+	.areamodel .heading-title-box h6{
+			font-size: 3vh;
+		color: #fff !important;
+		margin: 0;
+		font-family: Montserrat-Bold;
+	}
+	}
+	.select-modal-rtms{
+		padding:25vh 4vh;
+		background: rgba(0, 0, 0, 0.5) !important;
+	}
+	.model-area-margin .label-md{
+		margin:0 !important
+	}
+	
+	.model-area-margin{
+			margin: -0.76vh 0vh;
+	}
+	.main-edit-preference.areamodel .heading-title-box {
+		padding:2.998500749625187vh 5.333vw;
+	}
+	.main-edit-preference.areamodel .heading-title-box h6{
+		line-height: 4.6vh;
+	}
+	.main-edit-preference.areamodel .model-area-margin.row {
+		height: 100%;
+		float: left;
+		margin:0 0 0;
+		overflow-y: scroll;
+	}
+	.main-edit-preference.areamodel .model-area-margin ion-list.list, 
+	.main-edit-preference.areamodel .model-area-margin ion-list.list ion-item {
+		height: 100%;
+	}
+	.main-edit-preference.areamodel .model-area-margin ion-list.list ion-item ion-label.label {
+		margin: 5.997001499250374vh 0 4.497751124437781vh  !important;
+		height: 100%;
+	}
+	.main-edit-preference.areamodel .model-area-margin ion-list.list ion-item ion-label.label div{
+		height: 100% !important;
+	}
+	.model-area-margin .label-md{
+		margin:0 !important
+	}
+	.main-edit-preference .row{
+		float: left;
+		width: 100%;
+	}
+	.main-edit-preference.areamodel .model-area-margin.row ion-item {
+		border: 0;
+		padding-left: 5.333vw !important;
+	}
+	// ion-content.main-edit-preference.areamodel.content.content-ios {
+	// 	max-height: 34vh;
+	// }
+
+	p.span-area span:nth-child(1) {
+		width: 55px;
+		display: block;
+		float: left;
+	}
+	p.span-area span:nth-child(2) {
+		width: 15px;
+		display: block;
+		float: left;
+		text-align: center;
+	}
+	p.span-area span:nth-child(3) {
+		width: calc(100% - 70px);
+		display: block;
+		float: left;
+	}
+	ion-footer.common-footer.login-otp-footer .toolbar:last-child {
+		padding-bottom: calc(constant(safe-area-inset-bottom) + 4px);
+		padding-bottom: calc(env(safe-area-inset-bottom) + 4px);
+		min-height: calc(100px + constant(safe-area-inset-bottom)) !important;
+		min-height: calc(100px + env(safe-area-inset-bottom)) !important;
+	}
+	.otp-receive {
+		font-size: 1.1666675485565rem;
+		color: rgb(114, 114, 114);
+		font-family: "Montserrat-SemiBold";
+	}
+	.otp-receive a {
+		text-decoration: none;
+		font-family: "Montserrat-SemiBold";
+		color: #f3a01c;
+	}

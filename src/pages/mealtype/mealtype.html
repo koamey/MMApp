@@ -1,0 +1,32 @@
+<ion-header no-border class="dit-type-header">
+  <ion-navbar>
+    <ion-buttons left>
+      <button ion-button icon-only (click)="Back()">
+        <img src="assets/imgicon/Group-white.svg" class="backWhiteIcon" >
+      </button>
+    </ion-buttons>
+    <ion-title text-center>STEP 1</ion-title>     
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="main-content meal-type-scroll">
+  <div class="screen-heading">
+    <span>Choose Your</span>
+    <h2> Meal Type</h2>
+  </div>
+
+  <div class="content-area">
+    <ion-grid>
+      <ion-row *ngFor="let mealTypes of mealTypeArr; let i=index">
+        <ion-col col-12 class="text-center" (click)="onClickMealType(mealTypes.meal)">
+          <div class="lunch-box" id='meal_{{mealTypes.id}}'>
+            <img *ngIf="mealTypes.meal!='Both'" class="img2" src="assets/Group 9@3x.svg">
+            <img *ngIf="mealTypes.meal=='Both'" class="img3" src="assets/Group 234@3x.svg">
+            <h4>{{mealTypes.meal}}</h4>
+            <p>Rs {{mealTypes.price}}</p>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+</ion-content>

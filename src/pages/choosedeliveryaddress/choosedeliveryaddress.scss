@@ -1,0 +1,201 @@
+
+.choose-delivery-heading .delevery-sub-heading .image-icon{
+    float: left;
+}
+
+.choose-delivery-heading .delevery-sub-heading .toolbar-title-md{
+    text-align: center !important;
+    margin-top: 1.0vh !important;
+    font-size: 1.3vh !important;
+    color: #fff;
+    margin-right: 2.5vh;
+}
+
+.choose-delivery-heading .delevery-sub-heading .toolbar-background-md{ 
+    background-color: rgb(32, 60, 82) !important;
+}
+
+.choose-delivery-time{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    // padding: 0 1.4vh 6vh 1vh;
+    background-color: #ffffff;
+    height: 85%;
+    border-top-left-radius: 2vh;
+    border-top-right-radius: 2vh;
+    box-shadow: 0 0 0.5vh #000;
+    overflow-y: scroll;
+    font-size: 1.7vh;
+}
+
+.EditSize{
+    height: 2.09vh !important;
+    width: 2.09vh !important;
+}
+
+.choose-delivery-time .col{
+    padding:0;
+}
+
+.choose-delivery-time .select-lunch .col-10{
+  padding: 0;
+}
+
+.choose-delivery-time .select-lunch .col{
+    padding: 0;
+}
+
+.choose-delivery-time .select-lunch h2{
+    color: #f29b11;
+    font-family: Montserrat-Bold;
+    font-size: 4.267vw;
+    margin: 4.497vh 0vh 2.99vh 0vh;
+}
+
+.choose-delivery-time .select-lunch .activ1{
+    border-radius: 1.049vh;
+    border: 0.149vh solid rgba(0, 0, 0, 0.7);
+    padding: 1.79vh 5.333vw 1.79vh 5.333vw;
+    margin: 0vh 5.333vw;
+}
+
+.choose-delivery-time .select-lunch .activ2{
+    border-radius: 1.049vh;
+    padding: 1.79vh 5.333333333333333vw 1.79vh 5.333333333333333vw;
+    margin: 0vh 5.333vw;
+}
+
+.choose-delivery-time .select-lunch .lunchArea label{
+    font-family: Montserrat-Bold;
+    font-size: 4vw;
+    line-height: 5.24vh;
+    text-transform: capitalize;
+    color: rgb(49, 74, 93);
+}
+
+.choose-delivery-time .select-lunch .lunchArea p{
+    font-family: Montserrat-Medium;
+    font-size: 3.733vw;
+    color: black;
+    margin: 0.449vh 0vh 0vh 0vh;
+    opacity: 70%;
+    line-height: 2.54vh;
+    margin: 0;
+    width: 48.533vw;
+}
+
+.choose-delivery-time .deliver_active{
+    margin-top: 2.99vh;   
+}
+
+.choose-delivery-time .deliver_active label{
+    color: rgb(49, 74, 93);
+    opacity: 50%;
+    font-size: 2.16vh;
+    line-height: 2.09vh;
+    font-family: Montserrat-SemiBold;
+}
+
+.choose-delivery-time .delivery-rows{
+    margin-top: 1.499vh;
+}
+
+.choose-delivery-time .delivery-rows .address-space1{
+    padding-left: 9vh;
+}
+
+.choose-delivery-time .delivery-rows .address-space2{
+    padding-right: 9vh;
+}
+
+.choose-delivery-time .delivery-rows .address_mark .checkmark{
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 0.6vh; 
+}
+
+.choose-delivery-time .delivery-rows .address_mark .checkmark .checkbox-ios .checkbox-checked{
+    border-color: rgb(242, 155, 17);
+    background-color: rgb(242, 155, 17);
+}
+
+.choose-delivery-time .delivery-rows .address_mark .days{
+ display: inline-block;
+ vertical-align: middle;
+}
+
+.choose-delivery-time .delivery-rows .address_mark .days label{
+    color: rgb(49, 74, 93);
+    font-size: 1.94vh;
+    font-family: Montserrat-SemiBold;
+    padding-left: 0.9vh;
+}
+
+.choose-delivery-time .checkbox-md .checkbox-checked {
+    border-color: rgb(242, 155, 17);
+    background-color: rgb(242, 155, 17)
+}
+
+
+.choose-delivery-time .checkbox-md .checkbox-checked .checkbox-inner{
+    left: 0.8vh !important;
+    top: 0.3vh !important;
+}
+
+.choose-delivery-time .checkbox-md .checkbox-icon{
+    height: 2.99vh !important;
+    width: 2.99vh !important;
+}
+
+.choose-delivery-time .button-ios{
+    background-color: rgb(216, 216, 216);
+    height: 8.24vh;
+    border-radius: 0.899vh;
+}
+
+.choose-delivery-time .button-md{
+    background-color: rgb(216, 216, 216);
+    height: 8.24vh;
+    // color: rgb(193, 193, 193);
+    border-radius: 0.899vh;
+}
+
+.choose-delivery-time .button-md .button-inner{
+    font-size: 2.39vh;
+    font-family: Montserrat-Bold;
+} 
+
+.choose-delivery-time .dileveryButton{
+    margin: 2.99vh;
+}
+.choose-delivery-time .dileveryButton .button-inner{
+    font-family: Montserrat-Bold;
+}
+
+.choose-delivery-time .meal-heading{
+    line-height: 3.5vh;
+    font-size: 1.5pt;
+    margin: 0vh; 
+}
+
+
+.removeunchecked .checkbox-md .checkbox-checked
+{
+    border-color: #787878 !important;
+    background-color: #fff !important;
+}
+
+// .choose-delivery-time .activ1{
+//     border:0.149vh solid #000;
+//  }
+ 
+//  .choose-delivery-time .activ2{
+//      border:0.149vh solid #00CC66;
+//  }
+// button.disable-hover {
+//     color: rgb(193, 193, 193);
+// }
+.dit-type-header .toolbar-title-ios{
+    font-size: 3.467vw !important;
+}

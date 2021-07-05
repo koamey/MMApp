@@ -1,0 +1,240 @@
+  
+  .module-screen {
+    background-size: cover;
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    .start-button {
+    color:rgb(49, 74, 93);
+    background:rgb(255, 255, 255) !important;
+    font-weight: normal;
+    text-transform: none;
+    font-size: 1.2vh;
+    border-radius: 0.8vh;
+    font-weight: 600;
+    }
+  }
+
+  .module-screen img.main-logo{
+    margin-top: 5.93vh;
+    width: 20.53vh;
+    height: 29.98vh;
+  }
+
+  .module-screen .col {
+    padding:0;
+  }
+  
+  .module-screen .grid{
+    padding:0;
+  }
+
+
+  .module-content {
+    border-top-left-radius: 3vh;
+    border-top-right-radius: 3vh;
+    width: 100%;
+    height:100%;
+    // height: 58.02vh;
+    position: absolute;
+    // bottom: 0;
+    background-color: rgb(32, 60, 82);
+    margin-top: 6.05vh;
+
+  }
+  
+  .module-content h2{
+    color: #fff;
+    text-align: center;
+    margin: 5.937vh 0vh 0vh 0vh;
+    font-size: 6.667vw;
+    line-height: 5.6vh;
+    font-family: Montserrat-Bold;
+  }
+  
+
+  .module-content p.module-text{
+    text-align: center;
+    font-size: 3.200vw;
+    font-family: Montserrat-Medium;
+    margin: 0.44vh 0vh 0vh 0vh;
+    color: white;
+    opacity: 65%;
+  }
+
+
+.module-content .module-area{
+  margin-top: 5.146vh;
+  padding: 0vh 3vh;
+}
+
+
+//indivisual User css start here
+
+.module-content .module-area .individual{
+  display: block;
+  background-color: white;
+  border-radius: 1.28vh;
+  // height: 8.8vh;
+  padding-top: 2.6vh;
+  padding-bottom: 2.6vh;
+  height: 8.245877061469265vh;
+}
+
+.module-content .module-area .individual .ind_user_img{
+  display:inline-block;
+  text-align:center;
+  margin-left: 4.19vh;
+  vertical-align: middle;
+}
+
+.module-content .module-area .individual .ind_user{
+  display:inline-block; 
+  color: rgb(49, 74, 93);
+  font-family: Montserrat-SemiBold;
+  font-size: 4.478vw;
+  margin-left: 3.47vh;
+  vertical-align: middle;
+}
+
+.module-content .module-area .individual .ind_icon{
+  display: inline-block;
+  font-size: 2.24vh;
+  margin-right: 3vh;
+  float: right;
+  vertical-align: middle;
+}
+//indivisual User css end here
+
+//corporate User css start here
+
+.module-content .module-area .corporate{
+  display: block;
+  background-color: white;
+  border-radius: 1.28vh;
+ // height: 8.8vh;
+ padding-top: 2.6vh;
+ padding-bottom: 2.6vh;
+  margin-top: 2.24vh;
+  height: 8.245877061469265vh;
+}
+
+.module-content .module-area .corporate .cor_user_img{
+  display:inline-block;
+  text-align:center;
+  margin-left: 2.9vh;
+  vertical-align: middle;
+}
+
+.module-content .module-area .corporate .cor_user{
+  display:inline-block; 
+  color: rgb(49, 74, 93);
+  font-family: Montserrat-SemiBold;
+  font-size: 4.478vw;
+  margin-left: 2.35vh;
+  vertical-align: middle;
+}
+
+.module-content .module-area .corporate .cor_icon{
+  display: inline-block;
+  font-size: 2.24vh;
+  margin-right: 3vh;
+  float: right;
+  vertical-align: middle;
+}
+//corporate User css end here
+
+//donate User css start here
+
+.module-content .module-area .donate{
+  display: block;
+  background-color: white;
+  border-radius: 1.28vh;
+  // height: 8.8vh;
+  padding-top: 2.6vh;
+  padding-bottom: 2.6vh;
+  margin-top: 2.24vh;
+  height: 8.245877061469265vh;
+}
+
+.module-content .module-area .donate .don_user_img{
+  display:inline-block;
+  text-align:center;
+  margin-left: 3.97vh;
+  vertical-align: middle;
+}
+
+.module-content .module-area .donate .don_user{
+  display:inline-block; 
+  color: rgb(49, 74, 93);
+  font-family: Montserrat-SemiBold;
+  font-size: 4.478vw;
+  margin-left: 3.19vh;
+  vertical-align: middle;
+}
+
+.module-content .module-area .donate .don_icon{
+  display: inline-block;
+  font-size: 2.24vh;
+  margin-right: 3vh;
+  float: right;
+  vertical-align: middle;
+}
+
+//donate User css end here
+
+p.term-condition{
+  color: #b1bbc2;
+  font-size: 1.7vh;
+  text-align: center;
+  line-height: 2.6vh;
+  margin: 0;
+}
+ //*---module css--*/
+
+.content .scroll-content {
+ overflow-y: auto !important;
+ }
+
+.module-content {
+  width: 100%;
+  height: 58.03vh;
+  max-height: 58.02098950524738vh;
+  margin-top: 0;
+  min-height: 58.02098950524738vh;
+  overflow-y: auto;
+  bottom: auto;
+  top: 41.97vh;
+}
+.module-content .module-area {
+  width: 100%;
+}
+.module-area.module-footer {
+  margin-top: 0;
+}
+.module-logo {
+  height: 41.97vh;
+}
+.module-logo .grid, .module-logo .row, .module-logo ion-col {
+  height: 100%;
+}
+.module-screen img.main-logo {
+  margin: 5.96vh 0;
+  width: 36.480vw;
+  height: 29.985007496251875vh;
+}
+ion-content.module-main {
+  height: 100%;
+}
+ion-content.module-main .scroll-content {
+  overflow-y: hidden !important;
+}
+ion-footer.main-module-footer ion-toolbar.toolbar {
+  padding-bottom: calc(constant(safe-area-inset-bottom) + 4px);
+  padding-bottom: calc(env(safe-area-inset-bottom) + 4px);
+  min-height: calc(44px + constant(safe-area-inset-bottom)) !important;
+  min-height: calc(44px + env(safe-area-inset-bottom)) !important;
+}
+ion-footer.main-module-footer .toolbar-background {
+  background: transparent !important;
+}

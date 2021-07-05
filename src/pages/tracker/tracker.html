@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Order tracker</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <div class="tracker">
+    <div class="item" *ngFor="let item of tracker.statuses; let i = index" [ngClass]="{ '-done': curStatus >= i, '-current': curStatus == i }">
+      <div class="lbl">
+        <ion-icon name="checkmark" *ngIf="curStatus >= i"></ion-icon>
+        <ion-icon ios="md-time" md="md-time" *ngIf="curStatus < i"></ion-icon>
+        {{ item.name }}
+      </div>
+    </div>
+  </div>
+</ion-content>

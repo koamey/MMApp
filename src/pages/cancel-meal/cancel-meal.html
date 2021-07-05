@@ -1,0 +1,122 @@
+<ion-header no-border class="dit-type-header cancel-opacity">
+  <ion-navbar>
+    <ion-buttons left>
+      <button ion-button icon-only (click)="Back()">
+        <img src="assets/imgicon/Group_51.svg" class="backWhiteIcon">
+      </button>
+    </ion-buttons>
+    <ion-title text-center>CANCEL MEALS</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="main-content cancel-scroll">
+  <div class="screen-heading">
+    <span>Choose</span>
+    <h2>Date & Meal</h2>
+  </div>
+  <div class="choose-cancelmeal">
+    <ion-grid>
+      <ion-row text-center>
+        <ion-col>
+          <label>
+            <h5>CHOOSE DATE/RANGE</h5>
+            <h4>FROM</h4>
+          </label>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col col-12 class="text-center">
+          <ion-item>
+            <ion-datetime class="datetime-text-from" displayFormat="DD MMMM YYYY" [min]="today1" [max]="minDate2"
+              [(ngModel)]="selecteddate1" (ngModelChange)="fromSelectdate()"></ion-datetime>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col col-12 class="text-center">
+          <label>
+            <h4>TO</h4>
+          </label>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col col-12 class="text-center">
+          <ion-item>
+            <ion-datetime class="datetime-text-from" displayFormat="DD MMMM YYYY" [min]="minDate1" [max]="maxDate"
+              [(ngModel)]="selecteddate2" (ngModelChange)="toSelectdate()" [disabled]="selecteddate1==''">
+            </ion-datetime>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col col-12 class="text-center">
+          <h5>CHOOSE MEAL TYPE</h5>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <div class="cancel-meal-type-color">
+      <ion-list>
+        <ion-row>
+          <!-- for lunch -->
+          <ion-col col-12 *ngIf="mealType=='Lunch'" class="mealtype-checked">
+              <ion-radio type="radio" mode="md" value="Lunch" name="lunch" (click)="radioGroupChange('Lunch')" [checked]="rdDefaultLunch" [disabled]="toDate==''"></ion-radio>
+           <!--  <input type="radio" [checked]="rdDefaultLunch" id="lunch" name="lunch" mode="md" value="Lunch"
+              (click)="radioGroupChange('Lunch')" [disabled]="toDate==''"/> -->
+            <label *ngIf="toDate==''">Lunch</label>
+            <label (click)="radioGroupChange('Lunch')" *ngIf="toDate!=''">Lunch</label>
+          </ion-col>
+          <!-- for dinner -->
+          <ion-col col-12 *ngIf="mealType=='Dinner'" class="mealtype-checked">
+             <ion-radio type="radio" mode="md" [checked]="rdDefaultDinner" value="Dinner" name="dinner" (click)="radioGroupChange('Dinner')" [disabled]="toDate==''"></ion-radio>
+           <!--  <input type="radio" [checked]="rdDefaultDinner" id="dinner" name="dinner" mode="md" value="Dinner"
+              (click)="radioGroupChange('Dinner')" [disabled]="toDate==''"/> -->
+            <label *ngIf="toDate==''">Dinner</label>
+            <label (click)="radioGroupChange('Dinner')" *ngIf="toDate!=''">Dinner</label>
+          </ion-col>
+
+          <!-- for both -->
+
+          <ion-col col-6 *ngIf="mealType=='Both'" class="mealtype-checked">
+             <ion-radio type="radio" mode="md" value="Lunch" name="lunch" (click)="radioGroupChange('Lunch')" [disabled]="toDate==''" [checked]="rdDefaultLunch"></ion-radio>
+            <!-- <input type="radio" [checked]="rdDefaultLunch" id="lunch" name="lunch" mode="md" value="Lunch" (click)="radioGroupChange('Lunch')" [disabled]="toDate==''"/> -->
+          <label *ngIf="toDate==''">Lunch</label>
+            <label (click)="radioGroupChange('Lunch')" *ngIf="toDate!=''">Lunch</label>
+          </ion-col>
+
+          <ion-col col-6 *ngIf="mealType=='Both'" class="mealtype-checked">
+             <ion-radio type="radio" mode="md" value="Dinner" name="Dinner" (click)="radioGroupChange('Dinner')" [disabled]="toDate==''" [checked]="rdDefaultDinner"></ion-radio>
+           <!--  <input type="radio" [checked]="rdDefaultDinner" id="dinner" name="dinner" mode="md" value="Dinner"
+              (click)="radioGroupChange('Dinner')" [disabled]="toDate==''"/> -->
+             <label *ngIf="toDate==''">Dinner</label>
+            <label (click)="radioGroupChange('Dinner')" *ngIf="toDate!=''">Dinner</label>
+          </ion-col>
+
+        </ion-row>
+
+      </ion-list>
+    </div>
+    <div class="text-center">
+      <p class="remain-count">Remaining <span>{{countMeal}} Meals</span> Cancellations
+      </p>
+      <p class="footer-contents">
+        <span>*</span>The action of cancelling meals can not be reverted or changed later. please make sure before
+        confirmation.
+      </p>
+
+
+    </div>
+
+    <ion-grid class="footer-color">
+      <ion-row>
+        <ion-col>
+          <button class="button-class-cancel" type="submit" id="input_submit" block (click)="onSubmit()"
+            [style.background]="submitButton" [style.color]='submitButtoncolor'>
+            Confirm Cancellation
+          </button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+</ion-content>

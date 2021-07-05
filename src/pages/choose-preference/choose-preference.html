@@ -1,0 +1,73 @@
+<ion-header no-border class="dit-type-header" *ngIf="platformclose==true">
+  <ion-navbar>
+    <ion-buttons left>
+      <button ion-button icon-only (click)="Back()" [disabled]="customise">
+        <img src="assets/imgicon/Group-white.svg" class="backWhiteIcon">
+      </button>
+    </ion-buttons>
+    <ion-title text-center (click)="close()" >STEP 2</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-header no-border class="dit-type-header" *ngIf="platformclose==false">
+  <ion-navbar>
+    <ion-buttons left>
+      <button ion-button icon-only (click)="Back()" [disabled]="customise">
+        <img src="assets/imgicon/Group-white.svg" class="backWhiteIcon">
+      </button>
+    </ion-buttons>
+    <ion-title text-center>STEP 2</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content class="main-content main-content-scroll">
+  <div class="screen-heading" (click)="close()" *ngIf="platformclose==true">
+    <span>Choose Your</span>
+    <h2>Preference</h2>
+  </div>
+  <div class="screen-heading" *ngIf="platformclose==false">
+    <span>Choose Your</span>
+    <h2>Preference</h2>
+  </div>
+  <div class="content-area">
+    <div class="choosepref">
+      <ion-grid>
+        <ion-row>
+          <ion-col col-12 class="text-center" *ngFor="let preferences of prefernceTypArr; let i=index">
+            <div id={{preferences.meal}} class="meal-box">
+              <img id="img_rice_meal" *ngIf="preferences.meal=='Lunch Meal'" class="img2" src="{{lunchmeal_img}}">
+              <img id="img_roti_meal" *ngIf="preferences.meal=='Dinner Meal'" class="img3" src="{{dinnermeal_img}}">
+              <h4 *ngIf="preferences.meal=='Lunch Meal'">Lunch</h4>
+              <h4 *ngIf="preferences.meal=='Dinner Meal'">Dinner</h4>
+              <p *ngIf="preferences.meal=='Lunch Meal'" >{{preferenceProducts}}</p>
+              <p *ngIf="preferences.meal=='Dinner Meal'">{{preferenceProductsDinner}}</p>
+              <div>
+                <div class="customization" (click)="onclickCustomize(preferences.meal)"
+                  [style.background]="buttonColor">
+                  <div class="edit-customization">
+                    <img class="pencil" src="assets/choosePreference/edit-2_1_.svg">
+                    <p class="custo">Customize</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </ion-col>
+        </ion-row>
+       
+      </ion-grid>
+    </div>
+  </div>
+</ion-content>
+<ion-footer className="ion-no-border" class="footer-common">
+  <ion-toolbar>
+    <ion-row style="padding: 0; border-radius: 0.899vh; margin: 0 5.333vw;width: calc(100% - 5.997vh);">
+      <ion-col style="padding: 0;">
+        <div class="text-center">
+          <button class="button" style="font-size: 2.398vh;margin: 0;height: 8.245vh;" ion-button type="submit" id="input_submit"
+            [style.color]="subcolor" [style.background]="submitbuttonColor" block (click)="onSubmit()">
+            Continue
+          </button>
+        </div>
+      </ion-col>
+    </ion-row>
+    </ion-toolbar>
+    </ion-footer>
+

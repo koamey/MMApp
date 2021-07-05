@@ -1,0 +1,269 @@
+<ion-header no-border class="dit-type-header">
+  <ion-navbar>
+    <ion-buttons left>
+      <button ion-button icon-only (click)="Back()">
+        <img src="assets/imgicon/Group_51.svg" class="backWhiteIcon">
+      </button>
+    </ion-buttons>
+    <ion-title text-center>STEP 4</ion-title>     
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="main-content">
+  <div class="screen-heading">
+    <span>Choose Your</span>
+    <h2> Delivery Address</h2>
+  </div>
+
+  <div class="choose-delivery-time" style="padding-bottom: 14vh;">
+    <ion-grid>
+      <div class="select-lunch" *ngIf="ActiveLunch">
+        <ion-row>
+          <ion-col class="text-center">
+            <label *ngIf="ActiveLunch">
+              <h2>LUNCH</h2>
+            </label>
+          </ion-col>
+        </ion-row>
+
+        <div id="Lunchadd1" *ngIf="disablebox=='1'" [class]="Ldiv11" [style.background]="Ldiv1" class="onboard-click" block
+          (click)="onclicklunch1()" [style.color]="th1">
+          <ion-row>
+            <ion-col col-10>
+              <div class="lunchArea">
+                <label [style.color]="th1">{{Haddtype}}</label>
+                <p [style.color]="tl1">
+                  {{homestring}}</p>
+              </div>
+            </ion-col>
+            <ion-col col-2 style="vertical-align: middle; margin:auto; text-align: right;">
+              <div>
+                <img src="{{pencilimghomelunch}}" alt="Edit-address" (click)="editaddress()" class="EditSize">
+              </div>
+            </ion-col>
+          </ion-row>
+        </div>
+
+         <div id="Lunchadd1" *ngIf="disablebox=='0'" [class]="Ldiv11" class="onboard-click" block style="background: rgb(255, 255, 255);    border: 0.149vh solid rgba(0, 0, 0, 0.7);">
+          <ion-row>
+            <ion-col col-10>
+              <div class="lunchArea">
+                <label style="color: rgb(0, 0, 0);">{{Haddtype}}</label>
+                <p style="color:black  !important;padding: 0.45vh 0.30;">
+                  Address Not Entered</p>
+              </div>
+            </ion-col>
+            <ion-col col-2 style="vertical-align: middle; margin:auto; text-align: right;">
+              <div>
+                <img src="{{pencilimghomelunch}}" alt="Edit-address" (click)="editaddress()" class="EditSize">
+              </div>
+            </ion-col>
+          </ion-row>
+        </div>
+        <br>
+
+        <div id="Lunchadd2" [class]="Ldiv21" *ngIf="disablebox2=='1'" [style.background]="Ldiv2" class="onboard-click" block
+          (click)="onclicklunch2()" [style.color]="tw1">
+          <ion-row>
+            <ion-col col-10>
+              <div class="lunchArea">
+                <label [style.color]="tw1">{{Waddtype}}</label>
+                <p [style.color]="tl2">
+                  {{workstring}}</p>
+              </div>
+            </ion-col>
+            <ion-col col-2 style="vertical-align: middle; margin:auto; text-align: right;">
+              <div>
+                <img src="{{pencilimgworklunch}}" alt="Edit-address" (click)="editaddress()" class="EditSize">
+              </div>
+            </ion-col>
+          </ion-row>
+        </div>
+
+         <div id="Lunchadd2" [class]="Ldiv21" *ngIf="disablebox2=='0'"  class="onboard-click" block style="background: rgb(255, 255, 255);    border: 0.149vh solid rgba(0, 0, 0, 0.7);">
+          <ion-row>
+            <ion-col col-10>
+              <div class="lunchArea">
+                <label style="color: rgb(0, 0, 0);">{{Waddtype}}</label>
+                <p style="color: black;padding: 0.45vh 0.30;">Address Not Entered</p>
+              </div>
+            </ion-col>
+            <ion-col col-2 style="vertical-align: middle; margin:auto; text-align: right;">
+              <div>
+                <img src="{{pencilimgworklunch}}" alt="Edit-address" (click)="editaddress()" class="EditSize">
+              </div>
+            </ion-col>
+          </ion-row>
+        </div>
+
+        <div *ngIf="Activechk1">
+          <ion-row>
+            <ion-col col-12 text-center class="deliver_active">
+              <label *ngIf="activedinner">Deliver To Home Address on</label>
+            </ion-col>
+          </ion-row>
+          <ion-row class="delivery-rows" id="checkedunchecked">
+            <ion-col col-6 text-center class="address_mark address-space1">
+              <div class="checkmark" >
+                <ion-checkbox class="checkbox-square"  aria-checked="rdDefaultdsat" (click)="LaddValue1($event)" [(ngModel)]="Lchecked1" [checked]="rdDefaultdsat">
+                </ion-checkbox>
+              </div>
+              <div class="days">
+                <label>
+                  Saturday
+                </label>
+              </div>
+            </ion-col>
+            <ion-col col-6 text-center class="address_mark address-space2">
+              <div class="checkmark">
+                <ion-checkbox class="checkbox-square" (click)="LaddValue2($event)" [(ngModel)]="Lchecked2" [checked]="rdDefaultdsun">
+                </ion-checkbox>
+              </div>
+              <div class="days">
+                <label>
+                  Sunday
+                </label>
+              </div>
+            </ion-col>
+          </ion-row>
+        </div>
+      </div>
+     
+
+
+
+
+      <div class="select-lunch" *ngIf="ActiveDinner">
+        <ion-row>
+          <ion-col class="text-center">
+            <label *ngIf="ActiveDinner">
+              <h2>DINNER</h2>
+            </label>
+          </ion-col>
+        </ion-row>
+
+        <div id='Dinneradd1' [class]="Ddiv11" *ngIf="disablebox=='1'" [style.background]="Ddiv1" class="onboard-click" block
+          (click)="onclickdinner1()" [style.color]="th2">
+          <ion-row>
+            <ion-col col-10>
+              <div class="lunchArea">
+                <label [style.color]="th2">{{Haddtype}}</label>
+                <p [style.color]="td1">
+                  {{homestring}}</p>
+              </div>
+            </ion-col>
+            <ion-col col-2 style="vertical-align: middle; margin:auto; text-align: right;">
+              <div>
+                <img src="{{pencilimghomedinner}}" alt="Edit-address" (click)="editaddress()" class="EditSize">
+              </div>
+            </ion-col>
+          </ion-row>
+        </div>
+
+        <div id='Dinneradd1' [class]="Ddiv11" *ngIf="disablebox=='0'" class="onboard-click" block style="background: rgb(255, 255, 255);    border: 0.149vh solid rgba(0, 0, 0, 0.7);">
+          <ion-row>
+            <ion-col col-10>
+              <div class="lunchArea">
+                <label style="color: rgb(0, 0, 0);">{{Haddtype}}</label>
+                <p style="color: black;padding: 0.45vh 0.30;">
+                  Address Not Entered</p>
+              </div>
+            </ion-col>
+            <ion-col col-2 style="vertical-align: middle; margin:auto; text-align: right;">
+              <div>
+                <img src="{{pencilimghomedinner}}" alt="Edit-address" (click)="editaddress()" class="EditSize">
+              </div>
+            </ion-col>
+          </ion-row>
+        </div>
+        <br>
+
+        <div id='Dinneradd2' [class]="Ddiv21" *ngIf="disablebox2=='1'" [style.background]="Ddiv2" class="onboard-click" block
+          (click)="onclickdinner2()" [style.color]="tw2">
+          <ion-row>
+            <ion-col col-10>
+              <div class="lunchArea">
+                <label [style.color]="tw2">{{Waddtype}}</label>
+                <p [style.color]="td2">
+                  {{workstring}}</p>
+              </div>
+            </ion-col>
+            <ion-col col-2 style="vertical-align: middle; margin:auto; text-align: right;">
+              <div>
+                <img src="{{pencilimgworkdinner}}" alt="Edit-address" (click)="editaddress()" class="EditSize">
+              </div>
+            </ion-col>
+          </ion-row>
+        </div>
+
+
+        <div id='Dinneradd2' [class]="Ddiv21" *ngIf="disablebox2=='0'"  class="onboard-click" block style="background: rgb(255, 255, 255);    border: 0.149vh solid rgba(0, 0, 0, 0.7);">
+          <ion-row>
+            <ion-col col-10>
+              <div class="lunchArea">
+                <label style="color: rgb(0, 0, 0);">{{Waddtype}}</label>
+                <p style="color: black;padding: 0.45vh 0.30;">
+                 Address Not Entered</p>
+              </div>
+            </ion-col>
+            <ion-col col-2 style="vertical-align: middle; margin:auto; text-align: right;">
+              <div>
+                <img src="{{pencilimgworkdinner}}" alt="Edit-address" (click)="editaddress()" class="EditSize">
+              </div>
+            </ion-col>
+          </ion-row>
+        </div>
+
+        <div *ngIf="Activechk2">
+          <ion-row>
+            <ion-col col-12 text-center class="deliver_active">
+              <label *ngIf="activedinner1">Deliver To Home Address on</label>
+            </ion-col>
+          </ion-row>
+
+          <ion-row class="delivery-rows" id="checkeduncheckeds">
+            <ion-col col-6 text-center class="address_mark address-space1">
+              <div class="checkmark" >
+                <ion-checkbox class="checkbox-square" (click)="DaddValue1($event)" [(ngModel)]="Dchecked1" [checked]="rdDefaultdsatd">
+                </ion-checkbox>
+              </div>
+              <div class="days">
+                <label>
+                  Saturday
+                </label>
+              </div>
+            </ion-col>
+            <ion-col col-6 text-center class="address_mark address-space2">
+              <div>
+                <div class="checkmark">
+                  <ion-checkbox class="checkbox-square" (click)="DaddValue2($event)" [(ngModel)]="Dchecked2" [checked]="rdDefaultdsund">
+                  </ion-checkbox>
+                </div>
+                <div class="days">
+                  <label>
+                    Sunday
+                  </label>
+                </div>
+              </div>
+            </ion-col>
+          </ion-row>
+        </div>
+      </div>
+      <br>
+
+      
+    </ion-grid>
+  </div>
+</ion-content>
+<ion-footer className="ion-no-border" class="footer-common" style="background-color: #fff;">
+  <ion-toolbar>
+<ion-row>
+  <ion-col class="dileveryButton" style="padding:0vh 4vw;">
+    <button ion-button type="submit" id="input_submit" class="onboard-click" block [style.background]="conbut1"
+      (click)="onclickAddress()" style="margin: 0;">
+      Checkout
+    </button>
+  </ion-col>
+</ion-row>
+</ion-toolbar>
+</ion-footer>

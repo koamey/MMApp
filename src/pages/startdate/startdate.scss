@@ -1,0 +1,51 @@
+.datetime-text:empty:not(:focus):before{
+    content: "DATE - MONTH - YEAR"
+}
+
+.content-area .startdate{
+    .grid{
+        padding: 0 !important;
+        margin: 0 !important;    
+    }
+}
+
+.content-area .startdate .item-md{
+    padding-left: 0vh !important; 
+}
+.content-area .startdate .item-ios{
+    padding-left: 0vh !important; 
+}
+.content-area .startdate .item-inner{
+    padding-right: 0vh !important; 
+}
+
+.content-area .startdate .datetime-text{
+    margin: 0vh !important;
+    font-size: 2.248vh !important;
+    font-family: Montserrat-Bold;
+    text-transform: uppercase;       
+    text-align: center;
+    width: 20.38vh;
+    height: 5.58vh;
+    letter-spacing: 0.022vh;
+}
+
+
+.content-area .startdate .coloropacity1{
+    opacity: 40%;
+    color: rgb(0,0,0); 
+}
+
+.content-area .startdate .coloropacity{
+    opacity: unset;
+    color: rgb(49, 74, 93);
+}
+
+.choose-date .item-md.item-block .item-inner{
+   padding-right: 0vh; 
+}
+
+.startdate .button-inner{
+    font-size: 2.39vh;
+    font-family: Montserrat-Bold;
+ }

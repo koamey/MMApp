@@ -1,0 +1,175 @@
+
+.content-area .choosepref .grid{
+    padding: 0 !important;
+    margin-top: 1.497vh !important;
+}
+.content-area h4{
+    // color: rgb(242, 155, 17);
+    color: rgb(32, 60, 82);
+    font-size: 2.398vh;
+    margin: 0;
+    margin-bottom: 1.949vh;
+    font-family: Montserrat-Bold;
+}
+
+.content-area .meal-box{
+    border-radius: 1.19vh;
+    text-align: center;
+    width: calc(100% - 20.734vw);
+    margin: 4vw auto 0 auto;
+    border: 0.14vh solid rgba(29, 51, 67, 0.2);
+    height: 28.635682158920538vh;
+}
+
+.content-area .meal-box .img2{
+    margin-top: 2.39880059970015vh;
+    width: 7.796101949025488vh;
+    height: 7.796101949025488vh;
+}
+.content-area .meal-box .img3{
+    margin-top: 2.39vh;
+    width: 8.095vh;
+    height: 8.095vh;
+}
+.content-area .meal-box h4{
+    margin-top: 0.5997001499250375vh;
+    font-family: Montserrat-SemiBold;
+    font-size: 4vw;
+    margin-bottom: 0;    
+ }
+ .content-area .meal-box p{
+    font-family: Montserrat-SemiBold;
+    font-size: 3.3vw;
+    text-align: center;
+    margin: 0.7496251874062968vh auto 2.39880059970015vh auto;
+    color: rgb(49, 74, 93);
+    width: 60vw;
+    opacity: 70%;
+ }
+.content-area .meal-heading{
+    line-height: 3.5vh;
+    font-size: 1.6vh;
+    margin: 0vh;
+    font-family: Montserrat-SemiBold;
+}
+.content-area .button-md{
+    font-size: 2.398vh;
+        height: 8.245vh; 
+        background-color: rgb(216, 216, 216);
+        //background: linear-gradient(to bottom, rgb(255,206,128) -80%, rgb(242,156,17) 100%);
+        text-transform: none;
+        border-radius: 0.899vh;
+        box-shadow: none;
+}
+.content-area .button-ios{
+    font-size: 2.398vh;
+    height: 8.245vh; 
+    background-color: rgb(216, 216, 216);
+   // background: linear-gradient(to bottom, rgb(255,206,128) -80%, rgb(242,156,17) 100%);
+    text-transform: none;
+    border-radius: 0.899vh;
+    box-shadow: none;
+}
+.customization{
+    width: 28.267vw;
+    background: #f1f1f2 !important;
+    border-radius: 2.09vh !important;
+    text-align: center;
+    color: #1f3b51;
+    height: 4.497751124437781vh;
+    margin: auto auto 2.39vh;
+    position: relative;
+    .edit-customization{
+        margin: auto;        
+        text-align: center;
+        padding-top: 0.8vh;
+        vertical-align: middle;
+        img{
+            display: inline;
+            width: 2.667vw;
+            height: 1.799vh;
+            vertical-align: middle;
+        }
+        p.custo{
+            vertical-align: middle;
+            font-family: Montserrat-SemiBold;
+            color:rgb(31, 59, 81);
+            font-size: 2.933vw; 
+            text-align: center;            
+            display: inline;
+            margin: 0vh;
+            padding: 0vh;
+        }
+    }
+    
+}
+
+.select-modal-rcm {
+    background: rgba(0, 0, 0, 0.5) !important;
+    padding-top: 31.188vh;
+ }
+ .select-modal-rtm {
+    background: rgba(0, 0, 0, 0.5) !important;
+    padding-top: 42.188vh;
+ }
+
+ .choosepref .button-inner{
+    font-size: 2.39vh;
+    font-family: Montserrat-Bold;
+ }
+ .content-area .choosepref {
+    width: 100%;
+    float: left;
+}
+.customization .edit-customization {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    height: auto;
+    padding: 0;
+}
+ion-modal.select-modal-rcm {
+    padding-top: 21.331521739130434vh;
+}
+
+ion-footer.footer-common .toolbar-background {
+    background: transparent !important;
+}
+body page-choose-preference .main-content.main-content-scroll .scroll-content {
+    overflow-y: hidden !important;
+}
+.button-ios, .button-md {
+    background: #f3a01c;
+    border-radius: 6px !important;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+ion-datetime.datetime-text.coloropacity {
+    color: #000;
+}
+.header-ios .toolbar-ios:last-child .toolbar-background-ios {
+    border: 0 !important;
+    border-width: 0 0 0 !important;
+}
+.picker-wrapper .picker-toolbar {
+    border-bottom: 0;
+}
+page-choose-preference .content-area .choosepref .grid {
+    margin-top: 0 !important;
+}
+.submit-otp1 button {
+    height: 14.667vw !important;
+}
+.common-footer.login-otp-footer .aboutButton {
+    height: 4.5833367979007rem !important;
+}
+page-where-to-delivere .dit-type-header .toolbar-title {
+    opacity: 1;
+}
+// ion-footer.main-module-footer {
+//     padding-bottom: 3vh !important;
+// }

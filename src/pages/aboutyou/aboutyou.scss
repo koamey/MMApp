@@ -1,0 +1,250 @@
+
+.aboutyou .col{
+  padding:0;
+  
+}
+page-aboutyou{
+  .scroll-content {
+        overflow-y: scroll !important;
+    }
+    ion-select .select-text{
+      font-weight: bold;
+      font-size: 1.50rem !important;
+      font-family: "Montserrat-Regular";
+
+    }
+}
+.aboutyou{
+  padding: 0vh 5.333vw;
+  padding-bottom: 50vw;
+}
+
+.aboutyou .back-icon{
+  margin-top: 4.15vh;
+  padding: 1.2vh 0vh;
+}
+
+.aboutyou .back-icon .backIcon{
+  width: 4.49vh;
+  height: 4.49vh;
+}
+
+.aboutyou .about-headings{
+  margin-top:3.12vh;
+}
+.aboutyou .about-headings h1{
+  font-family: Montserrat-Bold;
+  font-size: 7.466666666666667vw;
+  color: #203c52;
+  line-height: 9.333333333333334vw;
+  margin: 0;
+}
+.aboutyou .about-headings p{
+  color: black;
+  opacity: 65%;
+  font-size: 3.7vw;
+  line-height: 9.333333333333334vw;
+  margin: 00vh 0vh 0vh;
+  font-family: Montserrat-Light;
+}
+.aboutyou .user_info h3{
+  color: #f29b11;
+  font-size: 3.466666666666667vw;
+  margin: 3vh 0vh 0vh 0vh;
+  font-family: Montserrat-Bold;
+  letter-spacing: 0.034666666666666665vw;
+  line-height: 4.266666666666667vw;
+}
+
+.aboutyou .item-ios {
+  padding-left: 0;
+}
+
+.aboutyou .item-md{
+  padding-left:0;
+}
+
+.aboutyou .user_field{
+  color: rgb(170, 170, 170);
+  font-family: Montserrat-Bold;
+  font-size: 2.24vh;
+}
+
+.aboutyou .text-input-ios{
+  color:rgb(49, 74, 93);
+  font-family: Montserrat-SemiBold;
+  letter-spacing: 0.020vh;
+}
+.text-input {
+  font-size: 3.7333333333333334vw;
+  color: #314a5d;
+  margin-bottom: 1.667vw !important;
+}
+.aboutyou .item-md.item-input.ng-invalid.ng-touched:not(.input-has-focus):not(.item-input-has-focus) .item-inner{
+  border-bottom-color: 0.55px solid rgb(243, 160, 28) !important;
+  box-shadow: none !important;
+}
+.aboutyou .item-md.item-input.ng-invalid.ng-touched:not(.input-has-focus):not(.item-input-has-focus) .item-inner{
+  border-bottom-color: rgb(243, 160, 28) !important;
+}
+
+.aboutyou .item-md.item-input.ng-valid.item-input-has-value:not(.input-has-focus):not(.item-input-has-focus) .item-inner, .item-md.item-input.ng-valid.input-has-value:not(.input-has-focus):not(.item-input-has-focus) .item-inner {
+  border-bottom-color: rgb(243, 160, 28) !important;
+}
+
+.aboutyou .aboutButton{
+  top:14vh;
+  padding: 2.1vh 0vh;
+  height: 8.245vh;
+  border-radius: 0.899vh;
+  background: linear-gradient(to bottom, rgba(255,206,128,1) -80%, rgba(242,156,17,1) 100%);
+  box-shadow: none;
+}
+.aboutyou .aboutButton .button-inner{
+  font-family: Montserrat-Bold;
+  font-size: 2.398vh;
+  color: rgb(255, 255, 255);
+}
+
+.aboutyou .bottomButton{
+  position: relative;
+  bottom: 1.1vh;
+  width: 100%;
+}
+
+
+/*25-5-20 Popup radio with text color design css start here*/
+.item-radio.item-md ion-label{
+  font-family: Montserrat-SemiBold;
+  font-size: 2.09vh;
+  color: #acacac;
+}
+.item-radio-checked.item-md ion-label{
+  color: #f09a12;
+}
+ .radio-md .radio-checked{
+  border-color: #f09a12;
+}
+ .radio-md .radio-inner{
+  background-color: #f09a12;
+}
+
+//IOS
+ion-label.label.label-ios{
+  font-family: Montserrat-SemiBold;
+  font-size: 1.0833341522311rem;
+  color: #acacac;
+}
+.item-radio-checked.item-ios ion-label{
+  color: #f09a12;
+}
+
+.radio-ios .radio-checked .radio-inner{
+  border-color: #f09a12;
+}
+
+.alert-md .alert-title{
+  font-family: Montserrat-SemiBold;
+  font-size: 18px;
+}
+
+.alert-md .alert-radio-label{
+  font-family: Montserrat-SemiBold;
+  font-size: 2.09vh;
+  color: #acacac;
+}
+
+.alert-md [aria-checked=true] .alert-radio-label{
+  color: #f09a12;
+  font-family: Montserrat-SemiBold;
+  font-size: 2.09vh;
+}
+.alert-md [aria-checked=true] .alert-radio-icon{
+  border-color: #f09a12;
+}
+.alert-md .alert-radio-inner{
+  background-color: #f09a12;
+}
+
+.alert-md .alert-button{
+  color: #f09a12;
+}
+/*25-5-20 Popup radio with text color design css end here*/
+.Aboutyoudropdown .select-text{
+  font-size: 1.25rem !important;
+  font-family: Montserrat-SemiBold !important;
+}
+
+.popover-content {
+  //top: 25vh !important;
+}
+
+.aboutyou .button-md{
+  text-transform: capitalize;
+}
+
+.item-md.item-block .item-inner{
+  padding-right: 0;
+}
+// ion-content.about-content .scroll-content {
+//   overflow-y: hidden !important;
+// }
+ion-content.main-edit-preference.areamodel.content{
+  width: calc(100% - 8vh);
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+ion-modal.select-modal-rtmsprof ion-content.main-edit-preference.areamodel.content {
+  height: 36vh;
+}
+ion-modal.select-modal-rtmsprof {
+  padding: 0;
+}
+ion-content.about-content form ion-input input {
+  margin-top: 0 !important;
+}
+.reffer-code ion-input input.text-input {
+  margin: 0 !important;
+  height: 9.066666666666666vw !important;
+}
+.reffer-code button#input_submit {
+  height: 9.066666666666666vw !important;
+}
+.button-ios span, .button-md span {
+  font-size: 4.267vw;
+  font-family: Montserrat-Bold;
+}
+.item-input ion-input, .item-input ion-textarea{
+  font-size: 5.733333vw;
+  font-family: Montserrat-Bold !important;
+}
+.label-md {
+  margin: 0 !important;
+}
+.button-md:hover:not(.disable-hover) {
+  background: #f3a01c;
+}
+button.checkout-slide img {
+  display: none;
+}
+button.checkout-slide {
+  background: linear-gradient(to bottom, #ffce80 -80%, #f29c11 100%) !important;
+}
+// .aboutyou form ion-item {
+//   min-height: 10.667vw;
+//   margin-bottom: 4vw !important;
+// }
+ion-footer.footer-md {
+  padding-bottom: 2vh !important;
+}
+.mystyle .aboutyou ion-footer {
+  position: relative;
+}
+.mystyle .aboutyou ion-footer .bottomButton.row ion-col {
+  padding: 0 !important;
+  margin-top: 5.333333333333333vw;
+}

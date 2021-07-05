@@ -1,0 +1,121 @@
+.main-content .spacetop{
+    margin: 1.2vh 0vh;
+}
+
+// .main-content .delivery-container{
+//     height: 73.01vh;
+//     overflow-y: scroll;
+// }
+
+.content-area .deliverytime{
+    margin-top:2.49vh;
+    .grid{
+        padding: 0 !important;
+        margin: 0 !important;    
+    }
+    h4{
+        margin-top: 4.497vh;;
+    }
+}
+.content-area .activ1{
+   border:0.1vh solid #000;
+}
+.content-area .activ2{
+    border:.0.1vh solid #00CC66;
+ }
+
+.added_font_family span {
+    font-family: Montserrat-Bold;
+}
+
+
+/*start css 15-5-20*/
+
+.delivery-container .datetime-text{
+    margin: 0vh !important;
+    font-size: 3.467vw !important;
+    font-family: Montserrat-Bold;
+    text-transform: uppercase;       
+    text-align: center;
+    width: 20.38vh;
+    // height: 5.58vh;
+    letter-spacing: 0.022vh;
+}
+
+.deliverytime{
+    margin: 0vh 1.20vh;
+}
+
+.deliverytime .item-ios.item-block .item-inner{
+    padding-right: 0;
+}
+
+.delivery-container .item-ios{
+    padding-right: 2.39vh;
+}
+
+.delivery-container .deliverytime h4{
+    color: rgb(242, 155, 17);
+    font-size: 4.267vw;
+    font-family: Montserrat-Bold;
+}
+
+.delivery-container .deliverytime h5{
+    color: #8f9da8;
+    font-size: 4vw;
+    font-family: Montserrat-Bold;
+    margin-top: 0;
+    margin-bottom: 2.998500749625187vh;
+}
+
+.delivery-container .deliverytime .col{
+    padding: 0;
+}
+
+.delivery-container .deliverytime .item-md{
+    padding-left: 0;
+}
+.start-meal-type .screen-heading h2 {
+    font-size: 6vw !important;
+}
+
+
+
+// .main-preference .choose-delivery-time .button-md{
+//     background-color: rgb(216, 216, 216);
+// }
+
+
+// .main-preference .choose-delivery-time .button-md{
+//     height: .046vh !important;
+//     text-transform: none;
+//     font-size: 0.19vh;
+//     font-weight: 900;
+//     background-color: rgb(216, 216, 216);
+// }
+
+.content-area .deliverytime {
+    margin:4.497751124437781vh 5.333vw 0 5.333vw;
+    width: calc(100% - 10.666vw);
+    float: left;
+}
+.content-area .deliverytime .grid {
+    width: 100%;
+}
+.content-area .deliverytime h4 {
+    margin: 0 0 4.497751124437781vh 0;
+}
+.delivery-container .item-block {
+    padding: 0;
+    min-height: auto;
+}
+.delivery-container .item-block ion-datetime {
+    color: rgba(0, 0, 0, 0.50);
+}
+.delivery-container .item-block .item-inner {
+    padding-bottom: 1.5292353823088454vh;
+    margin-bottom: 6.7166416791604195vh;
+}
+ion-content.main-content.start-meal-type .scroll-content {
+    overflow-y: hidden !important;
+}

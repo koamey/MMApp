@@ -1,0 +1,77 @@
+<ion-header no-border class="dit-type-header orderGuestmeal">
+  <ion-navbar>
+    <ion-buttons left>
+      <button ion-button icon-only (click)="Back()">
+        <img src="assets/imgicon/Group_51.svg" class="backWhiteIcon">
+      </button>
+    </ion-buttons>
+    <ion-title text-center>ORDER GUEST MEAL</ion-title>     
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="main-content order-scroll">
+
+  <div class="screen-heading">
+    <span>Almost Here</span>
+    <h2>Checkout</h2>
+  </div>
+  <div class="checkout-ordermeal">
+    <ion-col>
+      <button id="buttonhidden" (click)="buttonhide()" style="display: none;"></button>
+      <button id="buttonhiddencancle" (click)="buttonhidecancle()" style="display: none;"></button>
+      <div class="main-checkout-box">
+        <h3 >PRICE BREAKDOWN</h3>
+        <ion-row *ngFor="let mealTypes of checkoutArr; let i=index">
+        <ion-col> 
+            <label  class="first-label">{{mealTypes.mealtype}} ( {{mealTypes.quantity}} * {{mealTypes.singleprice}})</label>
+            <label class="second-label first-label">Rs.{{mealTypes.total}}</label>
+          </ion-col>
+        </ion-row>
+    
+      <ion-row>
+        <ion-col> 
+          <label class="first-label">{{dataarr.Tax}} </label>
+          <label class="second-label first-label">Rs.{{CGST}}</label>
+        </ion-col>
+      </ion-row>
+      <!-- <ion-row>
+        <ion-col> 
+          <label class="first-label">{{dataarr.IGST}} </label>
+          <label class="second-label first-label">Rs.{{IGST}}</label>
+        </ion-col>
+      </ion-row> -->
+      <hr class="newline">
+     
+      <ion-row>
+        <ion-col> 
+          <label class="total-label">{{dataarr.Total}}</label>
+          <label class="second-label total-label">Rs.{{Total}}</label>
+           
+        </ion-col>
+      </ion-row>
+         
+      </div>
+    </ion-col>
+ 
+  </div>
+  
+</ion-content>
+
+<ion-footer className="ion-no-border" class="footer-common">
+  <ion-toolbar>
+<ion-grid class="bottom-button">
+  <ion-row>
+    <ion-col style="padding: 0;">
+     <button ion-button type="submit" id="input_submit" style="background: #f8b13f;" block  (click)="onclickslidepay()" class="checkout-slide">
+      <label class="button-content">Pay</label> 
+      <label class="checkout-total">  &#8377; {{Total}}</label>
+      <img src="assets/pay-arrow.png" alt="TrueMark" class="img-responsive" >  
+      </button>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+</ion-toolbar>
+</ion-footer>
+  
+  
+  

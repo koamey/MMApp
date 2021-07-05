@@ -1,0 +1,129 @@
+<ion-header no-border class="dit-type-header">
+  <ion-navbar>
+    <ion-buttons left>
+      <button ion-button icon-only (click)="Back()">
+        <img src="assets/imgicon/Group_51.svg" class="backWhiteIcon" >
+      </button>
+    </ion-buttons>
+    <ion-title text-center>STEP 3</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="main-content start-meal-type">
+  <div class="screen-heading spacetop">
+    <span>Choose Your</span>
+    <h2>Start Date & Delivery Time</h2>
+  </div>
+
+  <div class="content-area delivery-container">
+    <div class="deliverytime">
+      <ion-grid>
+        <ion-row>
+          <ion-col text-center>
+            <h4>START DATE</h4>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col col-12 class="text-center">
+            <ion-item>
+              <ion-datetime #datetime [style.opacity]="opacity" [class]="coloropacity"
+                style="margin-top: 5.287vh;text-align: center;" displayFormat="DD-MMMM-YYYY" [min]="minDate"
+                [(ngModel)]="selecteddate" (ngModelChange)="selectdate()">
+              </ion-datetime>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col text-center>
+            <h4 style="margin-bottom: 3.598200899550225vh;">DELIVERY TIME</h4>
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col col-12 class="text-center" style="padding:0;"> 
+            <div *ngIf="ActiveLunch">
+              <label *ngIf="ActiveLunch">
+                <h5>LUNCH</h5>
+              </label>
+              <ion-row>
+                <ion-col col-6>
+                  <div id="Lunchtime1" [class]="Ldiv11" style="border-radius: 1.049vh;text-align: center;font-family: Montserrat-SemiBold;padding: 2.848vh 0; height: 8.095952023988007vh;font-size: 3.467vw; width: 95%;float: left;"
+                    class="onboard-click" block (click)="onclicklunch1()" [style.background]="Ldiv1"
+                    [style.color]="tl1">
+                    {{Lunchtime1}}
+                  </div>
+                </ion-col>
+                <ion-col col-6>
+                  <div id="Lunchtime2" [class]="Ldiv21" style="border-radius: 1.049vh; text-align: center;font-family: Montserrat-SemiBold; padding: 2.848vh 0; height: 8.095952023988007vh;font-size: 3.467vw; width: 95%;float: right;"
+                    class="onboard-click" block (click)="onclicklunch2()" [style.background]="Ldiv2"
+                    [style.color]="tl2">
+                    {{Lunchtime2}}
+                  </div>
+                </ion-col>
+              </ion-row>
+            </div>
+
+            <br>
+
+
+            <div *ngIf="ActiveDinner">
+              <label *ngIf="ActiveDinner">
+                <h5>DINNER</h5>
+              </label>
+              <ion-row>
+                <ion-col col-6>
+                  <div id="Dinnertime1" [class]="Ddiv11"
+                  style="border-radius: 1.049vh;text-align: center;font-family: Montserrat-SemiBold;padding: 2.848vh 0; height: 8.095952023988007vh;font-size: 3.467vw; width:95%;float: left;" class="onboard-click" block
+                    (click)="onclickdinner1()" [style.background]="Ddiv1" [style.color]="td1">
+                    {{Dinnertime1}}
+                  </div>
+                </ion-col>
+                <ion-col col-6>
+                  <div id="Dinnertime2" [class]="Ddiv21"
+                  style="border-radius: 1.049vh; text-align: center;font-family: Montserrat-SemiBold; padding: 2.848vh 0; height: 8.095952023988007vh;font-size: 3.467vw; width:95%;float: right;" class="onboard-click" block
+                    (click)="onclickdinner2()" [style.background]="Ddiv2" [style.color]="td2">
+                    {{Dinnertime2}}
+                  </div>
+                </ion-col>
+              </ion-row>
+            </div>
+          </ion-col>
+        </ion-row>
+
+<!-- 
+        <ion-row>
+          <ion-col text-center>
+            <div
+              style="text-align: center; font-size: 1.90vh; margin-top: 2.4vh; line-height: 2.8vh; width: 100%; color: rgb(153, 153, 153);"
+              *ngIf="Active">
+              Subscription or Trial will only start after <br> <b
+                style="color: red; font-family: Montserrat-SemiBold;">48 hours</b> from the payment date.<br> Your
+              Subscription will expire after <br>
+              <b style="color: red; font-family: Montserrat-SemiBold;"> {{days}} days </b> from the start date
+            </div>
+          </ion-col>
+        </ion-row> -->
+
+
+
+       
+      </ion-grid>
+    </div>
+  </div>
+</ion-content>
+
+<ion-footer className="ion-no-border" class="footer-common">
+  <ion-toolbar>
+<ion-row>
+  <ion-col style="width: 100%; border-radius: 0.899vh; padding: 0 5.333vw;">
+    <div class="text-center">
+      <button class="added_font_family" ion-button type="submit" id="input_submit" style="border-radius: 0.5vh;margin:0;"
+        block (click)="onclickmealtime()" [style.color]="dtcolor" [style.background]="conbut1">
+        Continue
+      </button>
+    </div>
+  </ion-col>
+</ion-row>
+</ion-toolbar>
+</ion-footer>

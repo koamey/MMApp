@@ -1,0 +1,116 @@
+
+// .about-user-header .image-icon{
+//   float: left;
+// }
+
+// .about-header{
+//   margin-top: 5.99vh;
+// }
+
+
+// .about-header .aboutBack{
+//   margin-left: 2.99vh;
+// }
+
+// .about-user-header .about-header .toolbar-title-md{
+//   font-size: 1.94vh !important;
+//   font-family: Montserrat-Bold;
+//   letter-spacing: 0.116;
+//   color: #fff;
+//   text-align: center;
+//   pointer-events: auto;
+// }
+
+// .about-user-header .about-header .toolbar-title-ios{
+//   font-size: 1.94vh !important;
+//   font-family: Montserrat-Bold;
+//   letter-spacing: 0.116;
+//   color: #fff;
+//   text-align: center;
+//   pointer-events: auto;
+// }
+
+// .about-user-header .toolbar-md {
+//   padding: 1.5vh 1.7vh;
+// }
+
+// .back-button.show-back-button {
+//   display: none !important;
+// }
+// .about-user-header .about-header .toolbar-background-md{ 
+//   background-color: rgb(32, 60, 82) !important;
+// }
+
+
+
+.aboutUser-main {
+  background-color:rgb(32, 60, 82)!important;
+}
+
+
+.aboutUser-contain{
+    width: 100%;
+     height: 130%;
+     margin-top: 4.49vh;
+    background-color: #ffffff;
+    border-top-left-radius: 2vh;
+    border-top-right-radius: 2vh;
+    -webkit-box-shadow: 0 0 0.5vh #000;
+    box-shadow: 0 0 0.5vh #000;
+}
+
+.aboutUser-contain .grid{
+  padding: 0;
+}
+
+.aboutUser-contain .term-condition{
+  margin:0vh 2.99vh;
+}
+
+.aboutUser-contain .Terms-heading h2 {
+  color: #203c52;
+  text-align: center;
+  font-family: Montserrat-Bold;
+  font-size: 2.99vh;
+}
+
+.aboutUser-contain .term-condition label p{
+  font-size: 1.79vh;
+  text-align: left;
+  color: rgb(131, 131, 131);
+  line-height: 3.2vh;
+ }
+
+.aboutUser-contain .term-condition  p.desc-content h2{
+  font-size: 2.5vh;
+  text-align: left;
+  color: rgb(21, 24, 22);
+  font-weight: 600;
+}
+
+.aboutUser-contain .term-condition p.desc-content{
+  font-size: 1.79vh;
+  text-align: left;
+  color: rgb(131, 131, 131);
+  line-height: 3.2vh;
+}
+page-aboutus .aboutUser-main .scroll-content{
+  overflow-y: scroll !important;
+}
+
+// .main-terms-privacy .content .content-md {
+//   background-color: rgb(32, 60, 82) !important;
+// }
+.deleteicon {
+  margin: 0 !important;
+  position: relative;
+}
+.deleteicon img {
+  // position: absolute;
+  // top: 60%;
+  // transform: translateY(-50%);
+  // width: 3vw !important;
+  position: absolute;
+    width: 3vw !important;
+    bottom: 4vw;
+}

@@ -1,0 +1,36 @@
+<ion-header no-border class="dit-type-header">
+  <ion-navbar>
+    <ion-buttons left>
+      <button ion-button icon-only (click)="Back()">
+        <img src="assets/imgicon/Group_51.svg" class="backWhiteIcon">
+      </button>
+    </ion-buttons>
+    <ion-title text-center>ABOUT</ion-title>     
+  </ion-navbar>
+</ion-header>
+<ion-content class="aboutUser-main">
+  <div class="aboutUser-contain">
+    <!-- <ion-grid>
+      <ion-row>
+        <ion-col col-12 class="Terms-heading">
+          <h2>About Us</h2>
+        </ion-col>
+      </ion-row>
+    </ion-grid> -->
+
+    <ion-grid>
+      <ion-row  *ngFor="let abtus of aboutusArray; let i=index">
+        <ion-col col-12>
+          <div class="term-condition">
+            <span><b [innerHTML]="abtus.page_name"></b></span>
+            <p  class="desc-content" [innerHTML]="abtus.page_description"></p>
+          </div>
+        </ion-col>
+      </ion-row>
+      <!-- <div style="display: inline-block;">
+          <a href="javascript:void(0);" style="text-decoration: none;" (click)="onclickbak()">BACK
+          </a>
+        </div> -->
+    </ion-grid>
+  </div>
+</ion-content>

@@ -1,0 +1,37 @@
+<ion-content class="main-edit-preference areamodel">
+  <ion-grid>
+    <div class="heading-title-box">
+      <ion-row>
+        <ion-col col-9 class="text-left" defualt>
+            <h6>Profession</h6>
+        </ion-col>
+        <ion-col col-3 style="margin-top: 0.6vh;text-align: right;">
+          <img src="assets/signs.png" style="width: 2.99vh;border-radius: 50%;margin-top: 0.6vh;" (click)="closemodel()">
+        </ion-col>
+      </ion-row>
+   </div>
+
+      <ion-row style="width: 100%;">
+      <ion-col *ngIf="Fieldactive">
+          <!-- <ion-list>
+            <ion-item>
+               <ion-input style="font-weight:bold ; " class="select-full-width" type="text" value='{{displayarea}}' (input)="selectprofesssion($event.target.value)" placeholder="Profession"></ion-input>
+            </ion-item>
+          </ion-list>
+        -->
+      </ion-col>
+    </ion-row>
+    <ion-row style="width: 100%;" class="model-area-margin">
+        <ion-col class="text-center" *ngIf="Active">
+          <ion-list>
+             <ion-item>
+              <div style=" width: 100%;max-height: 30vh;;overflow-y: scroll;">
+              <p style="font-size: 1.4rem;padding-top: 1vh;overflow: hidden;" *ngFor="let a of profArrays" (click)="setselectarea(a)">{{a}}</p>
+            </div>
+            </ion-item>
+          </ion-list>
+        </ion-col>
+      </ion-row>
+   
+  </ion-grid>
+</ion-content>

@@ -1,0 +1,401 @@
+
+
+.dashboard-heading{
+    background: #203c52;
+}
+
+.dashboard-heading .dashboard-navbar{
+    // margin-top:6.97vh;
+    margin-top:3.97vh;
+ }
+
+.dashboard-heading .dashboard-navbar .toolbar-content-md{
+    display: inherit;
+    // margin-right: 2.99vh;
+}
+
+.dashboard-heading .dashboard-navbar .toolbar-title-md{
+    color: #fff;
+    text-align: center;
+    font-family: Montserrat-Bold;
+    font-size: 1.94vh !important; 
+    margin-right: 6vh;
+}
+
+.dashboard-heading .dashboard-navbar .toolbar-title-ios{
+    color: #fff;
+    font-size: 3.467vw;
+    margin: 0;
+    width: 100%;
+}
+
+.dashboard-heading .dashboard-navbar .image-icon{    
+    // width: 3.89vw;
+    height: 2.99vh;
+    margin-left:5.333333333333333vw;
+}
+
+.dashboard-heading .dashboard-navbar .bar-button-menutoggle-md{
+    min-width: 0; 
+}
+.dashboard-heading .dashboard-navbar .bar-button-menutoggle-ios{
+    min-width: 0; 
+    padding: 0.2vh;
+}
+
+
+.dashboard-heading .dashboard-navbar .image-icon2{
+    float: right;
+    margin-right: 2vh;
+}
+
+.dashboard-heading .dashboard-navbar .dshboard-title{
+    color:white;
+}
+
+.dashboard-content{
+    background-color: rgb(32, 60, 82);
+    // margin-top: 1.77vh;
+}
+
+.main-dashboard{
+    background-color: #fff
+}
+
+.main-dashboard .user-welcome{
+    background: #203c52;
+    color: rgb(255,255,255);
+    border-bottom-left-radius:28%; 
+    border-bottom-right-radius:28%;
+    // height: 21.93vh;
+    height: 23.93vh;
+    padding-top: 1.99vh;
+    text-align: center;
+}
+.main-dashboard .user-welcome label{
+    font-family: Montserrat-Light;
+    text-align: left;
+    font-size: 4.267vw;
+    color: white;
+    line-height: 4.48vh;
+}
+.main-dashboard .user-welcome .label1{
+    font-family: Montserrat-Bold;
+    text-align: left;
+    font-size: 6.667vw;
+    color:rgb(255,255,255);
+    line-height:  4.48vh;
+    // margin-left: 2.98vh;
+}
+
+.dashboard-content .scroll-content{
+    margin-top: 0 !important;
+}
+
+.dashboard-content .scroll-content{
+    overflow-y: scroll !important;
+}
+
+
+.main-dashboard .grid{
+    padding:0;
+}
+
+// .main-dashboard .col{
+//     padding:0;
+// }
+
+.main-dashboard{
+    width: 100%;
+    position: absolute;
+}
+.main-column{
+    margin-top: -10.22vh;
+    width: 100%;
+    padding: 0vh 5.333333333333333vw;
+}
+.round-off{
+    margin-left: 5.333vw;
+    position: relative;
+    margin-right: 0;
+}
+
+// .left-round-off {
+//     margin: 0px -1.34vh;
+// }
+.inner-inline{
+    display: inline-block;
+    // margin-left: 0.8vh;
+    vertical-align: middle;
+}
+.inner-inline2{
+    // height: 3vh; 
+    display: inline-block;
+    // margin-left: 0.4vh;
+}   
+.inner-inline2 h1{
+    color: #f5aa33;
+    vertical-align: top;
+    margin: 0vh 0vh;
+    display: inline-block;
+    font-size: 9.067vw;
+    font-family: Montserrat-SemiBold;
+}
+
+.inner-inline2 p{
+    margin: 0vh;
+    font-size: 3.467vw;
+    color: #314a5d;
+    font-family: Montserrat-Medium;
+}
+
+
+.plan-name{
+    background-color: #fff; 
+    border-radius: 1vh;
+    box-shadow: 0.1vh 0.1vh 0.4vh 0.1vh rgba(0, 0, 0, 0.13);
+    // border: 0.1vh solid rgba(0, 0, 0, 0.13);
+    // padding: 0.5vh;
+}
+.plan-name .firsth2{
+    text-align: left;
+    line-height: 5.53vh;
+    color: #314a5d;
+    font-size: 4.267vw;
+    font-family: Montserrat-SemiBold;
+    width: calc(100% - 10.666vw);
+    margin: 3.74vh 5.333vw 1.949vh 5.333vw;
+}
+// .plan-name [col-5]{
+//     padding: 0;
+// }
+.plan-name .col {
+    padding: 0;
+}
+
+.dashboard-content .main-dashboard .bottomContaint{
+    margin-top: 2.24vh;
+    padding: 0px 5.333333333333333vw !important;
+}
+
+.tomorrow-main{
+    display: block;
+    background: #203c52;
+    border-radius: 0.6vh;
+    padding: 5.333vw;
+}
+.tomorrow-main button {
+    background: #203c52;
+    color: #fff;
+    width:100%;
+    text-align: left;
+    padding:0;
+}
+.tomorrow-main ion-col.col {
+    padding: 0;
+}
+// .tomorrow-main ion-row{
+//     margin: 0px 1vh;
+// }
+.tomorrow-main button label{
+    line-height: 3.02vh;
+    font-family: Montserrat-Bold;
+    font-size: 4.267vw;
+    text-align: left;
+    width: 100%;
+    display: block;
+}
+.tomorrow-main button p{
+    font-size: 3.200vw;
+    opacity: 70%;
+    font-family: Montserrat-Medium;
+    text-align: left;
+    color: white;
+    line-height: 2.27vh;
+    margin: auto;
+}
+
+.side-arrow{
+    display:inline-block; 
+    font-size: 2.8vh; 
+    margin-top: 1.7vh;
+    float: right;
+    margin-right: 0.597vh;
+}
+
+.manage-account {
+    color: #314a5d;
+    font-size: 4vw;
+    font-family: Montserrat-SemiBold;
+    text-align: left;
+    margin: 2.998500749625187vh 5.333333333333333vw 2.451vh 5.333333333333333vw;
+}
+.main-dashboard .margin-row
+{
+    margin: 0vh 3.5vw;
+}
+
+// .four-box{
+//     width: 22.22vh;
+//     height: 13.04vh;
+// }
+
+.four-box .first-image{
+    width: 3.89vh;
+    height: 4.49vh;
+}
+
+.four-box .second-image{
+    width: 4.22vh;
+    height:4.42vh;
+}
+
+.four-box .third-image{
+    width: 3.62vh;
+    height:4.42vh;
+}
+
+.four-box .four-image{
+    width: 3.62vh;
+    height:4.42vh;
+}
+
+.four-box button{
+    border-radius: 0.89vh;
+}
+
+.four-box img{
+    // margin-left: 9.46vh;
+    // margin-right: 9.91vh;
+    margin-top: 0.89vh;
+}
+
+.four-box .first-heading{
+    color: white;
+    margin-top: 0.539vh;
+    font-size: 3.467vw;
+    line-height: 2.24vh;
+    font-family: Montserrat-SemiBold;
+}
+
+.four-box .second-heading{
+    color: white;
+    margin-top: 0.539vh;
+    font-size: 3.467vw;
+    line-height: 2.24vh;
+    font-family: Montserrat-SemiBold;
+}
+
+.four-box .third-heading{
+    color: white;
+    margin-top: 0.539vh;
+    font-size: 3.467vw;
+    line-height: 2.24vh;
+    font-family: Montserrat-SemiBold;
+}
+
+.four-box .four-heading{
+    color: white;
+    margin-top: 0.539vh;
+    font-size: 3.467vw;
+    line-height: 2.24vh;
+    font-family: Montserrat-SemiBold;
+}
+
+.subscription-period {
+    color: #314a5d;
+    margin: 3.4482758620689653vh 5.333vw 1.4992503748125936vh 5.333vw;
+    font-size: 4.267vw;
+    font-family: Montserrat-SemiBold;
+}
+
+.fromdate{
+    color: #314a5d;
+    opacity: 0.5;
+    font-size: 2.933vw;
+    font-family: Montserrat-Bold;
+    margin-left: 0;
+    width: 100%;
+    float: left;
+    margin-bottom: 0.4497751124437781vh;
+}
+
+.fromdateh4 {
+    color: #314a5d;
+    font-size: 3.733vw;
+    font-family: Montserrat-SemiBold;
+    margin: 0;
+    width: 100%;
+    float: left;
+}
+
+.renew-sub{
+    background-color: #FEF4E4;
+    border-radius: 5vh;
+    border-radius: 5vh;
+    text-align: center;
+    width: 29.08545727136432vh;
+    margin: auto;
+    padding: 0.5vh 0vh;
+    margin-bottom: 3.7481259370314843vh;
+    margin-top: 3.7481259370314843vh;
+    height: 6.746626686656672vh;
+}
+.renew-sub p{
+    color: #f4a221;
+    font-size: 2.098950524737631vh;
+    font-family: Montserrat-SemiBold;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    line-height: 5.547226386806597vh;
+}
+
+.margin-row{
+    margin: auto;
+}
+
+.roundvalues {
+    width: 11.463vw !important;
+    height: 11.463vw!important;
+}
+
+// .roundvalues svg{
+//     width: 5.75vh !important;
+//     height: 5.75vh !important;
+// }
+
+.dashboard-content .main-dashboard .user-selection{
+    border: 0vh solid;
+    width : 100%;
+    padding: 1.39vh 0vh;
+    background: -moz-linear-gradient(-45deg, #FFD490 0%, #F29B11 50%, #F29B11 100%);
+    background: -webkit-linear-gradient(-45deg, #FFD490 0%, #F29B11 50%, #F29B11 100%);
+    background: linear-gradient(135deg, #FFD490 0%, #F29B11 50%, #F29B11 100%);
+}
+
+
+
+
+.vl {
+    // border-right: 0.3vh solid #eaeaea;
+    /* height: 6.5vh; */
+    border-radius: 0.6vh;
+    display: inline-block;
+
+  }
+
+  .dashboard-content content .scroll-content{
+      margin-top: 15vh !important;
+  }
+  .dashboard-content{
+      background: transparent;
+  }
+
+ion-content.dashboard-content {
+    top: 10.41vh;
+    height: 89.50525vh;
+}
+page-dashboard{
+    background: #203c52;
+}

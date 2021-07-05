@@ -1,0 +1,153 @@
+.main-content {
+    .scroll-content {
+        overflow-y: scroll !important;
+    }
+}
+.content-area-address{
+    position: absolute;
+    //bottom: 0;
+    background-color: #ffffff;
+    //height: 115.74vh;
+    width:100%;
+    border-top-left-radius: 1.45rem;
+    border-top-right-radius: 1.45rem;
+    box-shadow: 0 0 0.28rem #000;
+    //overflow-y: scroll;
+    margin-top: 3.17vh;
+}
+.content-area-address .delivery-signup{
+    padding-left: 5.333vw;
+    padding-right: 5.333vw;
+}
+
+.content-area-address .delivery-signup ion-item .item-inner .label-ios{
+    font-size: 0.83rem;
+    font-family: Montserrat-Bold;
+    color: rgb(170,170,170);
+    letter-spacing: 0.01rem;
+}
+
+.content-area-address .delivery-signup ion-item .item-inner .label-md{
+    font-size: 0.83rem;
+    font-family: Montserrat-Bold;
+    color: rgb(170,170,170);
+    letter-spacing: 0.01rem;
+}
+.content-area-address .delivery-signup ion-item .item-inner .input-ios{
+    font-size: 1.17rem;
+    font-family: Montserrat-Bold;
+    color: rgb(49,74,93);
+    letter-spacing: 0.01rem;
+}
+
+
+.select-full-width {
+    max-width: 100% !important;
+    width: 100% !important;
+    padding-left: 0 !important;
+  }
+
+.select-full-width .select-text{
+    color: rgb(0, 0, 0);
+    font-family: Montserrat-SemiBold;
+    font-size: 1.17rem;
+    letter-spacing: 0.01rem;
+}
+
+.content-area-address h4{
+    color: #f3a01c;
+    font-size: 3.7333333333333334vw;
+    margin: 0;
+    letter-spacing: 0.037333333333333336vw;
+    margin: 6.133333333333334vw 0 0;
+    font-family: Montserrat-Bold;
+}
+// .content-area .grid{
+//     margin-top: 8.37vh !important;
+//     margin-bottom: 8.37vh !important;
+//     padding:0 !important;
+//  }
+ .content-area-address [col-12]{
+    padding: 0.86vh 0vh 0vh 0vh;   
+ }
+ .content-area-address .col{
+    padding: 0.50vh;
+ }
+.content-area-address .delivery-signup{
+    .grid{
+        padding: 0 !important;
+        margin: 0 !important;    
+    }    
+}
+
+.content-area-address .item-inner{
+    border-bottom: 0vh;
+}
+
+.content-area-address .item-ios.item-block .item-inner{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.content-area-address .item-md.item-block .item-inner{
+    padding-right: 0;
+}
+
+
+
+.content-area-address .delivery-signup .button-md{
+    font-size: 1.33rem;
+    //width: 50.374vh;
+    height: 4.58rem; 
+    background-color: rgb(242,155,17);
+    text-transform: none;
+}
+.content-area-address .delivery-signup .button-ios{
+    font-size: 1.33rem;
+    //width: 50.374vh;
+    background-color: rgb(242,155,17);
+    height: 4.58rem;
+    text-transform: none;
+}
+
+.content-area-address .delivery-signup .button-inner{
+    font-size: 2.39vh;
+    font-family: Montserrat-Bold;
+ }
+
+
+.content-area-address .item-md.item-input.ng-valid.item-input-has-value:not(.input-has-focus):not(.item-input-has-focus) .item-inner, .item-md.item-input.ng-valid.input-has-value:not(.input-has-focus):not(.item-input-has-focus) .item-inner{
+    border-bottom-color: #f3a01c !important;
+}
+.item-label-floating .select-ios{
+    //padding: 0vh;
+    padding-top: 6px;
+    padding-bottom: 6px ;
+}
+.select-ios{
+    //padding: 1px 8px 11px 16px !important;
+    padding: 0vh;
+    border-bottom: solid 0.55px rgb(244,164,37);
+}
+
+.select-full-width .item-label-stacked .select-md, .item-label-floating .select-md{
+    padding-left: 0;
+    padding-top: 8px;
+    padding-bottom: 5px;
+}
+p{
+  font-size: 1.7rem;
+  padding-top: 0.05vh;
+}
+
+.deleteicon{
+    vertical-align: middle;
+    margin: auto;
+}
+
+.deleteicon .item-inner{
+    border-bottom: none !important;
+}
+.button-default.activated {
+    background: #f3a01c;
+}

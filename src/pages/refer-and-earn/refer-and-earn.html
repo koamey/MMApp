@@ -1,0 +1,75 @@
+<!--
+  Generated template for the ReferAndEarnPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+<ion-header no-border class="dit-type-header">
+  <ion-navbar>
+    <ion-buttons left>
+      <button ion-button icon-only (click)="backButton()">
+        <img src="assets/imgicon/Group_51.svg" class="backWhiteIcon">
+      </button>
+    </ion-buttons>
+    <ion-title text-center>REFER & EARN</ion-title>     
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content class="refer-main-content">
+
+  <div class="refer-earn-area text-center">
+      <ion-grid>
+        <ion-row>
+          <ion-col text-center>
+            <img src="assets/Refer_ic.png" alt="Refer-image" class="refer-img">
+          </ion-col>
+        </ion-row>
+  
+        <ion-row>
+          <ion-col>
+            <div class="refer-section">
+              <h2>Refer Friends & Earn</h2>
+              <p>Ask your friends to signup with your referral code and make an initial payment. Once done, you will win 2 meals for 15 days plan. 4 meals for 30 days plan.</p>
+            </div>
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col text-center>
+            <h2 class="referal-text">YOUR REFERRAL CODE</h2>
+            <div class="refer-code">
+              <img src="assets/ReferalField.png" alt="Refer-image" class="">
+              <div class="centered">
+                <h2>{{referrerCode}}</h2>
+              </div>
+            </div>
+          </ion-col>
+        </ion-row>
+
+        
+
+      </ion-grid>
+    
+  </div>
+</ion-content>
+<ion-footer className="ion-no-border" class="footer-common" style="background: #fff;">
+  <ion-toolbar>
+<ion-row class="code-button" style="margin: 0;">
+  <ion-col style="padding: 0 3vh;">
+    <button ion-button type="submit" id="input_submit"  block  class="share-button"  (click)="onClickShareCode()" style="margin: 0;">
+      <img src="assets/Share_ic.png" alt="food-image" class="shareicon"> Share Code 
+    </button>
+  </ion-col>
+</ion-row>
+</ion-toolbar>
+</ion-footer>
+
+
+
+
+
+
+
+

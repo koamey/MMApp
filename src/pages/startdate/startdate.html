@@ -1,0 +1,49 @@
+<ion-header no-border class="dit-type-header">
+  <ion-navbar>
+    <ion-buttons left>
+      <button ion-button icon-only (click)="Back()">
+        <img src="assets/imgicon/Group_51.svg" class="backWhiteIcon">
+      </button>
+    </ion-buttons>
+    
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="main-content">
+  <div class="screen-heading">
+    <span>Choose Your</span>
+    <h2> Start Date</h2>
+  </div>
+
+  <div class="content-area">
+    <div class="startdate">
+      <ion-grid>
+        <ion-row>
+          <ion-col col-12 class="text-center">
+            <ion-item>
+              <ion-datetime  [style.opacity]="opacity" [class]="coloropacity"
+                style="margin-top: 24.287vh;text-align: center; padding-left: 7.646vh;padding-right: 7.646vh;" displayFormat="DD-MMMM-YYYY" [min]="minDate"
+                [(ngModel)]="selecteddate" (ngModelChange)="selectdate()">
+              </ion-datetime>
+            </ion-item>
+          </ion-col>
+          <ion-col>
+            <div style="text-align: center; font-size: 1.90vh; line-height: 2.8vh; bottom: 9vh; width: 100%; color: rgb(153, 153, 153);"  *ngIf="Active">
+          Subscription or Trial will only start after <br> <b style="color: red; font-family: Montserrat-SemiBold;">48 hours</b> from the payment date.<br> Your Subscription will expire after <br>
+              <b style="color: red; font-family: Montserrat-SemiBold;"> {{days}} days </b> from the start date
+            </div>
+          </ion-col>
+          <ion-col style="position: absolute; width: 100%; bottom: 0; padding:2.923vh; border-radius: 0.899vh; ">
+            <div class="text-center">
+              <button style="font-size: 2.398vh;" [style.color]="subcolor" ion-button type="submit" id="input_submit" block (click)="continueclick()"
+                [style.background]="conbut">
+                Continue
+              </button>
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+  </div>
+
+</ion-content>

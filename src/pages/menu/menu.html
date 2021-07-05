@@ -1,0 +1,24 @@
+<ion-menu [content]="mycontent" class="appMainmenu">
+	<ion-content>
+		<ion-list class="list-menu-bar">
+			<div class="profile-list-header">
+				<ion-item>
+					<ion-avatar item-start>
+						<div class="profile">
+							<img [src]="base64Image" *ngIf="base64Image" class="profile-picture">
+						</div>
+					</ion-avatar>
+					<h2>{{custFname}}<br>{{custLname}}</h2>
+					<p>{{mtype}} Plan</p>
+				</ion-item>	
+			</div>
+			<div class="menuOption">
+				<button class="number-menu" ion-item menuClose *ngFor="let p of appPages" (click)="openPage(p)">
+					<ion-icon item-start [name]="p.icon" ></ion-icon>
+					{{p.title}}
+				</button>
+			</div>
+		</ion-list>
+	</ion-content>
+</ion-menu>
+<ion-nav #mycontent [root]="rootPage"></ion-nav>

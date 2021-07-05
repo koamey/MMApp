@@ -1,0 +1,118 @@
+.refer-main-content{
+    background-color: rgb(32, 60, 82);
+}
+
+.refer-earn-area .grid .col{
+    padding: 0;
+}
+
+.refer-earn-area{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-color: #ffffff;
+    height: 95%;
+    border-top-left-radius: 1.35vh;
+    border-top-right-radius: 1.35vh;
+    overflow-y: scroll;
+    padding: 0 1.99vh;
+}
+
+.refer-earn-area .refer-img{
+    margin-top: 3.8318vh;
+}
+
+.refer-earn-area .refer-section{
+    margin-top: 2.4456521739130435vh;
+}
+
+.refer-earn-area .refer-section h2{
+    color: #f3a01c;
+    text-align: center;
+    margin: 0vh;
+    font-size: 5.333vw;
+    font-family: Montserrat-SemiBold;
+}
+
+.refer-earn-area .refer-section p{
+    color: #203c52;
+    opacity: 50%;
+    text-align: center;
+    margin: 1.14vh 3.39vh 0vh 3.39vh;
+    font-size: 3.467vw;
+    line-height: 2.6986506746626686vh;
+    margin-top: 2.4456521739130435vh;
+}
+
+
+.refer-earn-area .refer-code{
+  position: relative;
+  text-align: center;
+  margin-top: 1.63vh;
+}
+
+.refer-earn-area .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+ }
+
+ .refer-code .centered h2{
+    color: #203c52;
+    font-size: 6.667vw;
+    letter-spacing: 0.33vh;
+    line-height: 3.74vh;
+    margin: 0;
+ }
+
+ .referal-text{
+    color: rgb(32, 60, 82);
+    opacity: 50%;
+    font-size: 3.467vw;
+    font-family: Montserrat-Bold;
+    margin: 4.94vh 0vh 0vh 0vh;
+ }
+
+
+ .code-button{
+     margin:6.146vh 0vh 3.29vh 0vh;
+ }
+
+ .code-button .shareicon{
+    margin-right: 1.61vh;
+ }
+/*  */
+.refer-earn-area .button-inner{
+    font-family: Montserrat-Bold;
+    font-size: 2.39vh;
+}
+
+.refer-earn-area .button-md{
+    background: linear-gradient(to bottom, rgba(255,206,128,1) -80%, rgba(242,156,17,1) 100%);
+    text-transform: none;
+    height: 8.24vh;
+    border-radius: 0.899vh;
+    font-family: Montserrat-Bold;
+}
+
+.refer-earn-area .button-ios {
+    background: linear-gradient(to bottom, rgba(255,206,128,1) -80%, rgba(242,156,17,1) 100%);
+    text-transform: none;
+    font-size: 2.098vh;
+    height: 8.24vh;
+    border-radius: 0.899vh;
+    font-family: Montserrat-Bold;
+}
+ion-content.refer-main-content {
+    width: 100vw;
+    height: calc(100% - 10.494752623688155vh);
+    bottom: 0;
+    top: auto;
+}
+ion-content.refer-main-content {
+    padding-bottom: 14vh;
+}
+// page-aboutus .aboutUser-contain {
+//     height: 100% !important;
+// }

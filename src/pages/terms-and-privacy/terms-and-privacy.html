@@ -1,0 +1,34 @@
+<ion-header no-border class="dit-type-header">
+  <ion-navbar>
+    <ion-buttons left>
+      <button ion-button icon-only (click)="Back()">
+        <img src="assets/imgicon/Group_51.svg" class="backWhiteIcon">
+      </button>
+    </ion-buttons>
+    <ion-title text-center>TERMS & PRIVACY</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content class="main-terms-privacy">
+  <div id="terms" class="terms-privacy-contain" [style.height]='termsHight'>
+    <div class="TermsArea">
+      <ion-grid>
+        <ion-row>
+          <ion-col col-12 class="Terms-heading">
+            <h2>Terms and Privacy</h2>
+          </ion-col>
+        </ion-row>
+        <ion-row *ngFor="let term of termArray; let i=index">
+          <ion-col col-12 class="">
+            <div class="term-condition1">
+              <p class="desc-content" [innerHTML]="term.page_description"></p>
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+
+    </div>
+
+  </div>
+</ion-content>

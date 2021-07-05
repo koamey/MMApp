@@ -1,0 +1,216 @@
+.select-full-width {
+  max-width: 100% !important;
+  width: 100% !important;
+  padding-left: 0 !important;
+}
+
+.welcome-area{
+  background-size: cover;
+  background-color: #fff;
+  padding: 0vh 2.3vh 0vh 2.3vh;
+  width: 100%;
+  height: 100%;
+  .start-button {
+  color:rgb(49, 74, 93);
+  font-weight: normal;
+  text-transform: none;
+  font-size: 1.3vh;
+  border-radius: 0.8vh;
+  font-weight: 600;
+  
+  }
+}
+
+
+//Select Area css start here
+
+.welcome-area .col{
+  padding:0;
+}
+
+.select-area{
+  margin-top:6.385869565217392vh;
+}
+
+.welcome-area .location{
+  width: 28.530734632683657vh;
+  height: 30.059970014992505vh;
+  margin-top: 5.176630434782608vh;
+}
+
+.select-area p{
+  text-align: center;
+  font-size: 3.467vw;
+  margin: 0.7496251874062968vh 1.333vw 0 1.333vw;
+  color: black;
+  opacity: 65%;
+  line-height: 2.548725637181409vh;
+  letter-spacing: 0.020vh;
+}
+
+.select-area h3{
+  color: #203c52;
+  text-align: center;
+  font-family: Montserrat-Bold;
+  font-size: 7.467vw;
+  margin: 0vh;
+}
+
+.welcome-area .selectAreaform{
+  margin-top: 6.806596701649175vh;
+}
+
+
+.select-area .onboard-click{
+  color: #ffff;
+  background-color: #F7AF3C;
+  font-weight: normal;
+  text-transform: none;
+  padding: 0 3.5vh;
+  height: 4.5vh;
+  font-size: 1.3vh;
+  border-radius: 0.8vh;
+  font-weight: 600;
+}
+.welcome-area .selectAreaform ion-item {
+  min-height: auto;
+}
+//Select Area css end here
+
+
+.welcome-content {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  padding: 0 1.4vh 6.0vh 1.0vh;
+  background-color:
+  #203c52;
+  height: 33.3vh;
+  border-radius: 1%;
+  border-top-left-radius: 3.0vh;
+  border-top-right-radius: 3.0vh;
+  padding:2.0vh;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  padding: 0 1.0vh 4.0vh 1.0vh;
+  background-color: rgb(32, 60, 82);    
+}
+
+.welcome-content h2{
+  color:#fff;
+  text-align: center;
+}
+
+.welcome-content p{
+  text-align: center;
+  color:#bdbdbd;
+}
+
+ 
+.welcome-group {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  p {
+    text-align: center;
+    font-size: 2.7vh;
+    color: #fff;
+    margin-bottom: 4.0vh;
+  }
+}
+
+.welcome-icon {
+  display: none;
+  width: 7.0vh;
+  height: 7.0vh;
+  background: url('../assets/for_logo.png') center center no-repeat;
+  background-size: 2.2vh 2.8vh;
+  border: 0.2vh solid #fff;
+  padding: 0.6vh;
+  border-radius: 50%;
+  .inner {
+    display: inline-block;
+    border: 0.2vh solid #fff;
+    border-radius: 50%;
+    width: 5.4vh;
+    height: 5.4vh;
+  }
+}
+.welcome-area .start-button {
+  color: #fff !important;
+  background-color: #f29c11;
+  font-weight: normal;
+  text-transform: none;
+  height: 8.245vh;
+  bottom: 0;
+  width: calc(100% - 5.997vh);
+  margin: 0 2.9985vh;
+  padding: 0;
+}
+
+.welcome-area .button-inner{
+  font-family: Montserrat-Bold;
+  font-size: 2.56vh;
+}
+
+.welcome-text {
+  display: block;
+  padding-top: 1.5vh;
+  background: rgba(66, 48, 48, 0.5);
+  padding: 0.1vh;
+  line-height: 4.0vh;
+}
+.scroll-content {
+  display: flex;
+  align-items: flex-start;
+  .wrap {
+    width: 100%;
+  }
+}
+
+.welcome-area .list-ios > .item-block:last-child, .list-ios > .item-wrapper:last-child .item-block{
+  border-bottom: 0;
+}
+
+.welcome-area .list-ios{
+  margin-bottom: 0vh;
+}
+
+.welcome-area .list-md{
+  margin-bottom: 0vh;
+}
+.welcome-area .list-ios .label .label-ios{
+  margin-top: 0vh;
+}
+.welcome-area .list-md .label .label-md{
+  margin-top: 0vh;
+}
+
+.welcome-area .list-ios > .item-block:first-child{
+  border-top: 0;
+}
+.label-ios{
+  margin-top: 0vh;
+}
+.welcome-area  .item-ios{
+  padding-left: 6px;
+  p{
+    font-size: 1.7rem;
+    padding-top: 1vh;
+  }
+}
+
+.welcome-area .item-md{
+  padding-left:6px;
+  p{
+    font-size: 1.7rem;
+    padding-top: 1vh;
+  }
+}
+
+.welcome-area .list-md .item-input:last-child{
+  border-bottom:0;
+}

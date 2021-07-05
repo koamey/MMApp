@@ -1,0 +1,253 @@
+<ion-header no-border class="dit-type-header pickheader">
+  <ion-navbar class="picknav">
+    <ion-buttons left>
+      <button ion-button icon-only (click)="Back()">
+        <img src="assets/imgicon/Group_51.svg" class="backWhiteIcon">
+      </button>
+    </ion-buttons>
+    <ion-title text-center>TOMMOROW'S MEAL</ion-title>     
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="main-vaggies">
+  <ion-grid class="main-vaggies-first-grid">
+    <ion-row>
+      <div class="heading-pickvaggies">
+        <p>Choose your choice of</p>
+        <h2>Veggies</h2>
+      </div>
+    </ion-row>
+  </ion-grid>
+
+  <div class="mainDiv">
+    <ion-row class="heading-pickvaggies-label" style="padding: 0 1.4vh 0vh 1.4vh">
+      <ion-col text-center>
+        <div [style.color]="activeMyMeal ? mymeal1:mymeal2" (click)="onClickMyMeal()">
+          <label>My Meal</label>
+        </div>
+      </ion-col>
+      <ion-col text-center>
+        <div [style.color]="activeGuestMeal ? guestmeal1:guestmeal2" (click)="onClickGuestMeal()">
+          <label>Guest Meal
+          </label>
+        </div>
+      </ion-col>
+    </ion-row>
+ 
+  <div class="pick-vagies-containt text-center" *ngIf="activeMyMeal">
+    
+      <ion-row class="fix-pick-vegie">
+        <ion-col style="padding: 0;" text-center >
+          <p [class]="activeMyMeal ? mymeal1:mymeal2"></p>
+        </ion-col>
+        <ion-col style="padding: 0;" text-center>
+          <p style="padding: 0;"></p>
+        </ion-col>
+      </ion-row>
+    
+    <div *ngIf="Activelunch" style="margin: 0 4vw;">
+      <ion-grid  style="padding: 0;">
+        <ion-row>
+          <ion-col style="padding:0;">
+            <label>
+              <h5 class="lunch-heading" style="margin-top: 5.247376311844078vh;margin-bottom: 1.4992503748125936vh;">LUNCH</h5>
+            </label>
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col style="padding: 0;">
+            <label class="lunch-label">Choose your veggie</label>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <div id="lunchsabji1" class="meal-list" block [style.border]="Lborder1"  [style.background]="LSdiv1" [style.color]="tls1"
+              (click)=" onclicklunchsabji1()">
+              <p>{{lunchsabji1}}</p>
+            </div>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <div id="lunchsabji2" class="meal-list" block [style.border]="Lborder2"  [style.background]="LSdiv2" [style.color]="tls2"
+              (click)=" onclicklunchsabji2()">
+              <p>{{lunchsabji2}}</p>
+            </div>
+          </ion-col>
+        </ion-row>
+
+
+        <ion-row>
+          <ion-col>
+            <label class="lunch-label">Choose your bread</label>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col col-6>
+            <div id="lunchbread1" class="onboard-click meal-list2" [style.border]="Lborder3" block [style.background]="LBdiv1"
+              [style.color]="tlb1" (click)=" onclicklunchbread1()">
+              <p>{{lunchbread1}}</p>
+            </div>
+          </ion-col>
+          <ion-col col-6>
+            <div id="lunchbread2" class="onboard-click meal-list2" [style.border]="Lborder4" block [style.background]="LBdiv2"
+              [style.color]="tlb2" (click)=" onclicklunchbread2()">
+              <p>{{lunchbread2}}</p>
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+
+    <div style="margin: 3vh 4vw 0 4vw;" *ngIf="Activedinner">
+      <ion-grid style="padding: 0;">
+        <ion-row>
+          <ion-col>
+            <label>
+              <h5 class="lunch-heading">DINNER</h5>
+            </label>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col style="padding-top: 0;">
+            <label class="lunch-label">Choose your veggie</label>
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col>
+            <div id="dinnersabji1" class="onboard-click meal-list" [style.border]="Dborder1" block [style.background]="DSdiv1"
+              [style.color]="tDs1" (click)=" onclickdinnersabji1()">
+              <p>{{dinnersabji1}}</p>
+            </div>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <div id="dinnersabji2" class="onboard-click meal-list" [style.border]="Dborder2" block [style.background]="DSdiv2"
+              [style.color]="tDs2" (click)=" onclickdinnersabji2()">
+              <p>{{dinnersabji2}}</p>
+            </div>
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col>
+            <label class="lunch-label">Choose your bread</label>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col col-6>
+            <div id="dinnerbread1" class="onboard-click meal-list2" [style.border]="Dborder3" block [style.background]="DBdiv1"
+              [style.color]="tDb1" (click)=" onclickdinnerbread1()">
+              <p>{{dinnerbread1}}</p>
+            </div> 
+          </ion-col>
+          <ion-col col-6>
+            <div id="dinnerbread2" class="onboard-click meal-list2" [style.border]="Dborder4" block [style.background]="DBdiv2"
+              [style.color]="tDb2" (click)=" onclickdinnerbread2()">
+              <p>{{dinnerbread2}}</p>
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+
+    <ion-grid style="padding: 0;">
+      <ion-row>
+        <ion-col style="padding: 0;">
+          <button class="button-class" ion-button *ngIf="butcont" type="submit" id="input_submit" block
+            [style.background]="conbut1" [disabled]="Disablecontinue==true" (click)="onclickcontinue()" style="margin: 4.076086956521739vh 2.717391304347826vh 2.717391304347826vh; width: calc(100% - 5.4347vh);padding:0;">
+            Continue
+          </button>
+          <button *ngIf="butconfirm" ion-button type="submit" id="input_submit" [disabled]="Disablecontinue==true" block [style.background]="conbut1"
+            (click)="onclickcontinue()" style="margin: 4.07609vh 5.333333333333333vw 2.71739vh;width: calc(100% - 5.4347vh); padding: 0px;background: rgb(242, 155, 17);">
+            Confirm
+          </button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+
+  <div class="pick-vagies-containt guest-meal-area text-center" *ngIf="activeGuestMeal">
+    <ion-row class="fix-pick-vegie">
+      <ion-col style="padding: 0;" text-center>
+        <p style="padding: 0;"></p>
+      </ion-col>
+      <ion-col style="padding: 0;" text-center>
+        <p class="border-bold" style="padding: 0;"></p>
+      </ion-col>
+    </ion-row>
+    <div class="Guest-meal" *ngIf="showData==true" id="idscripts">
+
+      <ion-row>
+        <ion-col text-center>
+          <img src="assets/GuestNotOrdered.svg" alt="TrueMark" style="width: 27.66304347826087vh;height: 19.293478260869566vh;">
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <h1>Guest Meal Not Ordered</h1>
+          <P>You have not ordered any guest meal for tomorrow's date. Order a guest meal soon!</P>
+        </ion-col>
+      </ion-row>
+
+      <ion-footer className="ion-no-border" class="footer-common">
+        <ion-toolbar>
+            <ion-row class="guestButton">
+              <ion-col>
+                <button class="orderclick" ion-button type="submit" block (click)="onclickQuestMeal()">
+                  Order Guest Meal
+                </button>
+              </ion-col>
+            </ion-row>
+            </ion-toolbar>
+      </ion-footer>
+    </div>
+
+    <ion-grid  *ngIf="showData==false" class="main-vaggies-second-grid">
+      <!-- <ion-row class="order-guesthistory">
+        <ion-col style="float:right;"></ion-col>
+        <ion-col><img src="assets/CancelOrder@3x.png"></ion-col>
+      </ion-row> -->
+      <div *ngFor="let mealTypes of guestMealArray; let i=index">
+        <ion-row>
+          <h4 class="order-number">ORDER - {{mealTypes.order_id}}</h4>
+        </ion-row>
+        <ion-row class="mealtype-margin-guest">
+          <h4 class="order-mealtype" style="text-transform: capitalize;">{{mealTypes.meal_type}}</h4>
+        </ion-row>
+
+        <ion-row>
+          <ion-col>
+            <ion-row class="order-on">ORDERED ON</ion-row>
+            <h4 class="order-date-time">{{mealTypes.date|date:'dd-MM-yyyy'}}</h4>
+          </ion-col>
+          <ion-col>
+            <ion-row class="order-on"> QUANTITY</ion-row>
+            <h4 class="order-date-time">{{mealTypes.quantity}}</h4>
+          </ion-col>
+          <ion-row>
+            <h4 class="total-order-price"> &#8377; {{mealTypes.total_amount}}</h4>
+          </ion-row>
+        </ion-row>
+        <hr /> 
+      </div>
+      <ion-row class="guestButton" style="margin-bottom: 15px;">
+        <ion-col>
+          <button class="orderclick"  style="background-color:rgb(242, 155, 17);" ion-button type="submit" block  (click)="onclickQuestMeal()">
+            Order Guest Meal
+          </button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+
+
+
+
+  </div>
+
+</div>
+</ion-content>

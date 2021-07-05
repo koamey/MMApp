@@ -1,0 +1,46 @@
+<ion-header no-border class="dit-type-header">
+  <ion-navbar>
+    <ion-buttons left>
+      <button ion-button icon-only (click)="Back()" [disabled]="customise">
+        <img src="assets/imgicon/Group-white.svg" class="backWhiteIcon">
+      </button>
+    </ion-buttons>
+    <ion-title text-center>MY CURRENT PLAN</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content class="main-content" (click)="close()"> 
+  <div class="content-area content-area-plan">
+    <div class="choosepref">
+      <ion-grid *ngIf="mealType=='Both' || mealType=='Lunch'">
+        <ion-row>
+          <ion-col col-12 class="text-center" >
+            <h4>Lunch</h4>
+            <div id="" class="meal-box">
+              <img id="img_rice_meal" class="img2" src="{{lunchmeal_img}}">
+              <p>{{preferenceProducts}}</p>
+              <div>                
+              <p class="custo">DELIVERY AT</p>
+              <p>{{preferenceProductstime}}</p>
+              </div>
+            </div>
+          </ion-col>
+        </ion-row> 
+      </ion-grid>
+      <ion-grid *ngIf="mealType=='Both' || mealType=='Dinner'">
+        <ion-row>
+          <ion-col col-12 class="text-center" >
+            <h4>Dinner</h4>            
+            <div id="" class="meal-box">
+              <img id="img_rice_meal" class="img2" src="{{dinnermeal_img}}">
+              <p>{{preferenceProductsDinner}}</p>
+              <div>                
+                <p class="custo">DELIVERY AT</p>
+                <p>{{preferenceProductsDinnertime}}</p>
+              </div>
+            </div>
+          </ion-col>
+        </ion-row>       
+      </ion-grid>
+    </div>
+  </div>
+</ion-content>

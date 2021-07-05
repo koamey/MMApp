@@ -1,0 +1,104 @@
+
+// .terms-policy-header .image-icon{
+//   float: left;
+// }
+
+// .terms-policy-header .terms-policy{
+//   margin-top: 5.99vh;
+// }
+
+// .terms-policy-header .terms-policy .termsBack{
+//   margin-left: 2.99vh;
+// }
+
+// .terms-policy-header .terms-policy .toolbar-title-md{
+//   font-size: 1.94vh !important;
+//   font-family: Montserrat-Bold;
+//   letter-spacing: 0.116;
+//   color: #fff;
+//   text-align: center;
+//   pointer-events: auto;
+// }
+
+
+// .terms-policy-header .terms-policy .toolbar-title-ios{
+//   font-size: 1.94vh !important;
+//   font-family: Montserrat-Bold;
+//   letter-spacing: 0.116;
+//   color: #fff;
+//   text-align: center;
+//   pointer-events: auto;
+// }
+
+// .terms-policy-header .toolbar-md {
+//   padding: 1.5vh 1.7vh;
+// }
+
+// .terms-policy-header .terms-policy .toolbar-background-md{ 
+//   background-color: rgb(32, 60, 82) !important;
+// }
+
+
+.back-button.show-back-button {
+  display: none !important;
+}
+
+
+.main-terms-privacy{
+  background-color:rgb(32, 60, 82)!important;
+}
+
+
+.main-terms-privacy .scroll-content {
+  overflow-y: scroll !important;
+}
+
+
+.terms-privacy-contain{
+    width: 100%;
+    height: 96%;
+    //  margin-top: 4.49vh;
+    margin-top: 5.697vh;
+    background-color: #ffffff;
+    border-top-left-radius: 2vh;
+    border-top-right-radius: 2vh;
+    // -webkit-box-shadow: 0 0 0.5vh #000;
+    // box-shadow: 0 0 0.5vh #000;
+    position: absolute;
+    // bottom: 0;
+}
+
+.terms-privacy-contain .Terms-heading h2 {
+  color: #203c52;
+  text-align: center;
+  font-weight: bold;
+  font-size: 5.4vw;
+}
+
+.terms-privacy-contain .term-condition label p{
+  text-align: center;
+  font-size: 2.7vh;
+  font-weight: 600;
+  color: rgb(21, 24, 22);
+}
+
+.terms-privacy-contain .term-condition  p.desc-content h2{
+  font-size: 2.5vh;
+  text-align: left;
+  color: rgb(21, 24, 22);
+  font-weight: 600;
+}
+
+.terms-privacy-contain .term-condition  p.desc-content{
+  font-size: 2.4vh;
+  text-align: left;
+  color: #849099;
+  line-height: 2.2vh;
+}
+.terms-privacy-contain .TermsArea{
+ background: #fff;
+}
+  
+// .main-terms-privacy .content .content-md {
+//   background-color: rgb(32, 60, 82) !important;
+// }

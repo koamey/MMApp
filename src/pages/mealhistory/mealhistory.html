@@ -1,0 +1,120 @@
+
+<ion-header no-border class="dit-type-header order-header">
+  <ion-navbar>
+    <ion-buttons left>
+      <button ion-button icon-only (click)="Back()">
+        <img src="assets/imgicon/Group_51.svg" class="backWhiteIcon">
+      </button>
+    </ion-buttons>
+    <ion-title  text-center>MEAL HISTORY</ion-title>     
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="mealhistory-vaggies">
+  <div class="mealhistoryTabDiv">
+  <div class="meal-history text-center">
+    <div >     
+      <ion-grid class="mealOrderHistory">
+        <!-- *ngFor="let order of orderArray; let i=index" -->
+        <div  class="padding:0vh 2.99vh;" *ngFor="let order of orderArray; let i=index" >
+        <!-- date heading -->
+          <ion-row  *ngIf="order.meal_typelunch!='' || order.meal_typedinner!='' || order.guestcountlunch!='' || order.guestcountdinner!=''">
+            <h4 class="mealorder-number">{{order.date|date:'EEEE, d MMMM'}}</h4>
+          </ion-row>
+
+          <ion-row *ngIf="order.meal_typelunch!='' || order.meal_typedinner!='' || order.guestcountlunch!='' || order.guestcountdinner!=''">
+            <h4 class="mealorder-mealtype"></h4>
+          </ion-row>
+          <!-- end -->
+          <!-- lunch date -->
+          <ion-row *ngIf="order.meal_typelunch!='' || order.meal_typedinner!='' || order.guestcountlunch!='' || order.guestcountdinner!=''">
+            <ion-col col-7 style="padding:0;">
+
+              <ion-row *ngIf="order.meal_typelunch!=''" class="mealorder-on" style="text-transform: capitalize;">
+                <span class="mealtitle">{{order.meal_typelunch}}</span> <span *ngIf="order.gueststatuslunch!='' && order.statuslunch==order.gueststatuslunch && order.guestcountlunch!=''" class="mealtitle">, Guest Meal x {{order.guestcountlunch}}</span> 
+              </ion-row>
+
+              <ion-row *ngIf="order.meal_typelunch!=''" class="mealorder-on" style="text-transform: capitalize;">
+                <span *ngIf="order.gueststatuslunch!='' && order.statuslunch!=order.gueststatuslunch && order.guestcountlunch!=''" class="mealtitle">Lunch - Guest Meal x {{order.guestcountlunch}}</span> 
+              </ion-row>
+
+              <ion-row *ngIf="order.meal_typelunch==''" class="mealorder-on" style="text-transform: capitalize;">
+                <span *ngIf="order.guestcountlunch!=''" class="mealtitle">Lunch - Guest Meal X {{order.guestcountlunch}}</span> 
+              </ion-row>
+              <!-- end -->
+
+              
+              <!-- dinner data -->
+              <ion-row *ngIf="order.meal_typedinner!=''" class="mealorder-on" style="text-transform: capitalize;">
+                <div style="margin-top: 2vh;"> <span class="mealtitle">{{order.meal_typedinner}}</span><span *ngIf="order.guestcountdinner!='' && order.gueststatusdinner!='' && order.statusdinner==order.gueststatusdinner" class="mealtitle">, Guest Meal x {{order.guestcountdinner}}</span></div>
+               
+              </ion-row>
+
+              <ion-row *ngIf="order.meal_typedinner!=''" class="mealorder-on" style="text-transform: capitalize;">
+                <span *ngIf="order.gueststatusdinner!='' && order.statusdinner!=order.gueststatusdinner && order.guestcountdinner!=''" class="mealtitle">Dinner - Guest Meal x {{order.guestcountlunch}}</span> 
+              </ion-row>
+
+
+              <ion-row *ngIf="order.meal_typedinner==''" class="mealorder-on" style="text-transform: capitalize;">
+                <span *ngIf="order.guestcountdinner!=''" class="mealtitle">Dinner - Guest Meal x {{order.guestcountdinner}}</span>
+              </ion-row>
+            </ion-col>
+            <!-- end -->
+
+
+
+
+            <ion-col style="padding:0;">
+              <ion-row *ngIf="order.meal_typelunch!=''" class="mealorder-on extreme-right" style="text-transform: capitalize;"><span>{{order.statuslunch}}</span>
+
+                <p class="mealorder-on3" *ngIf="order.statuslunch=='undelivered'"></p>
+                <p class="mealorder-on2" *ngIf="order.statuslunch=='delivered'"></p>
+                <p class="mealorder-on1" *ngIf="order.statuslunch=='cancelled'"></p>
+              </ion-row>
+              
+              <ion-row *ngIf="order.meal_typelunch!=''" class="mealorder-on extreme-right" style="text-transform: capitalize;"><span *ngIf="order.gueststatuslunch!='' && order.statuslunch!=order.gueststatuslunch && order.guestcountlunch!=''"><span *ngIf="order.lunchsame!='1'">{{order.gueststatuslunch}}</span></span>
+                <p class="mealorder-on3" *ngIf="order.gueststatuslunch=='undelivered' && order.lunchsame!='1'"></p>
+                <p class="mealorder-on2" *ngIf="order.gueststatuslunch=='delivered' && order.lunchsame!='1'"></p>
+                <p class="mealorder-on1" *ngIf="order.gueststatuslunch=='cancelled' && order.lunchsame!='1'"></p>
+              </ion-row>
+
+              <ion-row  *ngIf="order.meal_typelunch==''" class="mealorder-on extreme-right" style="text-transform: capitalize;"><span *ngIf="order.guestcountlunch!=''">{{order.gueststatuslunch}}</span>
+                <p class="mealorder-on3" *ngIf="order.gueststatuslunch=='undelivered'"></p>
+                <p class="mealorder-on2" *ngIf="order.gueststatuslunch=='delivered'"></p>
+                <p class="mealorder-on1" *ngIf="order.gueststatuslunch=='cancelled'"></p>
+              </ion-row>
+              <!-- lunch end -->
+              
+              <ion-row *ngIf="order.meal_typedinner!=''" class="mealorder-on extreme-right" style="text-transform: capitalize;"><span>{{order.statusdinner}}</span>
+                <p class="mealorder-on3" *ngIf="order.statusdinner=='undelivered'"></p>
+                <p class="mealorder-on2" *ngIf="order.statusdinner=='delivered'"></p>
+                <p class="mealorder-on1" *ngIf="order.statusdinner=='cancelled'"></p>
+              </ion-row>    
+              
+              <ion-row *ngIf="order.meal_typedinner!=''" class="mealorder-on extreme-right" style="text-transform: capitalize;"><span *ngIf="order.gueststatusdinner!='' && order.statusdinner!=order.gueststatusdinner && order.guestcountdinner!=''"><span *ngIf="order.dinnersame!='1'">{{order.gueststatusdinner}}</span></span>
+                <p class="mealorder-on3" *ngIf="order.gueststatusdinner=='undelivered' && order.dinnersame!='1'"></p>
+                <p class="mealorder-on2" *ngIf="order.gueststatusdinner=='delivered' && order.dinnersame!='1'"></p>
+                <p class="mealorder-on1" *ngIf="order.gueststatusdinner=='cancelled' && order.dinnersame!='1'"></p>
+              </ion-row>    
+
+              <ion-row *ngIf="order.meal_typedinner==''"  class="mealorder-on extreme-right" style="text-transform: capitalize;"><span *ngIf="order.guestcountdinner!=''">{{order.gueststatusdinner}}</span>
+                <p class="mealorder-on3" *ngIf="order.gueststatusdinner=='undelivered'"></p>
+                <p class="mealorder-on2" *ngIf="order.gueststatusdinner=='delivered'"></p>
+                <p class="mealorder-on1" *ngIf="order.gueststatusdinner=='cancelled'"></p>
+              </ion-row> 
+
+            </ion-col>
+          </ion-row>
+          <hr *ngIf="order.meal_typelunch!='' || order.meal_typedinner!=''">
+        </div>
+        <div *ngIf="showData==true" style="padding-top: 30vh;">
+          No Records to Display
+        </div>
+        
+      </ion-grid>
+    </div>
+   
+  </div>
+
+</div>
+</ion-content>

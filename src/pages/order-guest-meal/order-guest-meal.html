@@ -1,0 +1,121 @@
+<ion-header no-border class="dit-type-header order-header">
+  <ion-navbar>
+    <ion-buttons left>
+      <button ion-button icon-only (click)="Back()">
+        <img src="assets/imgicon/Group_51.svg" class="backWhiteIcon">
+      </button>
+    </ion-buttons>
+    <ion-title text-center>ORDER GUEST MEAL</ion-title>     
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="main-content order-scroll">
+  <div class="screen-heading">
+    <span>Choose</span>
+    <h2>Date & Meal</h2>
+  </div>
+
+  <div class="choose-ordermeal">
+    <ion-grid>
+      <ion-row text-center>
+        <ion-col style="padding: 0;">
+          <label style="width: 100%; float: left;">
+            <h5 >PICK DATE</h5>
+          </label>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col col-12 class="text-center" style="padding:0;">
+          <ion-item style="padding-left: 0;    min-height: 1px;">
+            <ion-datetime class="datetime-text" displayFormat="DD MMMM YYYY" [ngModelOptions]="{standalone: true}"  [min]="today1" [max]="today1"
+              [(ngModel)]="selecteddate" (ngModelChange)="selectdate()"></ion-datetime>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col col-12 class="text-center" style="padding:0;">
+          <h6 class="choose-type-quantity">CHOOSE MEAL TYPE & QUANTITY</h6>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <div class="meal-type-class"*ngIf="mealType1=='Lunch' || mealType1=='Both'">
+
+
+      <ion-row (click)="onClickMeal('Lunch')" class="orderDetail">
+        <ion-col col-2 class="font-image">
+          <div>
+            <img src="assets/Group 496.svg" alt="Edit-address" style="width: 4.769021739130435vh; height: 2.989130434782609vh;">
+          </div>
+        </ion-col>
+        <ion-col col-3 class="font-image">
+          <div>
+            <label class="mealtype-label" [style.color]="th2">{{lunchmealtype}}</label>
+          </div>
+        </ion-col>
+
+        <ion-col col-7 class="font-image">
+          <div class="row meal-content">
+            <button class="mealtype-integer col-4" [disabled]="mynum1==0" (click)="onclickMinus1()" style="padding:0;">
+              <img src="assets/Group 466.svg" alt="" style="height: 3.8530734632683656vh;width: 3.8530734632683656vh;">
+            </button>
+            <button class="mealtype-integer col-4">
+              <ion-label style="width:4.497vh; font-size: 4vw; font-family: Montserrat-Bold;"
+                >{{mynum1}}</ion-label>
+            </button>
+            <button class="mealtype-integer col-4" [disabled]="mynum1==10" (click)="onclickPlus1()" style="padding:0;">
+              <img src="assets/Group 467.svg" alt="" style="height: 3.8530734632683656vh;width: 3.8530734632683656vh;">
+            </button>  
+          </div>
+        </ion-col>
+      </ion-row>
+    </div>
+   
+    <div class="meal-type-class" *ngIf="mealType1=='Dinner' || mealType1=='Both'" style="margin-bottom: 0;">
+      <ion-row (click)="onClickMeal('Dinner')" class="orderDetail">
+        <ion-col col-2 class="font-image">
+          <div>
+            <img src="assets/Group 496.svg" alt="Edit-address" style="width: 4.769021739130435vh; height: 2.989130434782609vh;">
+          </div>
+        </ion-col>
+        <ion-col col-3 class="font-image">
+          <div>
+            <label class="mealtype-label" [style.color]="th2">{{Dinnermealtype}}</label>
+          </div>
+        </ion-col>
+        <ion-col col-7 class="font-image">
+          <div class="row meal-content">
+            <button class="mealtype-integer col-4" [disabled]="mynum2==0" (click)="onclickMinus2()" style="padding:0;">
+              <img  src="assets/Group 466.svg" alt="" style="height: 3.8530734632683656vh;width: 3.8530734632683656vh;">
+            </button>
+            <button class="mealtype-integer col-4">
+              <ion-label style="width:4.497vh; font-size: 4vw; font-family: Montserrat-Bold;"  
+                >{{mynum2}}</ion-label>
+            </button>
+            <button class="mealtype-integer col-4" [disabled]="mynum2==10" (click)="onclickPlus2()" style="padding:0;">  
+              <img src="assets/Group 467.svg" alt="" style="height: 3.8530734632683656vh;width: 3.8530734632683656vh;">
+            </button>
+          </div>
+        </ion-col>
+      </ion-row>
+
+    </div>
+
+  
+  </div>
+</ion-content>
+<ion-footer className="ion-no-border" class="footer-common">
+  <ion-toolbar>
+<ion-grid class="footer-color" style="padding:0;">
+  <ion-row>
+    <ion-col style="padding: 0;">
+      <button class="button-class_added" type="submit" id="input_submit" block (click)="onSubmit()"
+        [style.background]="submitButton" style="margin:0 5.333vw;">
+        Proceed
+      </button>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+</ion-toolbar>
+</ion-footer>

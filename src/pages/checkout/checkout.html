@@ -1,0 +1,261 @@
+<ion-header no-border class="dit-type-header special-margin-checkout" (click)="classadded()">
+  <ion-navbar>
+    <ion-buttons left>
+      <button ion-button icon-only (click)="Back()">
+        <img src="assets/imgicon/Group_51.svg" class="backWhiteIcon">
+      </button>
+    </ion-buttons>
+    <ion-title text-center>ALMOST THERE</ion-title>     
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="main-content" (click)="classadded()" id="myDIV"> 
+
+  <ion-grid style="position: absolute;">
+    <div class="screen-heading">
+      <span>It's time for</span>
+      <h2> Checkout</h2>
+      <button id="buttonhidden" (click)="buttonhide()" style="display: none;"></button>
+      <button id="buttonhiddencancle" (click)="buttonhidecancle()" style="display: none;"></button>      
+    </div>
+    <ion-row class="checkout-screen">
+      <ion-col text-center>
+        <div [style.color]="ActiveChkSumm ? summaryWhiteArrow:summaryBlackArrow" (click)="onClickMySubcription()">
+          <img class="active" [src]=" ActiveChkSumm ? summaryWhiteArrow : summaryBlackArrow" style="width:2.098vh; height:2.098vh;">
+          <label [style.color]="summeryColor">Summary</label>
+        </div>
+      </ion-col>
+      <ion-col text-center>
+   <!--      (click)="onClickGuestMeal()" -->
+        <div [style.color]="ActiveChkSumm ? paymentBlackArrow:paymentWhiteArrow" >
+          <img class="" [src]="ActiveChkSumm ? paymentBlackArrow :paymentWhiteArrow" style="width:2.098vh; height:2.098vh;">
+          <label [style.color]="paymentColor">Payment</label>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+
+
+
+  <div class="checkout-area" *ngIf="ActiveChkSumm">
+    <div style="padding: 6.14vh 5.333vw 0vh 5.333vw;">
+      <ion-grid>
+        <ion-row>
+          <ion-col col-12 class="text-left" style="padding:0;">
+            <div class="mealtype">
+              <label>MEAL TYPE</label>
+              <div class="mealdesc-content" class="onboard-click" block>
+                {{mealtype}}
+              </div>
+            </div>
+            <div class="mealtypearea">
+              <a href="javascript:void(0);" (click)="onclickeditmealtype()">EDIT
+              </a>
+            </div>
+            <hr class="borderLine">
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col col-12 class="text-left" style="padding:0;">
+            <div class="preference-area">
+              <label>PREFERENCES</label>
+              <div class="mealtypearea">
+                <a href="javascript:void(0);" (click)="onclickpreference()">EDIT
+                </a>
+              </div>
+              <div class="lunch-time" *ngIf="lunchtime">
+                <label>{{lunchdis}}</label>
+                <div class="lunchDesc" block>
+                  {{lunchPreference}}
+                </div>
+              </div>
+
+              <div class="lunch-time" *ngIf="Dinnertime">
+                <label>{{dinnerdis}}</label>
+                <div class="lunchDesc" block>
+                  {{dinnerPreference}}
+                </div>
+              </div>
+            </div>
+
+            <hr class="borderLine">
+          </ion-col>
+        </ion-row>
+
+
+        <ion-row>
+          <ion-col col-12 class="text-left" style="padding:0;">
+            <div class="mealtype">
+              <label>START DATE</label>
+              <div class="dateType" block>
+                {{startdate|date:'d MMMM y'}}
+              </div>
+            </div>
+            <div class="mealtypearea">
+              <a href="javascript:void(0);" style="text-decoration: none;" (click)="onclickstartdate()">EDIT
+              </a>
+            </div>
+            <br />
+            <div class="mealtype">
+              <label style="margin-top: 1.799vh;">END DATE</label>
+              <div class="dateType" block>
+                {{(enddate)?.substring(0,10)|date:'d MMMM y'}}
+              </div>
+            </div>
+            <hr class="borderLine">
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col col-12 class="text-left" style="line-height: 2.0em; padding: 0;">
+            <div class="dilevery-time">
+              <label>DELIVERY TIMING</label>
+              <br>
+              <div class="deliveryLunch" *ngIf="lunchtime">
+                <label>{{lunchdis}}</label>
+                <div class="lunchDilTime" block>
+                  {{lunchdeliverytime}}
+                </div>
+              </div>
+            </div>
+            <div class="mealtypearea">
+              <a href="javascript:void(0);" (click)="onclickdeliverytime()">EDIT
+              </a>
+            </div>
+            <div class="deliveryLunch" *ngIf="Dinnertime">
+              <label>{{dinnerdis}}</label>
+              <br>
+              <div class="lunchDilTime" block>
+                {{deliverytime}}
+              </div>
+            </div>
+            <hr class="borderLine">
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col col-12 class="text-left" style="line-height: 2.0em; padding: 0;">
+            <div class="dilevery-time">
+              <label>DELIVERY ADDRESSES</label>
+              <div class="deliveryLunch" *ngIf="ladd">
+                <label>{{lunchdis}}</label>
+                <div class="lunchDilTime" block>
+                  {{Lunchadd}}
+                </div>
+              </div>
+            </div>
+            <div class="mealtypearea">
+              <a href="javascript:void(0);" (click)="onclickaddress()">EDIT
+              </a>
+            </div>
+            <div class="deliveryLunch" *ngIf="dadd">
+              <label>{{dinnerdis}}</label>
+              <br>
+              <div class="lunchDilTime" block>
+                {{Dinneradd}}
+              </div>
+            </div>
+            <hr class="borderLine">
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+
+    <ion-grid class="all-edit-button">
+      <ion-row>
+        <ion-col style="    padding: 2vh 5.333vw 0 5.333vw;">
+          <button ion-button type="submit" id="input_submit" block (click)="onclickPaytoProceed()" style="margin-bottom:0;">
+            Proceed To Pay
+          </button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+
+  <div class="checkout-area" *ngIf="ActiveChkMethod">
+    <ion-grid style=" margin-bottom: 2vh;">
+      <ion-row>
+        <ion-col style="padding: 2.17vh 5.333vw">
+          <div class="checkout-payment-content">
+            <ion-row>
+              <ion-col>
+                <h3>PRICE BREAKDOWN</h3>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col>
+                <label>{{dataarr.month}} </label>
+                <label class="price-countvalues">Rs.{{subscription_price}}</label>
+              </ion-col>
+            </ion-row>
+
+            <ion-row>
+              <ion-col>
+                <label>{{dataarr.ExtraRoti}}</label>
+                <label class="price-countvalues">Rs.{{extra_price}}</label>
+              </ion-col>
+            </ion-row>
+
+            <ion-row>
+              <ion-col>
+                <label>{{dataarr.Tax}}</label>
+                <label class="price-countvalues">Rs.{{Tax}} </label>
+              </ion-col>
+            </ion-row>
+            <hr class="newline">
+            <ion-row>
+              <ion-col>
+                <label class="total">{{dataarr.Total}}</label>
+                <label class="total-price">Rs.{{Total}}</label>
+              </ion-col>
+            </ion-row>
+
+          </div>
+    
+        </ion-col>
+      </ion-row>
+      
+      <div class="reffer-code">
+        <ion-row>
+          <ion-col col-12>
+            <label style="margin-left: 0 !important;">Referal Code</label>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col col-7>
+            <ion-input [(ngModel)]="referCode"  (ngModelChange)="onSearchChange($event)" [disabled]="subdisable"></ion-input>
+          </ion-col>
+          <ion-col col-5>
+            <button ion-button type="submit" id="input_submit" block [style.background]="conbut1" (click)="onclickApply()" [disabled]="isdisable">Apply</button>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-label style="    padding: 0 5px;">{{msg}}</ion-label>
+        </ion-row>
+      </div>
+     
+      
+    </ion-grid>
+
+
+    <!-- <ion-footer className="ion-no-border" class="footer-common" style="background-color: #fff;">
+      <ion-toolbar> -->
+   
+        <ion-grid class="button-grid-box" style="margin-top: 10vw;">
+          <ion-row>
+            <ion-col style="padding:0 5.333vw;">
+              <button ion-button type="submit" id="input_submit" block  (click)="onclickslidepay()" style="background: linear-gradient(to bottom, #ffce80 -80%, #f29c11 100%);">
+                <label class="first-total-label">Pay</label>
+                <label class="second-total-label">&#8377; {{Total}}</label>
+                <!-- <img src="assets/pay-arrow.png" alt="TrueMark" class="img-responsive" class="buttonEffect"> -->
+              </button>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+        <!-- </ion-toolbar>
+        </ion-footer> -->
+
+
+  </div>
+</ion-content>
